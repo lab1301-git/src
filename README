@@ -41,7 +41,7 @@ The source files have an header that details what the code is trying to address.
 3)  src/C++/zooVisitorPattern/zooVisitor.cpp // Implemented via visitor pattern
 
 *  The Java version of polymorphism.cpp demonstrates Collections, iterators,
-*  exceptions.  
+*  exceptions and the Java 8 feature Streams 
 4)  src/Java/Eclipse/polymorphism/src/polymorphismExamples/B.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D1.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
