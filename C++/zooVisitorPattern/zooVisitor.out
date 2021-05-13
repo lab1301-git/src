@@ -1,0 +1,1257 @@
+Entered zoo....
+elephant() default ctor
+
+---------------------
+Number of Elephants in zoo:  5
+---------------------
+
+---------------------
+Number of Monkeys in zoo:  5
+---------------------
+
+---------------------
+Number of Giraffe's's in zoo:  5
+---------------------
+================================================
+Zoo vector populated with <15> animals.
+================================================
+
+
+Printing vector initial contents....
+-----------------------------------
+        Animal:     Monkey
+        id:         0
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         1
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         2
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Monkey
+        id:         3
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         4
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         5
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Monkey
+        id:         6
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         7
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         8
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Monkey
+        id:         9
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         10
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         11
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Monkey
+        id:         12
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         13
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         14
+        Count:      5
+        Health:     100
+        Feed:       0
+        Status:     Live
+-----------------------------------
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 15% from: 100 to: 85
+    Health for id <0> changed to: 85. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 15% from: 100 to: 85
+    Health for id <1> changed to: 85. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 13% from: 100 to: 87
+    Health for id <2> changed to: 87. Current/old status: Live
+Elephant id: 2 No change to status
+Reducing health of: 'Monkey' (id=3) by: 3% from: 100 to: 97
+    Health for id <3> changed to: 97. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 13% from: 100 to: 87
+    Health for id <4> changed to: 87. Current/old status: Live
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 1% from: 100 to: 99
+    Health for id <5> changed to: 99. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 19% from: 100 to: 81
+    Health for id <6> changed to: 81. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 0% from: 100 to: 100
+    Health for id <7> changed to: 100. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 4% from: 100 to: 96
+    Health for id <8> changed to: 96. Current/old status: Live
+Elephant id: 8 No change to status
+Reducing health of: 'Monkey' (id=9) by: 7% from: 100 to: 93
+    Health for id <9> changed to: 93. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 4% from: 100 to: 96
+    Health for id <10> changed to: 96. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 13% from: 100 to: 87
+    Health for id <11> changed to: 87. Current/old status: Live
+Elephant id: 11 No change to status
+Reducing health of: 'Monkey' (id=12) by: 11% from: 100 to: 89
+    Health for id <12> changed to: 89. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 18% from: 100 to: 82
+    Health for id <13> changed to: 82. Current/old status: Live
+Giraffe id: 13 No change to status
+Reducing health of: 'Elephant' (id=14) by: 14% from: 100 to: 86
+    Health for id <14> changed to: 86. Current/old status: Live
+Elephant id: 14 No change to status
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 3% from: 85 to: 82.45
+    Health for id <0> changed to: 82.45. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 14% from: 85 to: 73.1
+    Health for id <1> changed to: 73.1. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 6% from: 87 to: 81.78
+    Health for id <2> changed to: 81.78. Current/old status: Live
+Elephant id: 2 No change to status
+Reducing health of: 'Monkey' (id=3) by: 8% from: 97 to: 89.24
+    Health for id <3> changed to: 89.24. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 10% from: 87 to: 78.3
+    Health for id <4> changed to: 78.3. Current/old status: Live
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 5% from: 99 to: 94.05
+    Health for id <5> changed to: 94.05. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 15% from: 81 to: 68.85
+    Health for id <6> changed to: 68.85. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 2% from: 100 to: 98
+    Health for id <7> changed to: 98. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 15% from: 96 to: 81.6
+    Health for id <8> changed to: 81.6. Current/old status: Live
+Elephant id: 8 No change to status
+Reducing health of: 'Monkey' (id=9) by: 4% from: 93 to: 89.28
+    Health for id <9> changed to: 89.28. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 18% from: 96 to: 78.72
+    Health for id <10> changed to: 78.72. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 6% from: 87 to: 81.78
+    Health for id <11> changed to: 81.78. Current/old status: Live
+Elephant id: 11 No change to status
+Reducing health of: 'Monkey' (id=12) by: 6% from: 89 to: 83.66
+    Health for id <12> changed to: 83.66. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 9% from: 82 to: 74.62
+    Health for id <13> changed to: 74.62. Current/old status: Live
+Giraffe id: 13 No change to status
+Reducing health of: 'Elephant' (id=14) by: 19% from: 86 to: 69.66
+    Health for id <14> changed to: 69.66. Current/old status: Live
+Elephant id: 14 status changed from: Live to: Lame
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 15% from: 82.45 to: 70.0825
+    Health for id <0> changed to: 70.0825. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 13% from: 73.1 to: 63.597
+    Health for id <1> changed to: 63.597. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 14% from: 81.78 to: 70.3308
+    Health for id <2> changed to: 70.3308. Current/old status: Live
+Elephant id: 2 No change to status
+Reducing health of: 'Monkey' (id=3) by: 18% from: 89.24 to: 73.1768
+    Health for id <3> changed to: 73.1768. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 19% from: 78.3 to: 63.423
+    Health for id <4> changed to: 63.423. Current/old status: Live
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 12% from: 94.05 to: 82.764
+    Health for id <5> changed to: 82.764. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 9% from: 68.85 to: 62.6535
+    Health for id <6> changed to: 62.6535. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 5% from: 98 to: 93.1
+    Health for id <7> changed to: 93.1. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 9% from: 81.6 to: 74.256
+    Health for id <8> changed to: 74.256. Current/old status: Live
+Elephant id: 8 No change to status
+Reducing health of: 'Monkey' (id=9) by: 17% from: 89.28 to: 74.1024
+    Health for id <9> changed to: 74.1024. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 15% from: 78.72 to: 66.912
+    Health for id <10> changed to: 66.912. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 12% from: 81.78 to: 71.9664
+    Health for id <11> changed to: 71.9664. Current/old status: Live
+Elephant id: 11 No change to status
+Reducing health of: 'Monkey' (id=12) by: 15% from: 83.66 to: 71.111
+    Health for id <12> changed to: 71.111. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 18% from: 74.62 to: 61.1884
+    Health for id <13> changed to: 61.1884. Current/old status: Live
+Giraffe id: 13 No change to status
+Reducing health of: 'Elephant' (id=14) by: 12% from: 69.66 to: 61.3008
+    Health for id <14> changed to: 61.3008. Current/old status: Lame
+Elephant id: 14 status changed from: Lame to: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 12% from: 70.0825 to: 61.6726
+    Health for id <0> changed to: 61.6726. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 6% from: 63.597 to: 59.7812
+    Health for id <1> changed to: 59.7812. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 7% from: 70.3308 to: 65.4076
+    Health for id <2> changed to: 65.4076. Current/old status: Live
+Elephant id: 2 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=3) by: 9% from: 73.1768 to: 66.5909
+    Health for id <3> changed to: 66.5909. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 4% from: 63.423 to: 60.8861
+    Health for id <4> changed to: 60.8861. Current/old status: Live
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 6% from: 82.764 to: 77.7982
+    Health for id <5> changed to: 77.7982. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 14% from: 62.6535 to: 53.882
+    Health for id <6> changed to: 53.882. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 16% from: 93.1 to: 78.204
+    Health for id <7> changed to: 78.204. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 0% from: 74.256 to: 74.256
+    Health for id <8> changed to: 74.256. Current/old status: Live
+Elephant id: 8 No change to status
+Reducing health of: 'Monkey' (id=9) by: 5% from: 74.1024 to: 70.3973
+    Health for id <9> changed to: 70.3973. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 17% from: 66.912 to: 55.537
+    Health for id <10> changed to: 55.537. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 2% from: 71.9664 to: 70.5271
+    Health for id <11> changed to: 70.5271. Current/old status: Live
+Elephant id: 11 No change to status
+Reducing health of: 'Monkey' (id=12) by: 18% from: 71.111 to: 58.311
+    Health for id <12> changed to: 58.311. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 7% from: 61.1884 to: 56.9052
+    Health for id <13> changed to: 56.9052. Current/old status: Live
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+Feeding animals...
+-----------------------------------
+Feed random numbers generated by callFeedAnimal::resetRandomNumbers() are:
+    m_rnum=14  g_rnum=17  e_rnum=11
+callFeedAnimal::callFeedAnimal() ctor
+Animal just fed so increasing health of: 'Monkey' (id=0) by: 14% from: 61.6726 to: 70.3068
+    Health for id <0> changed to: 70.3068.  Current/old status: Live
+Monkey id: 0 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=1) by: 17% from: 59.7812 to: 69.944
+    Health for id <1> changed to: 69.944.  Current/old status: Live
+Giraffe id: 1 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=2) by: 11% from: 65.4076 to: 72.6025
+    Health for id <2> changed to: 72.6025.  Current/old status: Lame
+Elephant id: 2 status changed from: Lame to: Live
+Animal just fed so increasing health of: 'Monkey' (id=3) by: 14% from: 66.5909 to: 75.9136
+    Health for id <3> changed to: 75.9136.  Current/old status: Live
+Monkey id: 3 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=4) by: 17% from: 60.8861 to: 71.2367
+    Health for id <4> changed to: 71.2367.  Current/old status: Live
+Giraffe id: 4 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=5) by: 11% from: 77.7982 to: 86.356
+    Health for id <5> changed to: 86.356.  Current/old status: Live
+Elephant id: 5 No change to status
+Animal just fed so increasing health of: 'Monkey' (id=6) by: 14% from: 53.882 to: 61.4255
+    Health for id <6> changed to: 61.4255.  Current/old status: Live
+Monkey id: 6 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=7) by: 17% from: 78.204 to: 91.4987
+    Health for id <7> changed to: 91.4987.  Current/old status: Live
+Giraffe id: 7 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=8) by: 11% from: 74.256 to: 82.4242
+    Health for id <8> changed to: 82.4242.  Current/old status: Live
+Elephant id: 8 No change to status
+Animal just fed so increasing health of: 'Monkey' (id=9) by: 14% from: 70.3973 to: 80.2529
+    Health for id <9> changed to: 80.2529.  Current/old status: Live
+Monkey id: 9 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=10) by: 17% from: 55.537 to: 64.9782
+    Health for id <10> changed to: 64.9782.  Current/old status: Live
+Giraffe id: 10 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=11) by: 11% from: 70.5271 to: 78.285
+    Health for id <11> changed to: 78.285.  Current/old status: Live
+Elephant id: 11 No change to status
+Animal just fed so increasing health of: 'Monkey' (id=12) by: 14% from: 58.311 to: 66.4746
+    Health for id <12> changed to: 66.4746.  Current/old status: Live
+Monkey id: 12 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=13) by: 17% from: 56.9052 to: 66.5791
+    Health for id <13> changed to: 66.5791.  Current/old status: Live
+Giraffe id: 13 No change to status
+Elephant Id: 14 can't be fed as it is Dead...
+Elephant id: 14 Status: Dead
+~callFeedAnimal::callFeedAnimal() dtor
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 1% from: 70.3068 to: 69.6037
+    Health for id <0> changed to: 69.6037. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 19% from: 69.944 to: 56.6546
+    Health for id <1> changed to: 56.6546. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 13% from: 72.6025 to: 63.1642
+    Health for id <2> changed to: 63.1642. Current/old status: Live
+Elephant id: 2 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=3) by: 2% from: 75.9136 to: 74.3953
+    Health for id <3> changed to: 74.3953. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 13% from: 71.2367 to: 61.9759
+    Health for id <4> changed to: 61.9759. Current/old status: Live
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 15% from: 86.356 to: 73.4026
+    Health for id <5> changed to: 73.4026. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 18% from: 61.4255 to: 50.3689
+    Health for id <6> changed to: 50.3689. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 13% from: 91.4987 to: 79.6039
+    Health for id <7> changed to: 79.6039. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 15% from: 82.4242 to: 70.0605
+    Health for id <8> changed to: 70.0605. Current/old status: Live
+Elephant id: 8 No change to status
+Reducing health of: 'Monkey' (id=9) by: 0% from: 80.2529 to: 80.2529
+    Health for id <9> changed to: 80.2529. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 0% from: 64.9782 to: 64.9782
+    Health for id <10> changed to: 64.9782. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 10% from: 78.285 to: 70.4565
+    Health for id <11> changed to: 70.4565. Current/old status: Live
+Elephant id: 11 No change to status
+Reducing health of: 'Monkey' (id=12) by: 11% from: 66.4746 to: 59.1624
+    Health for id <12> changed to: 59.1624. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 17% from: 66.5791 to: 55.2607
+    Health for id <13> changed to: 55.2607. Current/old status: Live
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 1% from: 69.6037 to: 68.9077
+    Health for id <0> changed to: 68.9077. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 3% from: 56.6546 to: 54.955
+    Health for id <1> changed to: 54.955. Current/old status: Live
+Giraffe id: 1 No change to status
+Reducing health of: 'Elephant' (id=2) by: 12% from: 63.1642 to: 55.5845
+    Health for id <2> changed to: 55.5845. Current/old status: Lame
+Elephant id: 2 status changed from: Lame to: Dead
+Reducing health of: 'Monkey' (id=3) by: 5% from: 74.3953 to: 70.6756
+    Health for id <3> changed to: 70.6756. Current/old status: Live
+Monkey id: 3 No change to status
+Reducing health of: 'Giraffe' (id=4) by: 20% from: 61.9759 to: 49.5808
+    Health for id <4> changed to: 49.5808. Current/old status: Live
+Giraffe id: 4 status changed from: Live to: Dead
+Reducing health of: 'Elephant' (id=5) by: 3% from: 73.4026 to: 71.2005
+    Health for id <5> changed to: 71.2005. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 12% from: 50.3689 to: 44.3246
+    Health for id <6> changed to: 44.3246. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 1% from: 79.6039 to: 78.8078
+    Health for id <7> changed to: 78.8078. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 8% from: 70.0605 to: 64.4557
+    Health for id <8> changed to: 64.4557. Current/old status: Live
+Elephant id: 8 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=9) by: 17% from: 80.2529 to: 66.6099
+    Health for id <9> changed to: 66.6099. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 11% from: 64.9782 to: 57.8306
+    Health for id <10> changed to: 57.8306. Current/old status: Live
+Giraffe id: 10 No change to status
+Reducing health of: 'Elephant' (id=11) by: 18% from: 70.4565 to: 57.7744
+    Health for id <11> changed to: 57.7744. Current/old status: Live
+Elephant id: 11 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=12) by: 16% from: 59.1624 to: 49.6964
+    Health for id <12> changed to: 49.6964. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 4% from: 55.2607 to: 53.0502
+    Health for id <13> changed to: 53.0502. Current/old status: Live
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+Printing vector contents....
+-----------------------------------
+        Animal:     Monkey
+        id:         0
+        Count:      5
+        Health:     68.9077
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         1
+        Count:      5
+        Health:     54.955
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         2
+        Count:      5
+        Health:     55.5845
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Monkey
+        id:         3
+        Count:      5
+        Health:     70.6756
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         4
+        Count:      5
+        Health:     49.5808
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         5
+        Count:      5
+        Health:     71.2005
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Monkey
+        id:         6
+        Count:      5
+        Health:     44.3246
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         7
+        Count:      5
+        Health:     78.8078
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         8
+        Count:      5
+        Health:     64.4557
+        Feed:       0
+        Status:     Lame
+-----------------------------------
+        Animal:     Monkey
+        id:         9
+        Count:      5
+        Health:     66.6099
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         10
+        Count:      5
+        Health:     57.8306
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         11
+        Count:      5
+        Health:     57.7744
+        Feed:       0
+        Status:     Lame
+-----------------------------------
+        Animal:     Monkey
+        id:         12
+        Count:      5
+        Health:     49.6964
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         13
+        Count:      5
+        Health:     53.0502
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Elephant
+        id:         14
+        Count:      5
+        Health:     61.3008
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+
+
+Feeding animals...
+-----------------------------------
+Feed random numbers generated by callFeedAnimal::resetRandomNumbers() are:
+    m_rnum=16  g_rnum=14  e_rnum=17
+callFeedAnimal::callFeedAnimal() ctor
+Animal just fed so increasing health of: 'Monkey' (id=0) by: 16% from: 68.9077 to: 79.9329
+    Health for id <0> changed to: 79.9329.  Current/old status: Live
+Monkey id: 0 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=1) by: 14% from: 54.955 to: 62.6487
+    Health for id <1> changed to: 62.6487.  Current/old status: Live
+Giraffe id: 1 No change to status
+Elephant Id: 2 can't be fed as it is Dead...
+Elephant id: 2 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=3) by: 16% from: 70.6756 to: 81.9837
+    Health for id <3> changed to: 81.9837.  Current/old status: Live
+Monkey id: 3 No change to status
+Giraffe Id: 4 can't be fed as it is Dead...
+Giraffe id: 4 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=5) by: 17% from: 71.2005 to: 83.3046
+    Health for id <5> changed to: 83.3046.  Current/old status: Live
+Elephant id: 5 No change to status
+Animal just fed so increasing health of: 'Monkey' (id=6) by: 16% from: 44.3246 to: 51.4166
+    Health for id <6> changed to: 51.4166.  Current/old status: Live
+Monkey id: 6 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=7) by: 14% from: 78.8078 to: 89.8409
+    Health for id <7> changed to: 89.8409.  Current/old status: Live
+Giraffe id: 7 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=8) by: 17% from: 64.4557 to: 75.4132
+    Health for id <8> changed to: 75.4132.  Current/old status: Lame
+Elephant id: 8 status changed from: Lame to: Live
+Animal just fed so increasing health of: 'Monkey' (id=9) by: 16% from: 66.6099 to: 77.2675
+    Health for id <9> changed to: 77.2675.  Current/old status: Live
+Monkey id: 9 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=10) by: 14% from: 57.8306 to: 65.9269
+    Health for id <10> changed to: 65.9269.  Current/old status: Live
+Giraffe id: 10 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=11) by: 17% from: 57.7744 to: 67.596
+    Health for id <11> changed to: 67.596.  Current/old status: Lame
+Elephant id: 11 status changed from: Lame to: Dead
+Animal just fed so increasing health of: 'Monkey' (id=12) by: 16% from: 49.6964 to: 57.6478
+    Health for id <12> changed to: 57.6478.  Current/old status: Live
+Monkey id: 12 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=13) by: 14% from: 53.0502 to: 60.4773
+    Health for id <13> changed to: 60.4773.  Current/old status: Live
+Giraffe id: 13 No change to status
+Elephant Id: 14 can't be fed as it is Dead...
+Elephant id: 14 Status: Dead
+~callFeedAnimal::callFeedAnimal() dtor
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 1% from: 79.9329 to: 79.1336
+    Health for id <0> changed to: 79.1336. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 1% from: 62.6487 to: 62.0222
+    Health for id <1> changed to: 62.0222. Current/old status: Live
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 4% from: 81.9837 to: 78.7043
+    Health for id <3> changed to: 78.7043. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 8% from: 83.3046 to: 76.6402
+    Health for id <5> changed to: 76.6402. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 3% from: 51.4166 to: 49.8741
+    Health for id <6> changed to: 49.8741. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 7% from: 89.8409 to: 83.552
+    Health for id <7> changed to: 83.552. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 15% from: 75.4132 to: 64.1012
+    Health for id <8> changed to: 64.1012. Current/old status: Live
+Elephant id: 8 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=9) by: 15% from: 77.2675 to: 65.6774
+    Health for id <9> changed to: 65.6774. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 9% from: 65.9269 to: 59.9935
+    Health for id <10> changed to: 59.9935. Current/old status: Live
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 10% from: 57.6478 to: 51.883
+    Health for id <12> changed to: 51.883. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 17% from: 60.4773 to: 50.1961
+    Health for id <13> changed to: 50.1961. Current/old status: Live
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+Feeding animals...
+-----------------------------------
+Feed random numbers generated by callFeedAnimal::resetRandomNumbers() are:
+    m_rnum=11  g_rnum=21  e_rnum=11
+callFeedAnimal::callFeedAnimal() ctor
+Animal just fed so increasing health of: 'Monkey' (id=0) by: 11% from: 79.1336 to: 87.8382
+    Health for id <0> changed to: 87.8382.  Current/old status: Live
+Monkey id: 0 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=1) by: 21% from: 62.0222 to: 75.0469
+    Health for id <1> changed to: 75.0469.  Current/old status: Live
+Giraffe id: 1 No change to status
+Elephant Id: 2 can't be fed as it is Dead...
+Elephant id: 2 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=3) by: 11% from: 78.7043 to: 87.3618
+    Health for id <3> changed to: 87.3618.  Current/old status: Live
+Monkey id: 3 No change to status
+Giraffe Id: 4 can't be fed as it is Dead...
+Giraffe id: 4 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=5) by: 11% from: 76.6402 to: 85.0706
+    Health for id <5> changed to: 85.0706.  Current/old status: Live
+Elephant id: 5 No change to status
+Animal just fed so increasing health of: 'Monkey' (id=6) by: 11% from: 49.8741 to: 55.3602
+    Health for id <6> changed to: 55.3602.  Current/old status: Live
+Monkey id: 6 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=7) by: 21% from: 83.552 to: 100
+    Health for id <7> changed to: 100.  Current/old status: Live
+Giraffe id: 7 No change to status
+Animal just fed so increasing health of: 'Elephant' (id=8) by: 11% from: 64.1012 to: 71.1523
+    Health for id <8> changed to: 71.1523.  Current/old status: Lame
+Elephant id: 8 status changed from: Lame to: Live
+Animal just fed so increasing health of: 'Monkey' (id=9) by: 11% from: 65.6774 to: 72.9019
+    Health for id <9> changed to: 72.9019.  Current/old status: Live
+Monkey id: 9 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=10) by: 21% from: 59.9935 to: 72.5921
+    Health for id <10> changed to: 72.5921.  Current/old status: Live
+Giraffe id: 10 No change to status
+Elephant Id: 11 can't be fed as it is Dead...
+Elephant id: 11 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=12) by: 11% from: 51.883 to: 57.5902
+    Health for id <12> changed to: 57.5902.  Current/old status: Live
+Monkey id: 12 No change to status
+Animal just fed so increasing health of: 'Giraffe' (id=13) by: 21% from: 50.1961 to: 60.7373
+    Health for id <13> changed to: 60.7373.  Current/old status: Live
+Giraffe id: 13 No change to status
+Elephant Id: 14 can't be fed as it is Dead...
+Elephant id: 14 Status: Dead
+~callFeedAnimal::callFeedAnimal() dtor
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 1% from: 87.8382 to: 86.9599
+    Health for id <0> changed to: 86.9599. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 20% from: 75.0469 to: 60.0375
+    Health for id <1> changed to: 60.0375. Current/old status: Live
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 4% from: 87.3618 to: 83.8673
+    Health for id <3> changed to: 83.8673. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 10% from: 85.0706 to: 76.5636
+    Health for id <5> changed to: 76.5636. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 13% from: 55.3602 to: 48.1634
+    Health for id <6> changed to: 48.1634. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 18% from: 100 to: 82
+    Health for id <7> changed to: 82. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 17% from: 71.1523 to: 59.0564
+    Health for id <8> changed to: 59.0564. Current/old status: Live
+Elephant id: 8 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=9) by: 19% from: 72.9019 to: 59.0505
+    Health for id <9> changed to: 59.0505. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 0% from: 72.5921 to: 72.5921
+    Health for id <10> changed to: 72.5921. Current/old status: Live
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 6% from: 57.5902 to: 54.1347
+    Health for id <12> changed to: 54.1347. Current/old status: Live
+Monkey id: 12 No change to status
+Reducing health of: 'Giraffe' (id=13) by: 19% from: 60.7373 to: 49.1972
+    Health for id <13> changed to: 49.1972. Current/old status: Live
+Giraffe id: 13 status changed from: Live to: Dead
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 18% from: 86.9599 to: 71.3071
+    Health for id <0> changed to: 71.3071. Current/old status: Live
+Monkey id: 0 No change to status
+Reducing health of: 'Giraffe' (id=1) by: 19% from: 60.0375 to: 48.6304
+    Health for id <1> changed to: 48.6304. Current/old status: Live
+Giraffe id: 1 status changed from: Live to: Dead
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 15% from: 83.8673 to: 71.2872
+    Health for id <3> changed to: 71.2872. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 3% from: 76.5636 to: 74.2666
+    Health for id <5> changed to: 74.2666. Current/old status: Live
+Elephant id: 5 No change to status
+Reducing health of: 'Monkey' (id=6) by: 14% from: 48.1634 to: 41.4205
+    Health for id <6> changed to: 41.4205. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 13% from: 82 to: 71.34
+    Health for id <7> changed to: 71.34. Current/old status: Live
+Giraffe id: 7 No change to status
+Reducing health of: 'Elephant' (id=8) by: 10% from: 59.0564 to: 53.1508
+    Health for id <8> changed to: 53.1508. Current/old status: Lame
+Elephant id: 8 status changed from: Lame to: Dead
+Reducing health of: 'Monkey' (id=9) by: 1% from: 59.0505 to: 58.46
+    Health for id <9> changed to: 58.46. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 7% from: 72.5921 to: 67.5107
+    Health for id <10> changed to: 67.5107. Current/old status: Live
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 1% from: 54.1347 to: 53.5934
+    Health for id <12> changed to: 53.5934. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 6% from: 71.3071 to: 67.0287
+    Health for id <0> changed to: 67.0287. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 16% from: 71.2872 to: 59.8813
+    Health for id <3> changed to: 59.8813. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 18% from: 74.2666 to: 60.8987
+    Health for id <5> changed to: 60.8987. Current/old status: Live
+Elephant id: 5 status changed from: Live to: Lame
+Reducing health of: 'Monkey' (id=6) by: 16% from: 41.4205 to: 34.7932
+    Health for id <6> changed to: 34.7932. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 7% from: 71.34 to: 66.3462
+    Health for id <7> changed to: 66.3462. Current/old status: Live
+Giraffe id: 7 No change to status
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 3% from: 58.46 to: 56.7062
+    Health for id <9> changed to: 56.7062. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 19% from: 67.5107 to: 54.6837
+    Health for id <10> changed to: 54.6837. Current/old status: Live
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 12% from: 53.5934 to: 47.1622
+    Health for id <12> changed to: 47.1622. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 8% from: 67.0287 to: 61.6664
+    Health for id <0> changed to: 61.6664. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 0% from: 59.8813 to: 59.8813
+    Health for id <3> changed to: 59.8813. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Reducing health of: 'Elephant' (id=5) by: 14% from: 60.8987 to: 52.3728
+    Health for id <5> changed to: 52.3728. Current/old status: Lame
+Elephant id: 5 status changed from: Lame to: Dead
+Reducing health of: 'Monkey' (id=6) by: 6% from: 34.7932 to: 32.7056
+    Health for id <6> changed to: 32.7056. Current/old status: Live
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 11% from: 66.3462 to: 59.0481
+    Health for id <7> changed to: 59.0481. Current/old status: Live
+Giraffe id: 7 No change to status
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 4% from: 56.7062 to: 54.438
+    Health for id <9> changed to: 54.438. Current/old status: Live
+Monkey id: 9 No change to status
+Reducing health of: 'Giraffe' (id=10) by: 19% from: 54.6837 to: 44.2938
+    Health for id <10> changed to: 44.2938. Current/old status: Live
+Giraffe id: 10 status changed from: Live to: Dead
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 16% from: 47.1622 to: 39.6162
+    Health for id <12> changed to: 39.6162. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 18% from: 61.6664 to: 50.5664
+    Health for id <0> changed to: 50.5664. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 5% from: 59.8813 to: 56.8872
+    Health for id <3> changed to: 56.8872. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Animal: 5 health can't be adjusted as it is already Dead
+Elephant id: 5 Status: Dead
+Reducing health of: 'Monkey' (id=6) by: 17% from: 32.7056 to: 27.1457
+    Health for id <6> changed to: 27.1457. Current/old status: Live
+Monkey id: 6 status changed from: Live to: Dead
+Reducing health of: 'Giraffe' (id=7) by: 13% from: 59.0481 to: 51.3719
+    Health for id <7> changed to: 51.3719. Current/old status: Live
+Giraffe id: 7 No change to status
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 9% from: 54.438 to: 49.5386
+    Health for id <9> changed to: 49.5386. Current/old status: Live
+Monkey id: 9 No change to status
+Animal: 10 health can't be adjusted as it is already Dead
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 20% from: 39.6162 to: 31.693
+    Health for id <12> changed to: 31.693. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 1% from: 50.5664 to: 50.0608
+    Health for id <0> changed to: 50.0608. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 17% from: 56.8872 to: 47.2164
+    Health for id <3> changed to: 47.2164. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Animal: 5 health can't be adjusted as it is already Dead
+Elephant id: 5 Status: Dead
+Animal: 6 health can't be adjusted as it is already Dead
+Monkey id: 6 No change to status
+Reducing health of: 'Giraffe' (id=7) by: 6% from: 51.3719 to: 48.2896
+    Health for id <7> changed to: 48.2896. Current/old status: Live
+Giraffe id: 7 status changed from: Live to: Dead
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 6% from: 49.5386 to: 46.5662
+    Health for id <9> changed to: 46.5662. Current/old status: Live
+Monkey id: 9 No change to status
+Animal: 10 health can't be adjusted as it is already Dead
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 3% from: 31.693 to: 30.7422
+    Health for id <12> changed to: 30.7422. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 14% from: 50.0608 to: 43.0522
+    Health for id <0> changed to: 43.0522. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 14% from: 47.2164 to: 40.6061
+    Health for id <3> changed to: 40.6061. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Animal: 5 health can't be adjusted as it is already Dead
+Elephant id: 5 Status: Dead
+Animal: 6 health can't be adjusted as it is already Dead
+Monkey id: 6 No change to status
+Animal: 7 health can't be adjusted as it is already Dead
+Giraffe id: 7 No change to status
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 6% from: 46.5662 to: 43.7723
+    Health for id <9> changed to: 43.7723. Current/old status: Live
+Monkey id: 9 No change to status
+Animal: 10 health can't be adjusted as it is already Dead
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 0% from: 30.7422 to: 30.7422
+    Health for id <12> changed to: 30.7422. Current/old status: Live
+Monkey id: 12 No change to status
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+** An hour has passed so adjusting health of all animals down... **
+-----------------------------------
+Reducing health of: 'Monkey' (id=0) by: 15% from: 43.0522 to: 36.5944
+    Health for id <0> changed to: 36.5944. Current/old status: Live
+Monkey id: 0 No change to status
+Animal: 1 health can't be adjusted as it is already Dead
+Giraffe id: 1 No change to status
+Animal: 2 health can't be adjusted as it is already Dead
+Elephant id: 2 Status: Dead
+Reducing health of: 'Monkey' (id=3) by: 15% from: 40.6061 to: 34.5152
+    Health for id <3> changed to: 34.5152. Current/old status: Live
+Monkey id: 3 No change to status
+Animal: 4 health can't be adjusted as it is already Dead
+Giraffe id: 4 No change to status
+Animal: 5 health can't be adjusted as it is already Dead
+Elephant id: 5 Status: Dead
+Animal: 6 health can't be adjusted as it is already Dead
+Monkey id: 6 No change to status
+Animal: 7 health can't be adjusted as it is already Dead
+Giraffe id: 7 No change to status
+Animal: 8 health can't be adjusted as it is already Dead
+Elephant id: 8 Status: Dead
+Reducing health of: 'Monkey' (id=9) by: 12% from: 43.7723 to: 38.5196
+    Health for id <9> changed to: 38.5196. Current/old status: Live
+Monkey id: 9 No change to status
+Animal: 10 health can't be adjusted as it is already Dead
+Giraffe id: 10 No change to status
+Animal: 11 health can't be adjusted as it is already Dead
+Elephant id: 11 Status: Dead
+Reducing health of: 'Monkey' (id=12) by: 9% from: 30.7422 to: 27.9754
+    Health for id <12> changed to: 27.9754. Current/old status: Live
+Monkey id: 12 status changed from: Live to: Dead
+Animal: 13 health can't be adjusted as it is already Dead
+Giraffe id: 13 No change to status
+Animal: 14 health can't be adjusted as it is already Dead
+Elephant id: 14 Status: Dead
+
+
+Feeding animals...
+-----------------------------------
+Feed random numbers generated by callFeedAnimal::resetRandomNumbers() are:
+    m_rnum=12  g_rnum=21  e_rnum=19
+callFeedAnimal::callFeedAnimal() ctor
+Animal just fed so increasing health of: 'Monkey' (id=0) by: 12% from: 36.5944 to: 40.9857
+    Health for id <0> changed to: 40.9857.  Current/old status: Live
+Monkey id: 0 No change to status
+Giraffe Id: 1 can't be fed as it is Dead...
+Giraffe id: 1 No change to status
+Elephant Id: 2 can't be fed as it is Dead...
+Elephant id: 2 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=3) by: 12% from: 34.5152 to: 38.657
+    Health for id <3> changed to: 38.657.  Current/old status: Live
+Monkey id: 3 No change to status
+Giraffe Id: 4 can't be fed as it is Dead...
+Giraffe id: 4 No change to status
+Elephant Id: 5 can't be fed as it is Dead...
+Elephant id: 5 Status: Dead
+Monkey Id: 6 can't be fed as it is Dead...
+Monkey id: 6 No change to status
+Giraffe Id: 7 can't be fed as it is Dead...
+Giraffe id: 7 No change to status
+Elephant Id: 8 can't be fed as it is Dead...
+Elephant id: 8 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=9) by: 12% from: 38.5196 to: 43.1419
+    Health for id <9> changed to: 43.1419.  Current/old status: Live
+Monkey id: 9 No change to status
+Giraffe Id: 10 can't be fed as it is Dead...
+Giraffe id: 10 No change to status
+Elephant Id: 11 can't be fed as it is Dead...
+Elephant id: 11 Status: Dead
+Monkey Id: 12 can't be fed as it is Dead...
+Monkey id: 12 No change to status
+Giraffe Id: 13 can't be fed as it is Dead...
+Giraffe id: 13 No change to status
+Elephant Id: 14 can't be fed as it is Dead...
+Elephant id: 14 Status: Dead
+~callFeedAnimal::callFeedAnimal() dtor
+
+
+Feeding animals...
+-----------------------------------
+Feed random numbers generated by callFeedAnimal::resetRandomNumbers() are:
+    m_rnum=11  g_rnum=12  e_rnum=20
+callFeedAnimal::callFeedAnimal() ctor
+Animal just fed so increasing health of: 'Monkey' (id=0) by: 11% from: 40.9857 to: 45.4942
+    Health for id <0> changed to: 45.4942.  Current/old status: Live
+Monkey id: 0 No change to status
+Giraffe Id: 1 can't be fed as it is Dead...
+Giraffe id: 1 No change to status
+Elephant Id: 2 can't be fed as it is Dead...
+Elephant id: 2 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=3) by: 11% from: 38.657 to: 42.9093
+    Health for id <3> changed to: 42.9093.  Current/old status: Live
+Monkey id: 3 No change to status
+Giraffe Id: 4 can't be fed as it is Dead...
+Giraffe id: 4 No change to status
+Elephant Id: 5 can't be fed as it is Dead...
+Elephant id: 5 Status: Dead
+Monkey Id: 6 can't be fed as it is Dead...
+Monkey id: 6 No change to status
+Giraffe Id: 7 can't be fed as it is Dead...
+Giraffe id: 7 No change to status
+Elephant Id: 8 can't be fed as it is Dead...
+Elephant id: 8 Status: Dead
+Animal just fed so increasing health of: 'Monkey' (id=9) by: 11% from: 43.1419 to: 47.8876
+    Health for id <9> changed to: 47.8876.  Current/old status: Live
+Monkey id: 9 No change to status
+Giraffe Id: 10 can't be fed as it is Dead...
+Giraffe id: 10 No change to status
+Elephant Id: 11 can't be fed as it is Dead...
+Elephant id: 11 Status: Dead
+Monkey Id: 12 can't be fed as it is Dead...
+Monkey id: 12 No change to status
+Giraffe Id: 13 can't be fed as it is Dead...
+Giraffe id: 13 No change to status
+Elephant Id: 14 can't be fed as it is Dead...
+Elephant id: 14 Status: Dead
+~callFeedAnimal::callFeedAnimal() dtor
+
+
+Printing vector contents....
+-----------------------------------
+        Animal:     Monkey
+        id:         0
+        Count:      5
+        Health:     45.4942
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         1
+        Count:      5
+        Health:     48.6304
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         2
+        Count:      5
+        Health:     55.5845
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Monkey
+        id:         3
+        Count:      5
+        Health:     42.9093
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         4
+        Count:      5
+        Health:     49.5808
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         5
+        Count:      5
+        Health:     52.3728
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Monkey
+        id:         6
+        Count:      5
+        Health:     27.1457
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Giraffe
+        id:         7
+        Count:      5
+        Health:     48.2896
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         8
+        Count:      5
+        Health:     53.1508
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Monkey
+        id:         9
+        Count:      5
+        Health:     47.8876
+        Feed:       0
+        Status:     Live
+-----------------------------------
+        Animal:     Giraffe
+        id:         10
+        Count:      5
+        Health:     44.2938
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         11
+        Count:      5
+        Health:     67.596
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Monkey
+        id:         12
+        Count:      5
+        Health:     27.9754
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Giraffe
+        id:         13
+        Count:      5
+        Health:     49.1972
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+        Animal:     Elephant
+        id:         14
+        Count:      5
+        Health:     61.3008
+        Feed:       0
+        Status:     Dead
+-----------------------------------
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor
+virtual ~animal::animal() dtor

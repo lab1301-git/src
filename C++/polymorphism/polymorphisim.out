@@ -1,0 +1,61 @@
+Entered main()
+B:B() ctor
+D1:D1() ctor
+
+Loading vector...
+B:B() ctor
+D1:D1() ctor
+B:B() ctor
+D2:D2() ctor
+B:B() ctor
+D1:D1() ctor
+B:B() ctor
+D2:D2() ctor
+B:B() ctor
+D1:D1() ctor
+B:B() ctor
+D2:D2() ctor
+B:B() ctor
+D1:D1() ctor
+B:B() ctor
+D2:D2() ctor
+B:B() ctor
+D1:D1() ctor
+B:B() ctor
+D2:D2() ctor
+
+Iterating around vector...
+D1::vfunc(int rnum) Seq=1
+D1::vfunc(int rnum) Seq=2
+D1::vfunc(int rnum) Seq=3
+D1::vfunc(int rnum) Seq=4
+D1::vfunc(int rnum) Seq=5
+D1::vfunc(int rnum) Seq=6
+D1::vfunc(int rnum) Seq=7
+D1::vfunc(int rnum) Seq=8
+D1::vfunc(int rnum) Seq=9
+D1::vfunc(int rnum) Seq=10
+
+Vector Size=10
+D1:~D1() dtor
+B:~B() virtual dtor
+D1:~D1() dtor
+B:~B() virtual dtor
+D2:~D2() dtor
+B:~B() virtual dtor
+D1:~D1() dtor
+B:~B() virtual dtor
+D2:~D2() dtor
+B:~B() virtual dtor
+D1:~D1() dtor
+B:~B() virtual dtor
+D2:~D2() dtor
+B:~B() virtual dtor
+D1:~D1() dtor
+B:~B() virtual dtor
+D2:~D2() dtor
+B:~B() virtual dtor
+D1:~D1() dtor
+B:~B() virtual dtor
+D2:~D2() dtor
+B:~B() virtual dtor
