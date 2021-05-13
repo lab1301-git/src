@@ -2,3 +2,14 @@ Lakshman Brodie
 https://github.com/lab1301-git/src
 
 The source files have an header that details what the code is trying to address.
+
+1)  src/C++/polymorphism/polymorphism.cpp
+2)  src/C++/zooPolymorphism/zoo.cpp 
+3)  src/C++/zooVisitorPattern/zooVisitor.cpp
+
+4)  The Java version of polymorphism.cpp
+    src/Java/Eclipse/polymorphism/src/polymorphismExamples/B.java
+    src/Java/Eclipse/polymorphism/src/polymorphismExamples/D1.java
+    src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
+    src/Java/Eclipse/polymorphism/src/polymorphismExamples/polymorphism.java
+
