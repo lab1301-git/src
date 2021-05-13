@@ -35,6 +35,8 @@ The source files have an header that details what the code is trying to address.
  * dead.
  * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
  * pronounced dead straight away.
+ * The runntime output from the programs can be viewed in the files:
+ * C++/zooPolymorphism/zoo.out and C++/zooVisitorPattern/zooVisitor.out
  *
 
 2)  src/C++/zooPolymorphism/zoo.cpp          // Implemented via polymorphism
