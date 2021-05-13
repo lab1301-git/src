@@ -1,0 +1,48 @@
+
+Entered polymorphism...
+D1::D1() ctor
+
++++ List size=0
+Loading data into Vector...
+D1::D1(int) ctor.  Seq=1
+D2::D2(int) ctor.  Seq=2
+D1::D1(int) ctor.  Seq=3
+D2::D2(int) ctor.  Seq=4
+D1::D1(int) ctor.  Seq=5
+D2::D2(int) ctor.  Seq=6
+D1::D1(int) ctor.  Seq=7
+D2::D2(int) ctor.  Seq=8
+D1::D1(int) ctor.  Seq=9
+D2::D2(int) ctor.  Seq=10
+
++++ List size=10
+D1::D1() ctor
+
+Testing whether we can insert an object into the read-only container myData...
+** Caught UnsupportedOperationException on a READ ONLY collection**
+** You do not have write permissions to myData container! **
+** Use B::loadData() to load data. **
+
+Rechecking list size=10
+
+
+Iterating around data collection....
+D1::vfunc().  Seq=1
+D2::vfunc().  Seq=2
+D1::vfunc().  Seq=3
+D2::vfunc().  Seq=4
+D1::vfunc().  Seq=5
+D2::vfunc().  Seq=6
+D1::vfunc().  Seq=7
+D2::vfunc().  Seq=8
+D1::vfunc().  Seq=9
+D2::vfunc().  Seq=10
+
+Testing whether we can remove an object from the read only collection...
+
+** Caught UnsupportedOperationException on a READ ONLY collection**
+** You do not have write permissions to the data container! **
+** Use B::loadData() to modify data. **
+
+List size=10
+
