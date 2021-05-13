@@ -1,6 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+
+/*
+ * Lakshman Brodie
+ * August 2020
+ *
+ * A simple example to demonstrate polymorphism in C++ where class B is
+ * extended by D1 and D2.  The Java and Python versions of this example are 
+ * also available under my https://github.com/lab1301-git/src repository.
+*/
         
 
 using namespace std;
