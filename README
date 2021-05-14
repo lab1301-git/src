@@ -6,7 +6,7 @@ The source files have an header that details what the code is trying to address.
 * The polymorphism.cpp example demonstrates smart pointres, abstract classes etc
 1)  src/C++/polymorphism/polymorphism.cpp
 
- * The two zoo code examples addresses the following specification:
+ * The two zoo code examples below meet the following requirement specification:
  * Write a simple Zoo simulator which contains 3 different types of animals:
  *  monkey,
  *  giraffe
@@ -35,6 +35,7 @@ The source files have an header that details what the code is trying to address.
  * dead.
  * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
  * pronounced dead straight away.
+ * 
  * The runntime output from the programs can be viewed in the files:
  * C++/zooPolymorphism/zoo.out and C++/zooVisitorPattern/zooVisitor.out
  *
@@ -43,7 +44,7 @@ The source files have an header that details what the code is trying to address.
 3)  src/C++/zooVisitorPattern/zooVisitor.cpp // Implemented via visitor pattern
 
 *  The Java version of polymorphism.cpp demonstrates Collections, iterators,
-*  exceptions and the Java 8 feature Streams 
+*  exceptions and the Java 8 specific new feature; Streams 
 4)  src/Java/Eclipse/polymorphism/src/polymorphismExamples/B.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D1.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
