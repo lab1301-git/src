@@ -50,3 +50,6 @@ The source files have an header that details what the code is trying to address.
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/polymorphism.java
 
+    The Python version of polymorphism demonstrates inheritance 
+5)  src/scripts/Python/polymorphism.py
+
