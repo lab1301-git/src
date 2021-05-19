@@ -17,7 +17,7 @@ str = "Entered polymorphism.py"
 print(str)
 print("-----------------------------")
 
-# Base is an abstract class as it contains abstract method vfunc()
+# Base is an abstract class as it contains abstract methods
 class Base(ABC):       
         __count = 0  # private static/class variable
         __data = []  # A private array of derived objects
@@ -71,7 +71,7 @@ class D1(Base):
     __name = ""
 
     def __init__(self, idx, name):  # ctor method
-        print("D1::ctor invoked.")
+        print("D1::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
         self.__idx = idx
         self.__name = name
 
@@ -94,7 +94,7 @@ class D2(Base):
     __name = ""
 
     def __init__(self, idx, name):  # ctor method
-        print("D2::ctor invoked.")
+        print("D2::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
         self.__idx = idx
         self.__name = name
 
@@ -125,7 +125,7 @@ seq=0
 
 # Load derived objects into an array in the base class via loadData() static
 # method
-while (x < 6):
+while (x < 5):
     x += 1
     seq += 1
     Base.loadData(D1(seq, "D1"))

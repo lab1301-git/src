@@ -1,0 +1,44 @@
+-----------------------------
+Entered polymorphism.py
+-----------------------------
+D1::ctor invoked (idx=1   name=D1).
+D2::ctor invoked (idx=2   name=D2).
+D1::ctor invoked (idx=3   name=D1).
+D2::ctor invoked (idx=4   name=D2).
+D1::ctor invoked (idx=5   name=D1).
+D2::ctor invoked (idx=6   name=D2).
+D1::ctor invoked (idx=7   name=D1).
+D2::ctor invoked (idx=8   name=D2).
+D1::ctor invoked (idx=9   name=D1).
+D2::ctor invoked (idx=10  name=D2).
+
+ObjectCount=10
+Base.getCount()=10
+
+Iterating around list Base.__data...
+getIdx() = 1   Name=D1
+getIdx() = 2   Name=D2
+getIdx() = 3   Name=D1
+getIdx() = 4   Name=D2
+getIdx() = 5   Name=D1
+getIdx() = 6   Name=D2
+getIdx() = 7   Name=D1
+getIdx() = 8   Name=D2
+getIdx() = 9   Name=D1
+getIdx() = 10  Name=D2
+----------------------------
+
+Print contents of array via base class method printAttributes()...
+
+Printing contents of array Base.__data...
+idx= 1   name=D1
+idx= 2   name=D2
+idx= 3   name=D1
+idx= 4   name=D2
+idx= 5   name=D1
+idx= 6   name=D2
+idx= 7   name=D1
+idx= 8   name=D2
+idx= 9   name=D1
+idx= 10  name=D2
+==================================
