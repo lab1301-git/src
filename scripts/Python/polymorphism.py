@@ -74,6 +74,9 @@ class Base(ABC):
             print("Printing contents of array Base.__data...")
             for obj in list:
                 print("idx= %-3d name=%s" % (obj.getIdx(), obj.getName()))
+
+            stats = Base.getDictData()
+            print("\nPrinting contents of stats in dictionary: %s" % stats)
             return 0
 
         @staticmethod
