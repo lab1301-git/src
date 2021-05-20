@@ -7,14 +7,19 @@
 #
 ######################################################################
 
-import  itertools, os
 from abc import ABC, abstractmethod
 from collections import Counter
 from os import environ as env
+import datetime, itertools, os, sys
+
 
 print("-----------------------------")
 str = "Entered polymorphism.py"
 print(str)
+now = datetime.datetime.now()
+print("Date: %s" % now)
+print ("Python version: %s" % sys.version)
+#print(os.uname())
 print("-----------------------------")
 
 # Base is an abstract class as it contains abstract methods
@@ -25,11 +30,13 @@ class Base(ABC):
         @staticmethod
         def loadData(self):
            self.__data.append(self)
-           Base.__count += 1
+           Base.__count += 1 # keep a count of all objects constructed
            if 'DEBUG' in os.environ: 
                print("Base::loadData: Inserted %d" % Base.getObjectCount(self))
            return 0
 
+       
+        # Return the number of objects in the container
         @staticmethod
         def getCount(): # Duplicate of getObjectCount()
             return Base.__count 
@@ -38,12 +45,13 @@ class Base(ABC):
         def getListData():
             return Base.__data
 
+        # getObjectCount() returns the number of objects in the container
         @staticmethod
         def getObjectCount():
-           objCount = 0
+           containerCount = 0
            for element in Base.__data:
-               objCount += 1
-           return (objCount)
+               containerCount += 1
+           return (containerCount)
 
         def setIdx():
            pass 
@@ -72,8 +80,8 @@ class D1(Base):
 
     def __init__(self, idx, name):  # ctor method
         print("D1::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
-        self.__idx = idx
-        self.__name = name
+        self.setIdx(idx) 
+        self.setName(name)
 
     def setIdx(self, idx):
         self.__idx = idx
@@ -95,8 +103,8 @@ class D2(Base):
 
     def __init__(self, idx, name):  # ctor method
         print("D2::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
-        self.__idx = idx
-        self.__name = name
+        self.setIdx(idx) 
+        self.setName(name)
 
     def setIdx(self, idx):
         self.__idx = idx

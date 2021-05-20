@@ -1,5 +1,8 @@
 -----------------------------
 Entered polymorphism.py
+Date: 2021-05-20 09:23:19.531875
+Python version: 3.8.9 (default, May  5 2021, 08:05:34) 
+[GCC 10.2.0]
 -----------------------------
 D1::ctor invoked (idx=1   name=D1).
 D2::ctor invoked (idx=2   name=D2).
