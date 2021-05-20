@@ -2,8 +2,9 @@
 
 ######################################################################
 # Author:      Lakshman Brodie - May 2021
-# Description: Demonstrate polymorphism in Python.  All variables are
+# Description: Demonstrate inheritance in Python.  All variables are
 #              private and access is only via the get and set methods.
+#              This also demonstrates dictionary and list containers
 #
 ######################################################################
 
@@ -23,6 +24,7 @@ print("-----------------------------")
 class Base(ABC):       
         __count = 0  # private static/class variable
         __data = []  # A private array of derived objects
+        __stats = {} # Holds stats on contents of __data 
 
         @staticmethod
         def loadData(self):
@@ -73,6 +75,20 @@ class Base(ABC):
             for obj in list:
                 print("idx= %-3d name=%s" % (obj.getIdx(), obj.getName()))
             return 0
+
+        @staticmethod
+        def insertKeyValue(key, value):
+            if key not in Base.__stats.keys():
+                Base.__stats[key] = value 
+            return 0 
+
+        @staticmethod
+        def updateKeyValue(key, value):
+            Base.__stats.update({key: value})
+
+        @staticmethod
+        def getDictData():
+            return Base.__stats
 
         @classmethod
         def overridden(self):
@@ -139,22 +155,44 @@ class D2(Base):
 #B = Base()  #  Base() is an abstract class so can't be instantiated
 list = []
 
-x = 0
-seq=0
+x = 0         # Used by while loop
+seq=0         # Used to keep a count of objects inserted into list Base.__data 
+loop_cnt = 0  # Used to update dictionary Base.__stats
 
-# Load derived objects into an array in the base class via loadData() static
-# method
+# Create key/value pair in dictionary for D1 and D2
+Base.insertKeyValue("D1", 0)
+Base.insertKeyValue("D2", 0)
 
+# Insert 5 derived D1 & D2 objects into Base.__data via loadData() method
+print("\nInserting records in list Base.__data and updating stats in dictionary Base.__stats...")
 while (x < 5):
     x += 1
     seq += 1
+    loop_cnt += 1
     Base.loadData(D1(seq, "D1"))
+    Base.updateKeyValue("D1", loop_cnt)
     seq += 1
     Base.loadData(D2(seq, "D2"))
+    Base.updateKeyValue("D2", loop_cnt)
+
+# Now load an additional 6th D2 object into Base.__data 
+seq += 1
+Base.loadData(D2((seq + 1), "D2"))  # Update dictionary Base.__stats
+
+# Update the dictionary for the 6th object
+loop_cnt += 1
+Base.updateKeyValue("D2", loop_cnt)
+
+# So we have loaded five D1 and six D2 objects above
 
 # Two methods to get the count of derived objects in the array
-print("\nObjectCount=%d" % Base.getObjectCount())
+print("\n#####################################")
+print("ObjectCount=%d" % Base.getObjectCount())
 print("Base.getCount()=%d" % Base.getCount())
+
+stats = Base.getDictData()
+print("\nPrinting contents of stats in dictionary: %s" % stats)
+print("#####################################\n")
 
 # Here we get the __data array/list and loop around it printing contents
 print("\nIterating around list Base.__data...")
