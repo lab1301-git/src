@@ -74,6 +74,11 @@ class Base(ABC):
                 print("idx= %-3d name=%s" % (obj.getIdx(), obj.getName()))
             return 0
 
+        @classmethod
+        def overridden(self):
+           print("Base::overridden()")
+           return 0
+
 
 class D1(Base):
     __idx = 0
@@ -121,6 +126,10 @@ class D2(Base):
     def getName(self):
         return self.__name
 
+    def overridden(self):
+        print("D2::overridden()")
+ 
+
 
 
 #######################################
@@ -153,6 +162,7 @@ print("\nIterating around list Base.__data...")
 list = Base.getListData()
 for obj in list:
     print("getIdx() = %-3d Name=%s" % (obj.getIdx(), obj.getName()))
+    obj.overridden()
 
 
 print("----------------------------")
