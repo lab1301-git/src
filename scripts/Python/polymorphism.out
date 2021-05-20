@@ -1,6 +1,6 @@
 -----------------------------
 Entered polymorphism.py
-Date: 2021-05-20 21:24:58.499710
+Date: 2021-05-20 21:28:49.145381
 Python version: 3.8.9 (default, May  5 2021, 08:05:34) 
 [GCC 10.2.0]
 -----------------------------
@@ -16,7 +16,7 @@ D1::ctor invoked (idx=7   name=D1).
 D2::ctor invoked (idx=8   name=D2).
 D1::ctor invoked (idx=9   name=D1).
 D2::ctor invoked (idx=10  name=D2).
-D2::ctor invoked (idx=12  name=D2).
+D2::ctor invoked (idx=11  name=D2).
 
 #####################################
 ObjectCount=11
@@ -47,7 +47,7 @@ getIdx() = 9   Name=D1
 Base::overridden()
 getIdx() = 10  Name=D2
 D2::overridden()
-getIdx() = 12  Name=D2
+getIdx() = 11  Name=D2
 D2::overridden()
 ----------------------------
 
@@ -63,5 +63,5 @@ idx= 7   name=D1
 idx= 8   name=D2
 idx= 9   name=D1
 idx= 10  name=D2
-idx= 12  name=D2
+idx= 11  name=D2
 ==================================

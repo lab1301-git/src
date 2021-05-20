@@ -177,7 +177,7 @@ while (x < 5):
 
 # Now load an additional 6th D2 object into Base.__data 
 seq += 1
-Base.loadData(D2((seq + 1), "D2"))  # Update dictionary Base.__stats
+Base.loadData(D2((seq), "D2"))  # Update dictionary Base.__stats
 
 # Update the dictionary for the 6th object
 loop_cnt += 1
