@@ -50,15 +50,19 @@ class Base(ABC):
                containerCount += 1
            return (containerCount)
 
+        @abstractmethod
         def setIdx():
            pass 
 
+        @abstractmethod
         def getIdx():
             pass 
 
+        @abstractmethod
         def setName():
            pass
 
+        @abstractmethod
         def getName():
            pass
       
@@ -123,6 +127,7 @@ class D2(Base):
 ############### MAIN ##################
 #######################################
 
+#B = Base()  #  Base() is an abstract class so can't be instantiated
 list = []
 
 x = 0
@@ -130,6 +135,7 @@ seq=0
 
 # Load derived objects into an array in the base class via loadData() static
 # method
+
 while (x < 5):
     x += 1
     seq += 1
@@ -141,8 +147,9 @@ while (x < 5):
 print("\nObjectCount=%d" % Base.getObjectCount())
 print("Base.getCount()=%d" % Base.getCount())
 
-# Here we get the array and then loop around it printing contents
+# Here we get the __data array/list and loop around it printing contents
 print("\nIterating around list Base.__data...")
+# The list below contains two different types of objects
 list = Base.getListData()
 for obj in list:
     print("getIdx() = %-3d Name=%s" % (obj.getIdx(), obj.getName()))
