@@ -1,6 +1,6 @@
 -----------------------------
 Entered polymorphism.py
-Date: 2021-05-20 09:49:34.242669
+Date: 2021-05-20 18:58:56.166382
 Python version: 3.8.9 (default, May  5 2021, 08:05:34) 
 [GCC 10.2.0]
 -----------------------------
@@ -20,15 +20,25 @@ Base.getCount()=10
 
 Iterating around list Base.__data...
 getIdx() = 1   Name=D1
+Base::overridden()
 getIdx() = 2   Name=D2
+D2::overridden()
 getIdx() = 3   Name=D1
+Base::overridden()
 getIdx() = 4   Name=D2
+D2::overridden()
 getIdx() = 5   Name=D1
+Base::overridden()
 getIdx() = 6   Name=D2
+D2::overridden()
 getIdx() = 7   Name=D1
+Base::overridden()
 getIdx() = 8   Name=D2
+D2::overridden()
 getIdx() = 9   Name=D1
+Base::overridden()
 getIdx() = 10  Name=D2
+D2::overridden()
 ----------------------------
 
 Print contents of array via base class method printAttributes()...
