@@ -8,10 +8,7 @@
 ######################################################################
 
 from abc import ABC, abstractmethod
-from collections import Counter
-from os import environ as env
 import datetime, itertools, os, sys
-
 
 print("-----------------------------")
 str = "Entered polymorphism.py"
@@ -153,7 +150,7 @@ for obj in list:
 
 print("----------------------------")
 # Call a static method that prints the contents of the array
-print("\nPrint contents of array via base class method printAttributes()...\n")
+print("\nPrint contents of array via base class method printAttributes()...")
 Base.printAttributes()
 
 print("==================================")
