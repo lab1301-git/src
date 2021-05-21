@@ -24,7 +24,7 @@ print("-----------------------------")
 class Base(ABC):       
         __count = 0  # private static/class variable
         __data = []  # A private array of derived objects
-        __stats = {} # Holds stats on contents of __data 
+        __stats = {} # A private dictionary of stats on contents of __data 
 
         @staticmethod
         def loadData(self):
@@ -163,8 +163,8 @@ seq=0         # Used to keep a count of objects inserted into list Base.__data
 loop_cnt = 0  # Used to update dictionary Base.__stats
 
 # Create key/value pair in dictionary for D1 and D2
-Base.insertKeyValue("D1", 0)
-Base.insertKeyValue("D2", 0)
+#Base.insertKeyValue("D1", 0)  # redundant
+#Base.insertKeyValue("D2", 0)  # redundant
 
 # Insert 5 derived D1 & D2 objects into Base.__data via loadData() method
 print("\nInserting records in list Base.__data and updating stats in dictionary Base.__stats...")
@@ -207,7 +207,7 @@ for obj in list:
 
 
 print("----------------------------")
-# Call a static method that prints the contents of the array
+# Call a static method that prints the contents of the array and dictionary
 print("\nPrint contents of array via base class method printAttributes()...")
 Base.printAttributes()
 
