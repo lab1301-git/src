@@ -82,12 +82,19 @@ class Base(ABC):
         @staticmethod
         def insertKeyValue(key, value):
             if key not in Base.__stats.keys():
-                Base.__stats[key] = value 
-            return 0 
+                 Base.__stats[key] = value
+            return 0
 
         @staticmethod
         def updateKeyValue(key, value):
             Base.__stats.update({key: value})
+
+        @staticmethod
+        def getDictValue(key):
+            val = Base.__stats.get(key)
+            if 'DEBUG' in os.environ: 
+                print("Base::getDictValue(): Warning! The key: **<%s>** does not exist in Base.__stats" % key)
+            return val
 
         @staticmethod
         def getDictData():
@@ -194,7 +201,7 @@ class main():
         stats = Base.getDictData()
         print("\nPrinting contents of stats in dictionary: %s" % stats)
         print("#####################################\n")
-        
+
         # Here we get the __data array/list and loop around it printing contents
         print("\nIterating around list Base.__data...")
         # The list below contains two different types of objects
