@@ -98,7 +98,6 @@ class Base(ABC):
            print("Base::overridden()")
            return 0
 
-
 class D1(Base):
     __idx = 0
     __name = ""
@@ -149,66 +148,77 @@ class D2(Base):
         print("D2::overridden()")
  
 
+# Class to run the program and appropriately named main()
+class main():
+
+    @classmethod
+    def runner(self):
+        #B = Base()  #  Base() is an abstract class so can't be instantiated
+        list = []
+        
+        x = 0         # Used by while loop
+        seq=0         # Used to keep a count of objects inserted into list Base.__data 
+        loop_cnt = 0  # Used to update dictionary Base.__stats
+        
+        # Create key/value pair in dictionary for D1 and D2
+        #Base.insertKeyValue("D1", 0)  # redundant code that should be deleted
+        #Base.insertKeyValue("D2", 0)  # redundant code that should be deleted
+        
+        # Insert 5 derived D1 & D2 objects into Base.__data via loadData()
+        # method via while loop
+        print("\nInserting records in list Base.__data and updating stats in dictionary Base.__stats...")
+        while (x < 5):
+            x += 1
+            seq += 1
+            loop_cnt += 1
+            Base.loadData(D1(seq, "D1"))
+            Base.updateKeyValue("D1", loop_cnt)
+            seq += 1
+            Base.loadData(D2(seq, "D2"))
+            Base.updateKeyValue("D2", loop_cnt)
+        
+        # Now load an additional 6th D2 object into Base.__data 
+        seq += 1
+        Base.loadData(D2((seq), "D2"))  # Update dictionary Base.__stats
+        
+        # Update the dictionary for the 6th object
+        loop_cnt += 1
+        Base.updateKeyValue("D2", loop_cnt)
+        
+        # We now have loaded five D1 and six D2 objects into the __data array 
+        # Two methods to get the count of derived objects in the array
+        print("\n#####################################")
+        print("ObjectCount=%d" % Base.getObjectCount())
+        print("Base.getCount()=%d" % Base.getCount())
+        
+        stats = Base.getDictData()
+        print("\nPrinting contents of stats in dictionary: %s" % stats)
+        print("#####################################\n")
+        
+        # Here we get the __data array/list and loop around it printing contents
+        print("\nIterating around list Base.__data...")
+        # The list below contains two different types of objects
+        list = Base.getListData()
+        for obj in list:
+            print("getIdx() = %-3d Name=%s" % (obj.getIdx(), obj.getName()))
+            obj.overridden()
+        
+        print("----------------------------")
+        # Call a static method that prints the contents of the array and dictionary
+        print("\nPrint contents of array via base class method printAttributes()...")
+        Base.printAttributes()
+        return 0
+
+
 
 
 #######################################
-############### MAIN ##################
+############### CALL MAIN FUNCTION ##################
 #######################################
 
-#B = Base()  #  Base() is an abstract class so can't be instantiated
-list = []
-
-x = 0         # Used by while loop
-seq=0         # Used to keep a count of objects inserted into list Base.__data 
-loop_cnt = 0  # Used to update dictionary Base.__stats
-
-# Create key/value pair in dictionary for D1 and D2
-#Base.insertKeyValue("D1", 0)  # redundant
-#Base.insertKeyValue("D2", 0)  # redundant
-
-# Insert 5 derived D1 & D2 objects into Base.__data via loadData() method
-print("\nInserting records in list Base.__data and updating stats in dictionary Base.__stats...")
-while (x < 5):
-    x += 1
-    seq += 1
-    loop_cnt += 1
-    Base.loadData(D1(seq, "D1"))
-    Base.updateKeyValue("D1", loop_cnt)
-    seq += 1
-    Base.loadData(D2(seq, "D2"))
-    Base.updateKeyValue("D2", loop_cnt)
-
-# Now load an additional 6th D2 object into Base.__data 
-seq += 1
-Base.loadData(D2((seq), "D2"))  # Update dictionary Base.__stats
-
-# Update the dictionary for the 6th object
-loop_cnt += 1
-Base.updateKeyValue("D2", loop_cnt)
-
-# So we have loaded five D1 and six D2 objects above
-
-# Two methods to get the count of derived objects in the array
-print("\n#####################################")
-print("ObjectCount=%d" % Base.getObjectCount())
-print("Base.getCount()=%d" % Base.getCount())
-
-stats = Base.getDictData()
-print("\nPrinting contents of stats in dictionary: %s" % stats)
-print("#####################################\n")
-
-# Here we get the __data array/list and loop around it printing contents
-print("\nIterating around list Base.__data...")
-# The list below contains two different types of objects
-list = Base.getListData()
-for obj in list:
-    print("getIdx() = %-3d Name=%s" % (obj.getIdx(), obj.getName()))
-    obj.overridden()
-
-
-print("----------------------------")
-# Call a static method that prints the contents of the array and dictionary
-print("\nPrint contents of array via base class method printAttributes()...")
-Base.printAttributes()
-
+mainFunc = main()
+ret = mainFunc.runner()
 print("==================================")
+exit(ret)
+
+
