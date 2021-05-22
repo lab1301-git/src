@@ -31,7 +31,7 @@ class Base(ABC):
            self.__data.append(self)
            Base.__count += 1 # keep a count of all objects constructed
            if 'DEBUG' in os.environ: 
-               print("Base::loadData: Inserted %d" % Base.getObjectCount(self))
+               print("Base::loadData: Inserted %d" % Base.getObjectCount())
            return 0
 
        
@@ -196,7 +196,7 @@ class main():
         total = sum(stats.values())            
 
         if 'DEBUG' in os.environ: 
-            for key, value in stats.items():  # DELME
+            for key, value in stats.items():
                 print("------------------ key=%s  value=%s  Total=%d" %
                                                            (key, value, total)) 
 
