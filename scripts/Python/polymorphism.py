@@ -65,10 +65,6 @@ class Base(ABC):
             pass 
 
         @abstractmethod
-        def setName():
-           pass
-
-        @abstractmethod
         def getName():
            pass
       
@@ -110,16 +106,15 @@ class Base(ABC):
 
 class D1(Base):
     __idx = 0
-    __name = ""
+    __name = "D1" # class const
 
-    def __init__(self, idx, name):  # ctor method
-        print("D1::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
+    def __init__(self, idx):  # ctor method
+        print("D1::ctor invoked (idx=%-2d name=%s)." % (idx, D1.getName()))
         self.setIdx(idx) 
-        self.setName(name)
 
     @classmethod
     def D1Factory(cls, seq):  # Factory method for D1
-        return D1(seq, "D1")
+        return D1(seq)
 
     def setIdx(self, idx):
         self.__idx = idx
@@ -128,25 +123,21 @@ class D1(Base):
     def getIdx(self):
         return self.__idx
 
-    def setName(self, name):
-        self.__name = name
-        return 0
-
-    def getName(self):
-        return self.__name
+    @classmethod
+    def getName(cls):
+        return cls.__name
 
 class D2(Base):
     __idx = 0
-    __name = ""
+    __name = "D2" # class const
 
-    def __init__(self, idx, name):  # ctor method
-        print("D2::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
+    def __init__(self, idx):  # ctor method
+        print("D2::ctor invoked (idx=%-2d name=%s)." % (idx, D2.getName()))
         self.setIdx(idx) 
-        self.setName(name)
 
     @classmethod
     def D2Factory(cls, seq):  # Factory method for D2
-        return D2(seq, "D2")
+        return D2(seq)
 
     def setIdx(self, idx):
         self.__idx = idx
@@ -155,12 +146,9 @@ class D2(Base):
     def getIdx(self):
         return self.__idx
 
-    def setName(self, name):
-        self.__name = name
-        return 0
-
-    def getName(self):
-        return self.__name
+    @classmethod
+    def getName(cls):
+        return cls.__name
 
     def overridden(self):
         print("D2::overridden()")
@@ -190,7 +178,7 @@ class main():
         
         # Now load an additional 6th D2 object into Base.__data 
         seq += 1
-        Base.loadData(D2((seq), "D2"))  # Update dictionary Base.__stats
+        Base.loadData(D2((seq)))  # Update dictionary Base.__stats
         
         # Update the dictionary for the 6th object
         loop_cnt += 1
