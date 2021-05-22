@@ -29,13 +29,13 @@ class Base(ABC):
         @staticmethod
         def loadData(Base):
            Base.__data.append(Base)
-           Base.setCount() # keep a count of all objects constructed
+           Base.setCount() # keep a count of all objects loaded into __data
            if 'DEBUG' in os.environ: 
                print("Base::loadData: Inserted %d" % Base.getObjectCount())
            return 0
 
         @staticmethod
-        def setCount(): # Duplicate of getObjectCount()
+        def setCount(): # increment static variable __count
             Base.__count += 1
             return 0
        
@@ -104,7 +104,6 @@ class Base(ABC):
         def getDictData():
             return Base.__stats
 
-        @classmethod
         def overridden(self):
            print("Base::overridden()")
            return 0
@@ -117,6 +116,10 @@ class D1(Base):
         print("D1::ctor invoked (idx=%-2d  name=%s)." % (idx, name))
         self.setIdx(idx) 
         self.setName(name)
+
+    @classmethod
+    def D1Factory(cls, seq):  # Factory method for D1
+        return D1(seq, "D1")
 
     def setIdx(self, idx):
         self.__idx = idx
@@ -141,6 +144,10 @@ class D2(Base):
         self.setIdx(idx) 
         self.setName(name)
 
+    @classmethod
+    def D2Factory(cls, seq):  # Factory method for D2
+        return D2(seq, "D2")
+
     def setIdx(self, idx):
         self.__idx = idx
         return 0
@@ -162,7 +169,6 @@ class D2(Base):
 # Class to run the program and appropriately named main()
 class main():
 
-    @classmethod
     def runner(self):
         #B = Base()  #  Base() is an abstract class so can't be instantiated
         x = 0         # Used by while loop
@@ -176,10 +182,10 @@ class main():
             x += 1
             seq += 1
             loop_cnt += 1
-            Base.loadData(D1(seq, "D1"))
+            Base.loadData(D1.D1Factory(seq))
             Base.updateKeyValue("D1", loop_cnt)
             seq += 1
-            Base.loadData(D2(seq, "D2"))
+            Base.loadData(D2.D2Factory(seq))
             Base.updateKeyValue("D2", loop_cnt)
         
         # Now load an additional 6th D2 object into Base.__data 
@@ -230,5 +236,4 @@ mainFunc = main()
 ret = mainFunc.runner()
 print("==================================")
 exit(ret)
-
 
