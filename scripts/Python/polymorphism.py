@@ -26,31 +26,31 @@ class Base(ABC):
         __data = []  # A private array of derived objects
         __stats = {} # A private dictionary of stats on contents of __data 
 
-        @staticmethod
-        def loadData(Base):
+        @classmethod
+        def loadData(cls, Base):
            Base.__data.append(Base)
            Base.setCount() # keep a count of all objects loaded into __data
            if 'DEBUG' in os.environ: 
                print("Base::loadData: Inserted %d" % Base.getObjectCount())
            return 0
 
-        @staticmethod
-        def setCount(): # increment static variable __count
+        @classmethod
+        def setCount(cls): # increment static variable __count
             Base.__count += 1
             return 0
        
         # Return the number of objects in the container
-        @staticmethod
-        def getCount(): # Duplicate of getObjectCount()
+        @classmethod
+        def getCount(cls): # Duplicate of getObjectCount()
             return Base.__count 
 
-        @staticmethod
-        def getListData():
+        @classmethod
+        def getListData(cls):
             return Base.__data
 
         # getObjectCount() returns the number of objects in the container
-        @staticmethod
-        def getObjectCount():
+        @classmethod
+        def getObjectCount(cls):
            containerCount = 0
            for element in Base.__data:
                containerCount += 1
@@ -68,8 +68,8 @@ class Base(ABC):
         def getName():
            pass
       
-        @staticmethod
-        def printAttributes():
+        @classmethod
+        def printAttributes(cls):
             list = Base.getListData()
             print("Printing contents of array Base.__data...")
             for obj in list:
@@ -79,25 +79,25 @@ class Base(ABC):
             print("\nPrinting contents of stats in dictionary: %s" % stats)
             return 0
 
-        @staticmethod
-        def insertKeyValue(key, value):
+        @classmethod
+        def insertKeyValue(cls, key, value):
             if key not in Base.__stats.keys():
                  Base.__stats[key] = value
             return 0
 
-        @staticmethod
-        def updateKeyValue(key, value):
+        @classmethod
+        def updateKeyValue(cls, key, value):
             Base.__stats.update({key: value})
 
-        @staticmethod
-        def getDictValue(key):
+        @classmethod
+        def getDictValue(cls, key):
             val = Base.__stats.get(key)
             if 'DEBUG' in os.environ: 
                 print("Base::getDictValue(): Warning! The key: **<%s>** does not exist in Base.__stats" % key)
             return val
 
-        @staticmethod
-        def getDictData():
+        @classmethod
+        def getDictData(cls):
             return Base.__stats
 
         def overridden(self):
