@@ -161,15 +161,9 @@ class main():
     @classmethod
     def runner(self):
         #B = Base()  #  Base() is an abstract class so can't be instantiated
-        list = []
-        
         x = 0         # Used by while loop
         seq=0         # Used to keep a count of objects inserted into list Base.__data 
         loop_cnt = 0  # Used to update dictionary Base.__stats
-        
-        # Create key/value pair in dictionary for D1 and D2
-        #Base.insertKeyValue("D1", 0)  # redundant code that should be deleted
-        #Base.insertKeyValue("D2", 0)  # redundant code that should be deleted
         
         # Insert 5 derived D1 & D2 objects into Base.__data via loadData()
         # method via while loop
@@ -199,13 +193,19 @@ class main():
         print("Base.getCount()=%d" % Base.getCount())
         
         stats = Base.getDictData()
+        #total = map(lambda x: (stats.key(), stats.values()))
+        total = sum(stats.values())            
+
+        for key, value in stats.items():  # DELME
+            print("------------------ key=%s  value=%s  Total=%d" % (key, value, total)) 
+
         print("\nPrinting contents of stats in dictionary: %s" % stats)
         print("#####################################\n")
 
         # Here we get the __data array/list and loop around it printing contents
         print("\nIterating around list Base.__data...")
         # The list below contains two different types of objects
-        list = Base.getListData()
+        list = Base.getListData()  # list is a list/array datatype
         for obj in list:
             print("getIdx() = %-3d Name=%s" % (obj.getIdx(), obj.getName()))
             obj.overridden()
@@ -215,8 +215,6 @@ class main():
         print("\nPrint contents of array via base class method printAttributes()...")
         Base.printAttributes()
         return 0
-
-
 
 
 #####################################################
