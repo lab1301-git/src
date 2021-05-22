@@ -27,13 +27,17 @@ class Base(ABC):
         __stats = {} # A private dictionary of stats on contents of __data 
 
         @staticmethod
-        def loadData(self):
-           self.__data.append(self)
-           Base.__count += 1 # keep a count of all objects constructed
+        def loadData(Base):
+           Base.__data.append(Base)
+           Base.setCount() # keep a count of all objects constructed
            if 'DEBUG' in os.environ: 
                print("Base::loadData: Inserted %d" % Base.getObjectCount())
            return 0
 
+        @staticmethod
+        def setCount(): # Duplicate of getObjectCount()
+            Base.__count += 1
+            return 0
        
         # Return the number of objects in the container
         @staticmethod
