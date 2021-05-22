@@ -195,8 +195,10 @@ class main():
         stats = Base.getDictData()
         total = sum(stats.values())            
 
-        for key, value in stats.items():  # DELME
-            print("------------------ key=%s  value=%s  Total=%d" % (key, value, total)) 
+        if 'DEBUG' in os.environ: 
+            for key, value in stats.items():  # DELME
+                print("------------------ key=%s  value=%s  Total=%d" %
+                                                           (key, value, total)) 
 
         print("\nPrinting contents of stats in dictionary: %s" % stats)
         print("#####################################\n")
