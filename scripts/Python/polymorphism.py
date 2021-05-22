@@ -193,7 +193,6 @@ class main():
         print("Base.getCount()=%d" % Base.getCount())
         
         stats = Base.getDictData()
-        #total = map(lambda x: (stats.key(), stats.values()))
         total = sum(stats.values())            
 
         for key, value in stats.items():  # DELME
