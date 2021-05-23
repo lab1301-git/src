@@ -50,7 +50,8 @@ The source files have an header that details what the code is trying to address.
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
     src/Java/Eclipse/polymorphism/src/polymorphismExamples/polymorphism.java
 
-    The Python version of polymorphism demonstrates inheritance, list/array
-    and dictionary container in an abstract base accessed via static methods.
+    The Python version of polymorphism demonstrates inheritance, list/array,
+    dictionary containers in an abstract base accessed via class methods,
+    method overriding and factory methods.
 5)  src/scripts/Python/polymorphism.py
 
