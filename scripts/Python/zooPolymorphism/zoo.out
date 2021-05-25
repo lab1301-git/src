@@ -15,891 +15,144 @@ giraffe::ctor name=<Giraffe-14>  idx=<14>  health=<100.000000>
 elephant::ctor name=<Elephant-15>  idx=<15>  health=<100.000000>
 
 Dumping data from list/array:
+monkey::ctor name=<Monkey-0>  idx=<0>  health=<100.000000>
+animals::setFeedRval(): m_feed_rnum=<24>
+animals::setFeedRval(): g_feed_rnum=<19>
+animals::setFeedRval(): e_feed_rnum=<13>
 
 ---------- printInstanceAttr() ----------
-    Name   = Monkey-1
-    Idx    = 1
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Monkey-1>
----------- <Monkey-1> ----------
-    Health     = 82
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Monkey-1>
----------- <Monkey-1> ----------
-    Health     = 68
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Monkey-1>
----------- <Monkey-1> ----------
-    Health     = 59
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Monkey-1>
----------- <Monkey-1> ----------
-    Health     = 48
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Monkey-1>
----------- <Monkey-1> ----------
-    Health     = 39
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 100
+    FeedVal   = 24    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Giraffe-2
-    Idx    = 2
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Giraffe-2>
----------- <Giraffe-2> ----------
-    Health     = 86
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Giraffe-2>
----------- <Giraffe-2> ----------
-    Health     = 72
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Giraffe-2>
----------- <Giraffe-2> ----------
-    Health     = 65
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Giraffe-2>
----------- <Giraffe-2> ----------
-    Health     = 58
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Giraffe-2>
----------- <Giraffe-2> ----------
-    Health     = 51
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 100
+    FeedVal   = 19    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Elephant-3
-    Idx    = 3
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Elephant-3>
----------- <Elephant-3> ----------
-    Health     = 90
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Elephant-3>
----------- <Elephant-3> ----------
-    Health     = 81
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
----------- <Elephant-3> ----------
-    Health     = 67
-    Status     = LAME
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Elephant-3> ----------
-    Health     = 54
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Elephant-3 is dead!
----------- <Elephant-3> ----------
-    Health     = 54
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 100
+    FeedVal   = 13    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Monkey-4
-    Idx    = 4
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Monkey-4>
----------- <Monkey-4> ----------
-    Health     = 85
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Monkey-4>
----------- <Monkey-4> ----------
-    Health     = 75
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Monkey-4>
----------- <Monkey-4> ----------
-    Health     = 68
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Monkey-4>
----------- <Monkey-4> ----------
-    Health     = 57
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Monkey-4>
----------- <Monkey-4> ----------
-    Health     = 49
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 100
+    FeedVal   = 24    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Giraffe-5
-    Idx    = 5
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Giraffe-5>
----------- <Giraffe-5> ----------
-    Health     = 89
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Giraffe-5>
----------- <Giraffe-5> ----------
-    Health     = 79
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Giraffe-5>
----------- <Giraffe-5> ----------
-    Health     = 64
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Giraffe-5>
----------- <Giraffe-5> ----------
-    Health     = 54
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
----------- <Giraffe-5> ----------
-    Health     = 46
-    Status     = DEAD
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 100
+    FeedVal   = 19    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Elephant-6
-    Idx    = 6
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Elephant-6>
----------- <Elephant-6> ----------
-    Health     = 86
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Elephant-6>
----------- <Elephant-6> ----------
-    Health     = 71
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
----------- <Elephant-6> ----------
-    Health     = 63
-    Status     = LAME
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Elephant-6> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Elephant-6 is dead!
----------- <Elephant-6> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 100
+    FeedVal   = 13    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Monkey-7
-    Idx    = 7
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Monkey-7>
----------- <Monkey-7> ----------
-    Health     = 86
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Monkey-7>
----------- <Monkey-7> ----------
-    Health     = 70
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Monkey-7>
----------- <Monkey-7> ----------
-    Health     = 61
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Monkey-7>
----------- <Monkey-7> ----------
-    Health     = 50
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Monkey-7>
----------- <Monkey-7> ----------
-    Health     = 41
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 100
+    FeedVal   = 24    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Giraffe-8
-    Idx    = 8
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Giraffe-8>
----------- <Giraffe-8> ----------
-    Health     = 89
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Giraffe-8>
----------- <Giraffe-8> ----------
-    Health     = 76
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Giraffe-8>
----------- <Giraffe-8> ----------
-    Health     = 65
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Giraffe-8>
----------- <Giraffe-8> ----------
-    Health     = 57
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Giraffe-8>
----------- <Giraffe-8> ----------
-    Health     = 52
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 100
+    FeedVal   = 19    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Elephant-9
-    Idx    = 9
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Elephant-9>
----------- <Elephant-9> ----------
-    Health     = 88
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Elephant-9>
----------- <Elephant-9> ----------
-    Health     = 71
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
----------- <Elephant-9> ----------
-    Health     = 63
-    Status     = LAME
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Elephant-9> ----------
-    Health     = 54
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Elephant-9 is dead!
----------- <Elephant-9> ----------
-    Health     = 54
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 100
+    FeedVal   = 13    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Monkey-10
-    Idx    = 10
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Monkey-10>
----------- <Monkey-10> ----------
-    Health     = 87
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Monkey-10>
----------- <Monkey-10> ----------
-    Health     = 76
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Monkey-10>
----------- <Monkey-10> ----------
-    Health     = 63
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Monkey-10>
----------- <Monkey-10> ----------
-    Health     = 55
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Monkey-10>
----------- <Monkey-10> ----------
-    Health     = 48
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 100
+    FeedVal   = 24    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Giraffe-11
-    Idx    = 11
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Giraffe-11>
----------- <Giraffe-11> ----------
-    Health     = 82
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Giraffe-11>
----------- <Giraffe-11> ----------
-    Health     = 66
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Giraffe-11>
----------- <Giraffe-11> ----------
-    Health     = 54
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Giraffe-11> ----------
-    Health     = 48
-    Status     = DEAD
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Giraffe-11 is dead!
----------- <Giraffe-11> ----------
-    Health     = 48
-    Status     = DEAD
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 100
+    FeedVal   = 19    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Elephant-12
-    Idx    = 12
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Elephant-12>
----------- <Elephant-12> ----------
-    Health     = 84
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Elephant-12>
----------- <Elephant-12> ----------
-    Health     = 70
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
----------- <Elephant-12> ----------
-    Health     = 64
-    Status     = LAME
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Elephant-12> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Elephant-12 is dead!
----------- <Elephant-12> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 100
+    FeedVal   = 13    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Monkey-13
-    Idx    = 13
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Monkey-13>
----------- <Monkey-13> ----------
-    Health     = 87
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Monkey-13>
----------- <Monkey-13> ----------
-    Health     = 75
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Monkey-13>
----------- <Monkey-13> ----------
-    Health     = 66
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
-No change to status for <Monkey-13>
----------- <Monkey-13> ----------
-    Health     = 55
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-No change to status for <Monkey-13>
----------- <Monkey-13> ----------
-    Health     = 45
-    Status     = OK
-    Threshold  = 30
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 100
+    FeedVal   = 24    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Giraffe-14
-    Idx    = 14
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Giraffe-14>
----------- <Giraffe-14> ----------
-    Health     = 84
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
-========================================
-
-Reducing health...
-No change to status for <Giraffe-14>
----------- <Giraffe-14> ----------
-    Health     = 70
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
-No change to status for <Giraffe-14>
----------- <Giraffe-14> ----------
-    Health     = 56
-    Status     = OK
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Giraffe-14> ----------
-    Health     = 48
-    Status     = DEAD
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Giraffe-14 is dead!
----------- <Giraffe-14> ----------
-    Health     = 48
-    Status     = DEAD
-    Threshold  = 50
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 100
+    FeedVal   = 19    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 
 ---------- printInstanceAttr() ----------
-    Name   = Elephant-15
-    Idx    = 15
-    Health = 100
-    Status = OK
-
-Reducing health...
-No change to status for <Elephant-15>
----------- <Elephant-15> ----------
-    Health     = 86
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 1
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 100
+    FeedVal   = 13    Animal specific feed random number
+    FeedRuns  = 0     ** number of times fed **
+    HealthRed = 0     ** number of times health reduced **
+    Status    = OK
 ========================================
-
-Reducing health...
-No change to status for <Elephant-15>
----------- <Elephant-15> ----------
-    Health     = 75
-    Status     = OK
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 2
-========================================
-
-Reducing health...
----------- <Elephant-15> ----------
-    Health     = 66
-    Status     = LAME
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 3
-========================================
-
-Reducing health...
----------- <Elephant-15> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 4
-========================================
-
-Reducing health...
-animals::reduceHealth(): Elephant-15 is dead!
----------- <Elephant-15> ----------
-    Health     = 53
-    Status     = DEAD
-    Threshold  = 70
-    FeedRuns   = 0
-    FeedRuns   = 0
-    HealthRuns = 5
 ==================================
