@@ -49,6 +49,8 @@ class zooException(Exception):
 
 class animals(ABC):       
     LAME     = "LAME"
+    HEALTHY  = "HEALTHY"
+    LIVE     = "LIVE"
     DEAD     = "DEAD"
     MONKEY   = "Monkey"
     GIRAFFE  = "Giraffe"
@@ -138,7 +140,7 @@ class animals(ABC):
         # Set initial default values for all new animal instances
         self.setName(type, idx)
         self.type = self.setType()
-        self.setStatus("HEALTHY") 
+        self.setStatus(animals.HEALTHY) 
         self.setHealth(100)
 
     @classmethod
@@ -149,7 +151,7 @@ class animals(ABC):
         return 0
         
     def printInstance(self):
-        rval      = "  Animal specific feed random number (-1 == not fed yet!)"
+        rval      = "  Animal type  specific feed random number (-1 == not fed yet!)"
         fedNum    = "   ** number of times fed **"
         healthRed = "   ** number of times health reduced **"
         if (self.getFeedValue() < 0):
@@ -184,32 +186,31 @@ class animals(ABC):
 
     def changeStatus(self):
         chg = False
-        if (self.getStatus() == "DEAD"):
+        if (self.getStatus() == animals.DEAD):
             return 0
 
-        elif (self.getStatus() == "LAME" and
+        elif (self.getStatus() == animals.LAME and
                             self.getHealth() < self.getThresholdConst()):
-            print("adjustHealthDownAllAnimals(): <%s> went from LAME to DEAD" % (self.getName()))
-            self.setStatus("DEAD")
+            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             chg=True
 
-        elif (self.getStatus() == "LAME" and
+        elif (self.getStatus() == animals.LAME and
                  (self.getHealth() >= self.getThresholdConst())):
-            print("adjustHealthDownAllAnimals(): <%s> went from <%s> to LIVE again" % (self.getName(), self.getStatus()))
-            self.setStatus("LIVE")
+            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for      <%-11s>" % (self.getStatus(), animals.LIVE, self.getName()))
+            self.setStatus(animals.LIVE)
             chg=True
 
-        elif ((self.getType() == "Elephant") and
+        elif ((self.getType() == animals.ELEPHANT) and
                  (self.getHealth() < self.getThresholdConst())):
-            print("adjustHealthDownAllAnimals(): <%s> is LAME" % (self.getName()))
-            self.setStatus("LAME")
+            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LAME, self.getName()))
+            self.setStatus(animals.LAME)
 
         elif (self.getHealth() < self.getThresholdConst()):
-            print("adjustHealthDownAllAnimals(): <%s> is DEAD" % (self.getName()))
-            self.setStatus("DEAD")
+            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
+            self.setStatus(animals.DEAD)
 
         else:
-            print("adjustHealthDownAllAnimals(): No change to status (%s) for <%-11s>" % (self.getStatus(), self.getName()))
+            print("adjustHealthDownAllAnimals(): No change to status (%-7s) for <%-11s>" % (self.getStatus(), self.getName()))
 
         return 0
 
@@ -232,7 +233,7 @@ class animals(ABC):
     # set the new health for one animal.  This method expects the caller to
     # have alreday regenerated the feed randon values.
     def feedAnimal(self):
-        if (self.getStatus() == "DEAD"):
+        if (self.getStatus() == animals.DEAD):
             if 'DEBUG' in os.environ: 
                 print("animals::feedAnimal(): %s is dead!" % (self.getName()))
             return 0
@@ -269,7 +270,7 @@ class animals(ABC):
 
     def adjustHealthDown(self, value):
         type = self.getType()
-        if (self.getStatus() == "DEAD"):
+        if (self.getStatus() == animals.DEAD):
             if 'DEBUG' in os.environ: 
                 print("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
                 return 0
@@ -401,7 +402,7 @@ class animals(ABC):
 
 
 class monkey(animals):
-    __animalType = "Monkey"
+    __animalType = animals.MONKEY
     __m_threshold = 30
 
 
@@ -469,7 +470,7 @@ class monkey(animals):
 
 
 class giraffe(animals):
-    __animalType = "Giraffe"
+    __animalType = animals.GIRAFFE
     __m_threshold = 50
 
     def __init__(self, idx):  # ctor method
@@ -503,7 +504,7 @@ class giraffe(animals):
         return self.__idx
 
     def setHealth(self, health):
-        if (self.getStatus() != "DEAD"):
+        if (self.getStatus() != animals.DEAD):
             self.__health = health
         return 0
 
@@ -537,7 +538,7 @@ class giraffe(animals):
 
 
 class elephant(animals):
-    __animalType = "Elephant"
+    __animalType = animals.ELEPHANT
     __m_threshold = 70
 
     def __init__(self, idx):  # ctor method
@@ -639,13 +640,13 @@ exit(ret)
 
 
 '''
-            if (obj.getAnimalType() == "Monkey"):
+            if (obj.getAnimalType() == animals.MONKEY):
                 obj.setFeedValue(m)
 
-            elif (obj.getAnimalType() == "Giraffe"):
+            elif (obj.getAnimalType() == animals.GIRAFFE):
                 obj.setFeedValue(g)
 
-            elif (obj.getAnimalType() == "Elephant"):
+            elif (obj.getAnimalType() == animals.ELEPHANT):
                 obj.setFeedValue(e)
 
             else:
