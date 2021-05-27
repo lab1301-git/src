@@ -115,8 +115,15 @@ class animals(ABC):
         # Set initial default values for all new animal instances
         self.setName(type, idx)
         self.type = self.setType()
-        self.setStatus("OK") 
+        self.setStatus("HEALTHY") 
         self.setHealth(100)
+
+    @classmethod
+    def printBanner(cls, str):
+        print("\n#########################################")
+        print("########## %s ##########" %(str));
+        print("#########################################")
+        return 0
         
     def printInstance(self):
         rval      = "  Animal specific feed random number (-1 == not fed yet!)"
@@ -131,12 +138,13 @@ class animals(ABC):
         print("    Health    = %d" % self.getHealth())
         print("    FeedVal   = %d  %s" % (self.getFeedValue(), rval))
         print("    FeedRuns  = %s  %s" % (animals.getFeedRuns(), fedNum))
-        print("    HealthRed = %s  %s" % (self.getHealthRunDown(), healthRed))
+        print("    HealthRun = %s  %s" % (self.getHealthRunDown(), healthRed))
         print("    Status    = %s" % self.getStatus())
         return 0
 
     def printAllInstances(self):
-        print("\nanimals::printAllInstances(): Printing all instances...") 
+        str = "printAllInstances() is dumping zoo list data..."
+        animals.printBanner(str);
         for obj in animals.getListData():
             obj.printInstance()
         
@@ -164,7 +172,7 @@ class animals(ABC):
 
         elif (self.getStatus() == "LAME" and
                  (self.getHealth() >= self.getThresholdConst())):
-            print("adjustHealthDownAllAnimals(): <%s> is LIVE again" % (self.getName()))
+            print("adjustHealthDownAllAnimals(): <%s> went from <%s> to LIVE again" % (self.getName(), self.getStatus()))
             self.setStatus("LIVE")
             chg=True
 
@@ -178,7 +186,7 @@ class animals(ABC):
             self.setStatus("DEAD")
 
         else:
-            print("adjustHealthDownAllAnimals(): No change to status for <%s>" % (self.getName()))
+            print("adjustHealthDownAllAnimals(): No change to status (%s) for <%s>" % (self.getStatus(), self.getName()))
 
         return 0
 
@@ -229,6 +237,8 @@ class animals(ABC):
         # Generate the feed random values
         animals.genFeedValue()
 
+        str = "feedAllAnimals() is feeding all animals in zoo list..."
+        animals.printBanner(str);
         # Now we need to iterate around the zoo list/array
         for obj in animals.getListData():
             obj.feedAnimal()
@@ -250,6 +260,8 @@ class animals(ABC):
 
         print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down...")
         animals.setHealthRunDown()
+        str = "adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list..."
+        animals.printBanner(str);
         # Now we need to iterate around the zoo list/array
         for obj in animals.getListData():
             # Generate a random value for each animal
@@ -291,7 +303,11 @@ class animals(ABC):
         self.adjustHealthDownAllAnimals()
         self.printAllInstances()
 
+        self.feedAllAnimals()
+        self.printAllInstances()
+
         return 0
+
 
     @classmethod
     def setFeedRuns(cls):
