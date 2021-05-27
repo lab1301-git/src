@@ -54,6 +54,7 @@ class animals(ABC):
     __feed_min_rval   = 10
     __feed_max_rval   = 25
     __feedRun = 0
+    __healthRunDown = 0
 
     # Three random numbers, one for each type of animal used for feeding and
     # these class attributes are available in all instances
@@ -150,27 +151,6 @@ class animals(ABC):
         print("    HealthDown = %s  %s" % (self.getHealthRunDown(), health_s))
         return 0
 
-    def adjustHealthDown(self, value):
-        type = self.getType()
-        if (self.getStatus() == "DEAD"):
-            if 'DEBUG' in os.environ: 
-                print("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
-                return 0
-
-        health = self.getHealth() -  (self.getHealth() * (value/100))
-        self.setHealth(health)
-        self.changeStatus()
-        return 0
-
-    def adjustHealthDownAllAnimals(self):
-
-        print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down...")
-        for obj in animals.getListData():
-            # Generate a random value between 0 and 20
-            val = animals.genRandomValue(0, 20)
-            obj.adjustHealthDown(val)
-        return 0
-
     def changeStatus(self):
         chg = False
         if (self.getStatus() == "DEAD"):
@@ -178,23 +158,27 @@ class animals(ABC):
 
         elif (self.getStatus() == "LAME" and
                             self.getHealth() < self.getThresholdConst()):
+            print("adjustHealthDownAllAnimals(): <%s> went from LAME to DEAD" % (self.getName()))
             self.setStatus("DEAD")
             chg=True
 
         elif (self.getStatus() == "LAME" and
                  (self.getHealth() >= self.getThresholdConst())):
+            print("adjustHealthDownAllAnimals(): <%s> is LIVE again" % (self.getName()))
             self.setStatus("LIVE")
             chg=True
 
         elif ((self.getType() == "Elephant") and
                  (self.getHealth() < self.getThresholdConst())):
+            print("adjustHealthDownAllAnimals(): <%s> is LAME" % (self.getName()))
             self.setStatus("LAME")
 
         elif (self.getHealth() < self.getThresholdConst()):
+            print("adjustHealthDownAllAnimals(): <%s> is DEAD" % (self.getName()))
             self.setStatus("DEAD")
 
         else:
-            print("No change to status for <%s>" % (self.getName()))
+            print("adjustHealthDownAllAnimals(): No change to status for <%s>" % (self.getName()))
 
         return 0
 
@@ -250,8 +234,29 @@ class animals(ABC):
             obj.feedAnimal()
         return 0
 
+    def adjustHealthDown(self, value):
+        type = self.getType()
+        if (self.getStatus() == "DEAD"):
+            if 'DEBUG' in os.environ: 
+                print("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
+                return 0
 
-    # Feed all animals in the zoo list array 
+        health = self.getHealth() -  (self.getHealth() * (value/100))
+        self.setHealth(health)
+        self.changeStatus()
+        return 0
+
+    def adjustHealthDownAllAnimals(self):
+
+        print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down...")
+        animals.setHealthRunDown()
+        # Now we need to iterate around the zoo list/array
+        for obj in animals.getListData():
+            # Generate a random value for each animal
+            val = animals.genRandomValue(0, 20)
+            obj.adjustHealthDown(val)
+        return 0
+
     def runWrapper(self):
 
         # print contents of animals.zoo list array
@@ -263,16 +268,26 @@ class animals(ABC):
 
         self.adjustHealthDownAllAnimals()
         self.adjustHealthDownAllAnimals()
-
         self.printAllInstances()
 
         self.feedAllAnimals()
         self.printAllInstances()
 
         self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
         self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
         self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.feedAllAnimals()
+        self.printAllInstances()
+
         self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
         self.adjustHealthDownAllAnimals()
         self.printAllInstances()
 
@@ -287,7 +302,15 @@ class animals(ABC):
     def getFeedRuns(cls):
         return (cls.__feedRun)
 
-    @abstractmethod
+    @classmethod
+    def setHealthRunDown(cls):
+        cls.__healthRunDown += 1
+
+    @classmethod
+    def getHealthRunDown(cls):
+        return (cls.__healthRunDown)
+
+    @classmethod
     def getName(self):
         pass
 
@@ -326,15 +349,6 @@ class animals(ABC):
     def getStatus(self):
         pass
 
-
-    @abstractmethod
-    def setHealthRunDown(self):
-        pass
-
-    @abstractmethod
-    def getHealthRunDown(self):
-        pass
-
     @abstractmethod
     def setFeedValue(self):
         pass
@@ -361,7 +375,6 @@ class monkey(animals):
         self.__health = 0
         self.initValues(self.getType(), idx)
         self.feedRun=0
-        self.healthRunDown=0
         self.feedValue = -1
         print("monkey::ctor name=<%s>  idx=<%d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
@@ -404,14 +417,6 @@ class monkey(animals):
     def getAnimalType(self):
         return self.__animalType
 
-    def setHealthRunDown(self):
-        if (self.getStatus() != "DEAD"):
-            self.healthRunDown += 1
-        return 0
-
-    def getHealthRunDown(self):
-        return(self.healthRunDown)
-
     def setFeedValue(self, val):
         self.feedValue = val
         return 0
@@ -436,7 +441,6 @@ class giraffe(animals):
         self.initValues(self.getType(), idx)
         self.__health = 100
         self.feedRun=0
-        self.healthRunDown=0
         self.feedValue = -1
         print("giraffe::ctor name=<%s>  idx=<%d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
@@ -480,14 +484,6 @@ class giraffe(animals):
     def getAnimalType(self):
         return self.__animalType
 
-    def setHealthRunDown(self):
-        if (self.getStatus() != "DEAD"):
-            self.healthRunDown += 1
-        return 0
-
-    def getHealthRunDown(self):
-        return(self.healthRunDown)
-
     def setFeedValue(self, val):
         self.feedValue = val
         return 0
@@ -513,7 +509,6 @@ class elephant(animals):
         self.initValues(self.getType(), idx)
         self.__health = 100
         self.feedRun=0
-        self.healthRunDown=0
         self.feedValue = -1
         print("elephant::ctor name=<%s>  idx=<%d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
@@ -555,14 +550,6 @@ class elephant(animals):
 
     def getAnimalType(self):
         return self.__animalType
-
-    def setHealthRunDown(self):
-        if (self.getStatus() != "DEAD"):
-            self.healthRunDown += 1
-        return 0
-
-    def getHealthRunDown(self):
-        return(self.healthRunDown)
     
     def setFeedValue(self, val):
         self.feedValue = val
@@ -601,7 +588,6 @@ class main():
         #val=obj.genRandomValue(0, 20)
         #print("\nReducing health...")
         #obj.adjustHealthDown(val)
-        #obj.setHealthRunDown()
         #obj.printHealthAttr()
 
         #obj.feedAnimal()
