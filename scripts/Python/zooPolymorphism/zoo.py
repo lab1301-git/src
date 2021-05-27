@@ -43,6 +43,10 @@ import datetime, itertools, os, sys, random
 
 print ("Python version: %s" % sys.version)
 
+class zooException(Exception):
+    def __init__(self, message):
+        self.message = message
+
 class animals(ABC):       
     LAME     = "LAME"
     DEAD     = "DEAD"
@@ -70,8 +74,26 @@ class animals(ABC):
         animal.__zoo.append(animal)
 
     @classmethod
+    def getObjectCount(cls):
+        return (len(animals.__zoo)) # return size of __zoo
+
+    @classmethod
     def getListData(cls):
         return cls.__zoo
+
+    @classmethod
+    def getObject(cls, idx):
+        if (animals.getObjectCount() > idx):
+            return(animals.__zoo[idx])
+        else:
+            str="\n*** Index provided: <%d> is bigger that size of list: <%d> ***\n" % (idx, animals.getObjectCount())
+            try:
+                raise zooException(str)
+            except zooException as err:
+                 
+                print("\nanimals::getObject(): Fatal error:", err.message)
+                return 1
+            return 0
 
     @classmethod
     def getRangeFloat(cls, min, max):
@@ -187,7 +209,7 @@ class animals(ABC):
             self.setStatus("DEAD")
 
         else:
-            print("adjustHealthDownAllAnimals(): No change to status (%s) for <%s>" % (self.getStatus(), self.getName()))
+            print("adjustHealthDownAllAnimals(): No change to status (%s) for <%-11s>" % (self.getStatus(), self.getName()))
 
         return 0
 
@@ -596,7 +618,9 @@ class main():
             idx += 1
             animals.loadData(elephant.elephantFactory(idx))
 
-        m = monkey(0)
+        m = animals.getObject(1)
+        if (m == 1):
+            exit(1 )
         m.runWrapper()
         print("========================================")
 
