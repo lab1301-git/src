@@ -41,8 +41,9 @@
 from abc import ABC, abstractmethod
 import datetime, itertools, os, sys, random
 
+print ("Python version: %s" % sys.version)
+
 class animals(ABC):       
-    OK       = "OK"
     LAME     = "LAME"
     DEAD     = "DEAD"
     MONKEY   = "Monkey"
@@ -120,9 +121,9 @@ class animals(ABC):
 
     @classmethod
     def printBanner(cls, str):
-        print("\n#########################################")
+        print("\n#############################################################")
         print("########## %s ##########" %(str));
-        print("#########################################")
+        print("#############################################################")
         return 0
         
     def printInstance(self):
@@ -392,7 +393,7 @@ class monkey(animals):
         self.initValues(self.getType(), idx)
         self.feedRun=0
         self.feedValue = -1
-        print("monkey::ctor name=<%s>  idx=<%d>  health=<%f>" %
+        print("monkey::ctor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     @classmethod
@@ -458,7 +459,7 @@ class giraffe(animals):
         self.__health = 100
         self.feedRun=0
         self.feedValue = -1
-        print("giraffe::ctor name=<%s>  idx=<%d>  health=<%f>" %
+        print("giraffe::ctor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     @classmethod
@@ -526,7 +527,7 @@ class elephant(animals):
         self.__health = 100
         self.feedRun=0
         self.feedValue = -1
-        print("elephant::ctor name=<%s>  idx=<%d>  health=<%f>" %
+        print("elephant::ctor name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     @classmethod
@@ -595,36 +596,22 @@ class main():
             idx += 1
             animals.loadData(elephant.elephantFactory(idx))
 
-        print("\nDumping data from list/array:")
         m = monkey(0)
         m.runWrapper()
-    
-        
-
-        #val=obj.genRandomValue(0, 20)
-        #print("\nReducing health...")
-        #obj.adjustHealthDown(val)
-        #obj.printHealthAttr()
-
-        #obj.feedAnimal()
-
         print("========================================")
 
 
-        #print("Random value=%f" % (m.getRangeFloat(0, 20)))
-        #print("Random value=%s" % (str(m.getRangeFloat(0, 20)) + "LL"))
-
-        #print(m.getHealth())
 
 #####################################################
 ############### CALL MAIN FUNCTION ##################
 #####################################################
 
 mainFunc = main()
+animals.printBanner("Starting zoo simulation...")
+print("")
 ret = mainFunc.runner()
 print("==================================")
 exit(ret)
-
 
 
 '''
