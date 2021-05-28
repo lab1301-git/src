@@ -194,6 +194,7 @@ class animals(ABC):
                             self.getHealth() < self.getThresholdConst()):
             print("adjustHealthDownAllAnimals(1): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             chg=True
+            self.setStatus(animals.DEAD)
 
         elif (self.getStatus() == animals.LAME and
                  (self.getHealth() >= self.getThresholdConst())):
@@ -325,6 +326,9 @@ class animals(ABC):
         self.adjustHealthDownAllAnimals()
         self.printAllInstances()
 
+        self.feedAllAnimals()
+        self.printAllInstances()
+
         self.adjustHealthDownAllAnimals()
         self.printAllInstances()
 
@@ -340,6 +344,29 @@ class animals(ABC):
         self.feedAllAnimals()
         self.printAllInstances()
 
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.adjustHealthDownAllAnimals()
+        self.printAllInstances()
+
+        self.feedAllAnimals()
+        self.printAllInstances()
         return 0
 
     @classmethod
