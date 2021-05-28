@@ -65,9 +65,9 @@ class animals(ABC):
 
     # Three random numbers, one for each type of animal used for feeding and
     # these class attributes are available in all instances
-    m_feed_rnum = -1 
-    g_feed_rnum = -1
-    e_feed_rnum = -1
+    m_feed_rnum = 0 
+    g_feed_rnum = 0
+    e_feed_rnum = 0
 
     __zoo = []  # A private array of derived animal objects
 
@@ -142,7 +142,7 @@ class animals(ABC):
         self.type = self.setType()
         self.setStatus(animals.HEALTHY) 
         self.setHealth(100)
-        self.feedRuns = -1      
+        self.feedRuns = 0      
 
     @classmethod
     def printBanner(cls, str):
@@ -152,7 +152,7 @@ class animals(ABC):
         return 0
         
     def printInstance(self):
-        rval      = "  Animal type  specific feed random number (-1 == not fed yet!)"
+        rval      = "  Animal type  specific feed random number (0 == not fed yet!)"
         fedNum    = "   ** number of times fed **"
         healthRed = "   ** number of times health reduced **"
         if (self.getFeedValue() < 0):
@@ -169,7 +169,7 @@ class animals(ABC):
         return 0
 
     def printAllInstances(self):
-        str = "printAllInstances() is dumping zoo list data..."
+        str = "printAllInstances() is dumping zoo list data"
         animals.printBanner(str);
         for obj in animals.getListData():
             obj.printInstance()
@@ -192,26 +192,26 @@ class animals(ABC):
 
         elif (self.getStatus() == animals.LAME and
                             self.getHealth() < self.getThresholdConst()):
-            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
+            print("adjustHealthDownAllAnimals(1): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             chg=True
 
         elif (self.getStatus() == animals.LAME and
                  (self.getHealth() >= self.getThresholdConst())):
-            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for      <%-11s>" % (self.getStatus(), animals.LIVE, self.getName()))
+            print("adjustHealthDownAllAnimals(2): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LIVE, self.getName()))
             self.setStatus(animals.LIVE)
             chg=True
 
         elif ((self.getType() == animals.ELEPHANT) and
                  (self.getHealth() < self.getThresholdConst())):
-            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LAME, self.getName()))
+            print("adjustHealthDownAllAnimals(3): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LAME, self.getName()))
             self.setStatus(animals.LAME)
 
         elif (self.getHealth() < self.getThresholdConst()):
-            print("adjustHealthDownAllAnimals(): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
+            print("adjustHealthDownAllAnimals(4): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             self.setStatus(animals.DEAD)
 
         else:
-            print("adjustHealthDownAllAnimals(): No change to status (%-7s) for <%-11s>" % (self.getStatus(), self.getName()))
+            print("adjustHealthDownAllAnimals(5): No change to status (%-7s) for <%-11s>" % (self.getStatus(), self.getName()))
 
         return 0
 
@@ -260,11 +260,11 @@ class animals(ABC):
 
     def feedAllAnimals(self):
 
-        print("\nanimals::feedAllAnimals(): Feeding all animals...")
+        print("\nanimals::feedAllAnimals(): Feeding all animals")
         # Generate the feed random values
         animals.genFeedValue()
 
-        str = "feedAllAnimals() is feeding all animals in zoo list..."
+        str = "feedAllAnimals() is feeding all animals in zoo list"
         animals.printBanner(str);
 
         animals.incrementFeedCount()  # Increment the feed run count
@@ -289,8 +289,8 @@ class animals(ABC):
 
     def adjustHealthDownAllAnimals(self):
 
-        print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down...")
-        str = "adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list..."
+        print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down")
+        str = "adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list"
         animals.printBanner(str);
 
         animals.incrementHealthRunCount()
@@ -378,7 +378,6 @@ class animals(ABC):
     def getHealthRunDown(self):
         return(self.__healthRunCount)
 
-    @classmethod
     def getName(self):
         pass
 
@@ -443,9 +442,9 @@ class monkey(animals):
         self.__health = 0
         self.initValues(self.getType(), idx)
         self.feedRun=0
-        self.feedValue = -1
-        self.feedRuns = -1
-        self.__healthRunDown = -1
+        self.feedValue = 0
+        self.feedRuns = 0
+        self.__healthRunDown = 0
         print("monkey::ctor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
@@ -511,9 +510,9 @@ class giraffe(animals):
         self.initValues(self.getType(), idx)
         self.__health = 100
         self.feedRun=0
-        self.feedValue = -1
-        self.feedRuns = -1
-        self.__healthRunDown = -1
+        self.feedValue = 0
+        self.feedRuns = 0
+        self.__healthRunDown = 0
         print("giraffe::ctor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
@@ -581,9 +580,9 @@ class elephant(animals):
         self.initValues(self.getType(), idx)
         self.__health = 100
         self.feedRun=0
-        self.feedValue = -1
-        self.feedRuns = -1
-        self.__healthRunDown = -1
+        self.feedValue = 0
+        self.feedRuns = 0
+        self.__healthRunDown = 0
         print("elephant::ctor name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
@@ -666,7 +665,7 @@ class main():
 #####################################################
 
 mainFunc = main()
-animals.printBanner("Starting zoo simulation...")
+animals.printBanner("Starting zoo simulation")
 print("")
 ret = mainFunc.runner()
 print("==================================")
