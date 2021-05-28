@@ -43,9 +43,12 @@ import datetime, itertools, os, sys, random
 
 print ("Python version: %s" % sys.version)
 
+
 class zooException(Exception):
     def __init__(self, message):
         self.message = message
+
+
 
 class animals(ABC):       
     LAME     = "LAME"
@@ -161,7 +164,7 @@ class animals(ABC):
         print("\n---------- printInstance() ----------")
         print("    Name      = %s" % self.getName())
         print("    Idx       = %d" % self.getIdx())
-        print("    Health    = %d" % self.getHealth())
+        print("    Health    = %d  (Threshold=%d)" % (self.getHealth(), self.getThresholdConst()))
         print("    FeedVal   = %d  %s" % (self.getFeedValue(), rval))
         print("    FeedRuns  = %s  %s" % (self.getFeedRun(), fedNum))
         print("    HealthRun = %s  %s" % (self.getHealthRunDown(), healthRed))
@@ -254,6 +257,9 @@ class animals(ABC):
         nhealth = ((lambda: nhealth, lambda: 100)[ nhealth > 100]())
         self.setHealth(nhealth)          
 
+        # The status may change for elephants as they may go LAME -> HEALTHY
+        self.changeStatus();
+
         if 'DEBUG' in os.environ: 
             print("animals::feedAnimal(): %-11s oldHealth=<%-.2f> newHealth= <%-.2f>" % (self.getName(), chealth, nhealth)) 
         return 0            
@@ -279,9 +285,9 @@ class animals(ABC):
         if (self.getStatus() == animals.DEAD):
             if 'DEBUG' in os.environ: 
                 print("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
-                return 0
+            return 0
 
-        v = animals.getHealthRunCount()
+        v = self.getHealthRunCount()
         self.setHealthRunDown(v)
         health = self.getHealth() - (self.getHealth() * (value/100))
         self.setHealth(health)
@@ -289,7 +295,6 @@ class animals(ABC):
         return 0
 
     def adjustHealthDownAllAnimals(self):
-
         print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down")
         str = "adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list"
         animals.printBanner(str);
@@ -394,16 +399,17 @@ class animals(ABC):
         cls.__healthRunCount += 1
         return 0
 
+    # This returns value set by incrementHealthRunCount()
     @classmethod
-    def getHealthRunCount(cls):
-        return (cls.__healthRunCount)
+    def getHealthRunCount(self):
+        return (animals.__healthRunCount)
 
     # The arg val passed here should be obtained from incrementHealthRunCount()
     def setHealthRunDown(self, val):
-        self.__healthRunDown = val
+        pass 
 
     def getHealthRunDown(self):
-        return(self.__healthRunCount)
+        pass
 
     def getName(self):
         pass
@@ -455,9 +461,10 @@ class animals(ABC):
         pass
 
 
+
 class monkey(animals):
     __animalType = animals.MONKEY
-    __m_threshold = 30
+    __threshold = 30
 
 
     def __init__(self, idx):  # ctor method
@@ -508,7 +515,7 @@ class monkey(animals):
         return self.__status
 
     def getThresholdConst(self):
-        return self.__m_threshold
+        return self.__threshold
 
     def getAnimalType(self):
         return self.__animalType
@@ -516,6 +523,14 @@ class monkey(animals):
     def setFeedValue(self, val):
         self.feedValue = val
         return 0
+
+    # The arg val passed here should be obtained from incrementHealthRunCount()
+    def setHealthRunDown(self, val):
+        if (self.getStatus() != animals.DEAD):
+            self.__healthRunDown = val
+
+    def getHealthRunDown(self):
+        return(self.__healthRunDown)
 
     # getFeedValue() returns the animal specific random value used to calculate
     # feed quantity.  The correct derived class method is invoked
@@ -527,7 +542,7 @@ class monkey(animals):
 
 class giraffe(animals):
     __animalType = animals.GIRAFFE
-    __m_threshold = 50
+    __threshold = 50
 
     def __init__(self, idx):  # ctor method
 
@@ -577,7 +592,7 @@ class giraffe(animals):
         return self.__status
 
     def getThresholdConst(self):
-        return self.__m_threshold
+        return self.__threshold
 
     def getAnimalType(self):
         return self.__animalType
@@ -585,6 +600,13 @@ class giraffe(animals):
     def setFeedValue(self, val):
         self.feedValue = val
         return 0
+
+    # The arg val passed here should be obtained from incrementHealthRunCount()
+    def setHealthRunDown(self, val):
+        self.__healthRunDown = val
+
+    def getHealthRunDown(self):
+        return(self.__healthRunDown)
 
     # getFeedValue() returns the animal specific random value used to calculate
     # feed quantity.  The correct derived class method is invoked
@@ -594,10 +616,9 @@ class giraffe(animals):
         return (self.__class__.g_feed_rnum)
 
 
-
 class elephant(animals):
     __animalType = animals.ELEPHANT
-    __m_threshold = 70
+    __threshold = 70
 
     def __init__(self, idx):  # ctor method
 
@@ -646,7 +667,7 @@ class elephant(animals):
         return self.__status
 
     def getThresholdConst(self):
-        return self.__m_threshold
+        return self.__threshold
 
     def getAnimalType(self):
         return self.__animalType
@@ -655,12 +676,20 @@ class elephant(animals):
         self.feedValue = val
         return 0
 
+    # The arg val passed here should be obtained from incrementHealthRunCount()
+    def setHealthRunDown(self, val):
+        self.__healthRunDown = val
+
+    def getHealthRunDown(self):
+        return(self.__healthRunDown)
+
     # getFeedValue() returns the animal specific random value used to calculate
     # feed quantity.  The correct derived class method is invoked
     # polymorphically when iterating around the zoo list/array
     def getFeedValue(self):
         # return class attribute from an instance method
         return (self.__class__.e_feed_rnum)
+
 
 
 class main():
@@ -712,7 +741,6 @@ exit(ret)
             else:
                 # We should never get here!
                 # Someone has probably added a new derived class...
-                # Remember to throw an exception here  DELME
                 print("genFeedValue(): Have you added a new derived class?") 
                 ret=1
 '''
