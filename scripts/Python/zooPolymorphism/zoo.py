@@ -727,20 +727,3 @@ ret = mainFunc.runner()
 print("==================================")
 exit(ret)
 
-
-'''
-            if (obj.getAnimalType() == animals.MONKEY):
-                obj.setFeedValue(m)
-
-            elif (obj.getAnimalType() == animals.GIRAFFE):
-                obj.setFeedValue(g)
-
-            elif (obj.getAnimalType() == animals.ELEPHANT):
-                obj.setFeedValue(e)
-
-            else:
-                # We should never get here!
-                # Someone has probably added a new derived class...
-                print("genFeedValue(): Have you added a new derived class?") 
-                ret=1
-'''
