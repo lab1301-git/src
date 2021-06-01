@@ -39,22 +39,23 @@ The source files have an header that details what the code is trying to address.
  * The runntime output from the programs can be viewed in the files:
  * C++/zooPolymorphism/zoo.out and C++/zooVisitorPattern/zooVisitor.out
  *
-
 2)  src/C++/zooPolymorphism/zoo.cpp          // Implemented via polymorphism
 3)  src/C++/zooVisitorPattern/zooVisitor.cpp // Implemented via visitor pattern
-
-*  The Java version of polymorphism.cpp demonstrates Collections, iterators,
-*  exceptions and the Java 8 specific new feature; Streams 
-4)  src/Java/Eclipse/polymorphism/src/polymorphismExamples/B.java
-    src/Java/Eclipse/polymorphism/src/polymorphismExamples/D1.java
-    src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
-    src/Java/Eclipse/polymorphism/src/polymorphismExamples/polymorphism.java
-
-    The Python version of polymorphism demonstrates inheritance, list/array,
-    dictionary containers in an abstract base accessed via class methods,
-    method overriding and factory methods.
-5)  src/scripts/Python/polymorphism/polymorphism.py
-
-*  The Python version of the zoo simulation.
-6) src/scripts/Python/zooPolymorphism/zoo.py
-
+*
+4)  The Java version of polymorphism.cpp demonstrates Collections, iterators,
+ *  exceptions and the Java 8 specific new feature; Streams 
+ *  src/Java/Eclipse/polymorphism/src/polymorphismExamples/B.java
+ *  src/Java/Eclipse/polymorphism/src/polymorphismExamples/D1.java
+ *  src/Java/Eclipse/polymorphism/src/polymorphismExamples/D2.java
+ *  src/Java/Eclipse/polymorphism/src/polymorphismExamples/polymorphism.java
+ *
+5)  The Python version of polymorphism demonstrates inheritance, list/array,
+ *  dictionary containers in an abstract base accessed via class methods,
+ *  method overriding and factory methods.
+*  src/scripts/Python/polymorphism/polymorphism.py
+ *
+6) The Python version of the zoo simulation:
+ * src/scripts/Python/zooPolymorphism/zoo.py
+ *
+7) The Java 8 version of zoo simulation:
+ * src/Java/Eclipse/polymorphism/src/zooPolymorphism
