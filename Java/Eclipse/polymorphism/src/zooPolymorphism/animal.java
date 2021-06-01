@@ -223,7 +223,7 @@ public abstract class animal {
 	}
 	
 	public void feedAnimal(animal obj) {		
-		if (getStatus() == animal.DEAD)			
+		if (obj.getStatus() == animal.DEAD)			
 			return;
 		
 		int frun = getGlobalFeedRunCount();
@@ -318,7 +318,7 @@ public abstract class animal {
 		System.out.println(" Name:           <" + obj.getName() + ">");
 		System.out.println(" Idx:            <" + obj.getIdx() + ">");
 		System.out.println(" Status:         <" + obj.getStatus() + ">");
-		System.out.println(" Current Health: <" + obj.getCurrentHealth() + ">");
+		System.out.println(" Current Health: <" + obj.getCurrentHealth() + ">     (Threshold: <" + obj.getThreshold() + ">");
 		System.out.println(" Prev Health:    <" + obj.getPrevHealth() + ">");
 		System.out.println(" Health Runs:    <" + obj.getLocalHealthRunCount() + ">");
 		System.out.println(" Feed Runs:      <" + obj.getLocalFeedRunCount() + ">");

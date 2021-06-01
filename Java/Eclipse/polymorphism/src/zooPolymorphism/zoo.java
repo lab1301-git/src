@@ -91,7 +91,19 @@ public class zoo {
 		System.out.println();
 		obj.printAllInstanceAttributes();
 		
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		obj.adjustHealthDownAllAnimals();
+		
 		obj.feedAllAnimals();
+		obj.adjustHealthDownAllAnimals();
 		System.out.println();
 		obj.printAllInstanceAttributes();
 		
