@@ -201,22 +201,22 @@ public abstract class animal {
 		 *  ret = 0      chealth == threshold
 		 */		
 		
-		int ret = Float.compare(getCurrentHealth(), getThreshold());
+		int ret = Float.compare(obj.getCurrentHealth(), obj.getThreshold());
 		
 		if (obj.getStatus() == animal.DEAD) {
 			return;
-		} else if ( getStatus() == animal.LAME  &&	ret < 0) {
+		} else if ( obj.getStatus() == animal.LAME  &&	ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.DEAD + " for <" + getName() + ">");
 			setStatus(animal.DEAD);
-		} else if ( getStatus() == animal.LAME  &&	ret > 0) {
+		} else if ( obj.getStatus() == animal.LAME  &&	ret > 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.HEALTHY + " for <" + getName() + ">");
-			setStatus(animal.HEALTHY);
+			obj.setStatus(animal.HEALTHY);
 		} else if (getType() == animal.ELEPHANT && ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.LAME + " for <" + getName() + ">");
-			setStatus(animal.LAME);			
+			obj.setStatus(animal.LAME);			
 		} else if (ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.DEAD + " for <" + getName() + ">");
-			setStatus(animal.DEAD);
+			obj.setStatus(animal.DEAD);
 		} else {
 			System.out.println("animal::changeStatus(): No change to status: <" + getStatus() + "> for <" + getName() + "> (ret=" + ret + ")");
 		}
@@ -240,7 +240,7 @@ public abstract class animal {
 		 * You can't have an nhealth > 100%
 		 */
 		float maxHealth = 100;
-		if (Float.compare(nhealth, 100) > 0) {
+		if (Float.compare(nhealth, maxHealth) > 0) {
 			nhealth = 100;
 		}		
 		obj.setCurrentHealth(nhealth);
@@ -280,7 +280,7 @@ public abstract class animal {
 	public int adjustHealthDown(animal obj) {
 		int ret = 0;
 		
-		if (getStatus() == animal.DEAD) {
+		if (obj.getStatus() == animal.DEAD) {
 			return 0;
 		}
 		
@@ -289,13 +289,13 @@ public abstract class animal {
 		 *  for each animal.  This value should be passed to the appropriate animal, whose
 		 *  health is then reduced by that percentage of their current health.
 		 */
-		int rvalue = getRandomValue(0, 20);		
-		int hrun = getGlobalHealthRunCount();
-		setLocalHealthRunCount(hrun);
+		int rvalue = obj.getRandomValue(0, 20);		
+		int hrun = obj.getGlobalHealthRunCount();
+		obj.setLocalHealthRunCount(hrun);
 		float chealth = obj.getCurrentHealth();
 		obj.setPrevHealth(chealth);
 		float nhealth = (float) chealth - (chealth * rvalue/100);		
-		setCurrentHealth(nhealth);		
+		obj.setCurrentHealth(nhealth);		
 		obj.changeStatus(obj);		
 		return ret;
 	}

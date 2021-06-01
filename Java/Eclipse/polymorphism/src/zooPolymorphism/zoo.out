@@ -88,7 +88,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <86.0>
+ Current Health: <90.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -98,7 +98,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <93.0>
+ Current Health: <82.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -108,7 +108,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <85.0>
+ Current Health: <91.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -118,7 +118,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <95.0>
+ Current Health: <90.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -128,7 +128,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <99.0>
+ Current Health: <91.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -150,8 +150,8 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <78.26>
- Prev Health:    <86.0>
+ Current Health: <73.8>
+ Prev Health:    <90.0>
  Health Runs:    <2>
  Feed Runs:      <0>
  Feed Value:     <0.0>
@@ -160,8 +160,8 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <87.42>
- Prev Health:    <93.0>
+ Current Health: <78.72>
+ Prev Health:    <82.0>
  Health Runs:    <2>
  Feed Runs:      <0>
  Feed Value:     <0.0>
@@ -170,8 +170,8 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <78.2>
- Prev Health:    <85.0>
+ Current Health: <75.53>
+ Prev Health:    <91.0>
  Health Runs:    <2>
  Feed Runs:      <0>
  Feed Value:     <0.0>
@@ -180,8 +180,8 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <94.05>
- Prev Health:    <95.0>
+ Current Health: <80.1>
+ Prev Health:    <90.0>
  Health Runs:    <2>
  Feed Runs:      <0>
  Feed Value:     <0.0>
@@ -190,8 +190,8 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
  Name:           <Monkey-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <88.11>
- Prev Health:    <99.0>
+ Current Health: <72.8>
+ Prev Health:    <91.0>
  Health Runs:    <2>
  Feed Runs:      <0>
  Feed Value:     <0.0>
@@ -200,9 +200,9 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
 ***** Feeding all animals... *****
 *******************************************************************
 ****************** printRandomFeedValue() ******************
-Monkey   = <22>
-Giraffe  = <16>
-Elephant = <23>
+Monkey   = <25>
+Giraffe  = <19>
+Elephant = <12>
 ************************************************************
 
 *******************************************************************
@@ -212,50 +212,50 @@ Elephant = <23>
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <95.4772>
- Prev Health:    <78.26>
+ Current Health: <92.25>
+ Prev Health:    <73.8>
  Health Runs:    <2>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <25.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <100.0>
- Prev Health:    <87.42>
+ Current Health: <98.4>
+ Prev Health:    <78.72>
  Health Runs:    <2>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <25.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <95.40399>
- Prev Health:    <78.2>
+ Current Health: <94.4125>
+ Prev Health:    <75.53>
  Health Runs:    <2>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <25.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
  Current Health: <100.0>
- Prev Health:    <94.05>
+ Prev Health:    <80.1>
  Health Runs:    <2>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <25.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <100.0>
- Prev Health:    <88.11>
+ Current Health: <91.0>
+ Prev Health:    <72.8>
  Health Runs:    <2>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <25.0>
 -------------------------------------------------------------------
 
