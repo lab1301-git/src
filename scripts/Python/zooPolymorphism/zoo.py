@@ -181,7 +181,7 @@ class animals(ABC):
         feed_s =   "   ** number of times fed **"
         health_s = "   ** number of times health reduced **"
         print("---------- <%s> ----------" % (self.getName()))
-        print("    Health     = %d" % self.getHealth())
+        print("    Health     = %f" % self.getHealth())
         print("    Status     = %s" % self.getStatus())
         print("    Threshold  = %s" % self.getThresholdConst())
         print("    FeedRuns   = %s  %s" % (self.getFeedRun(), feed_s))
