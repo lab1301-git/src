@@ -19,7 +19,7 @@ public abstract class animal {
 	final static String	DASH		= "-";
 	final static float  m_threshold    = 30;	
 	final static float  g_threshold	   = 50;
-	final static float  E_threshold	   = 70;
+	final static float  e_threshold	   = 70;
 	static int          gFeedRunCount   = 0;
 	static int          gHealthRunCount = 0;
 	
@@ -318,7 +318,7 @@ public abstract class animal {
 		System.out.println(" Name:           <" + obj.getName() + ">");
 		System.out.println(" Idx:            <" + obj.getIdx() + ">");
 		System.out.println(" Status:         <" + obj.getStatus() + ">");
-		System.out.println(" Current Health: <" + obj.getCurrentHealth() + ">     (Threshold: <" + obj.getThreshold() + ">");
+		System.out.println(" Current Health: <" + obj.getCurrentHealth() + ">     (Threshold: <" + obj.getThreshold() + ">)");
 		System.out.println(" Prev Health:    <" + obj.getPrevHealth() + ">");
 		System.out.println(" Health Runs:    <" + obj.getLocalHealthRunCount() + ">");
 		System.out.println(" Feed Runs:      <" + obj.getLocalFeedRunCount() + ">");

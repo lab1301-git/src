@@ -32,7 +32,7 @@ public class monkey extends animal {
 	}
 	
 	public float getThreshold() {
-		return m_threshold;
+		return animal.m_threshold;
 	}
 	
 	public void setName(String name) {

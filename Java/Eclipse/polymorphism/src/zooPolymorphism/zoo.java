@@ -59,25 +59,20 @@ public class zoo {
 		 */
 		System.out.println();
 		animal.printBannerMsg("Loading animal objects into data list...");
-		int i = 0;
-		while (i++ < 5) {
-			animal.loadData(monkey.animalFactory(i));			
+		int i = 0, j = 0;
+		while (i++ < 5) {			
+			animal.loadData(monkey.animalFactory(++j));		
+			System.out.println();
+			animal.loadData(giraffe.animalFactory(++j));
+			System.out.println();
+			animal.loadData(elephant.animalFactory(++j));
+			System.out.println();
 		}		
 		
 		List<animal> myData = animal.getData();
 		Iterator<animal> it = myData.listIterator();
 		
-		System.out.println();
-				
-		/**************
-		animal.printBannerMsg("Iterating around data conatainer...");
-		while (it.hasNext()) {
-			animal obj = it.next();
-			obj.printInstanceAttributes();
-			
-			obj.adjustHealthDown();
-		}
-		*/
+		System.out.println();		
 		
 		// get the first/any object from container
 		animal obj = animal.getObject(1);
