@@ -20,13 +20,67 @@ monkey::animalFactory(): Returning new object: <5>
 monkey::ctor(): Initialising instance: <5>
 
 *******************************************************************
+***** Printing attributes of all instances... *****
+*******************************************************************
+ Type:           <Monkey>
+ Name:           <Monkey-1>
+ Idx:            <1>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <0.0>
+ Health Runs:    <0>
+ Feed Runs:      <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-2>
+ Idx:            <2>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <0.0>
+ Health Runs:    <0>
+ Feed Runs:      <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-3>
+ Idx:            <3>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <0.0>
+ Health Runs:    <0>
+ Feed Runs:      <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-4>
+ Idx:            <4>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <0.0>
+ Health Runs:    <0>
+ Feed Runs:      <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-5>
+ Idx:            <5>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <0.0>
+ Health Runs:    <0>
+ Feed Runs:      <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+*******************************************************************
 ***** Adjusting health of animal down... *****
 *******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-2>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-3>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-2> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-3> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
+
 *******************************************************************
 ***** Printing attributes of all instances... *****
 *******************************************************************
@@ -34,21 +88,21 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5>
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <80.0>
+ Current Health: <86.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <95.0>
+ Current Health: <93.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-3>
@@ -58,36 +112,37 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <96.0>
+ Current Health: <95.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <92.0>
+ Current Health: <99.0>
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
 *******************************************************************
 ***** Adjusting health of animal down... *****
 *******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-2>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-3>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-2> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-3> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5> (ret=1)
+
 *******************************************************************
 ***** Printing attributes of all instances... *****
 *******************************************************************
@@ -95,50 +150,112 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-5>
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <65.6>
- Prev Health:    <80.0>
+ Current Health: <78.26>
+ Prev Health:    <86.0>
  Health Runs:    <2>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <80.75>
- Prev Health:    <95.0>
+ Current Health: <87.42>
+ Prev Health:    <93.0>
  Health Runs:    <2>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <69.7>
+ Current Health: <78.2>
  Prev Health:    <85.0>
  Health Runs:    <2>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <81.6>
- Prev Health:    <96.0>
+ Current Health: <94.05>
+ Prev Health:    <95.0>
  Health Runs:    <2>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <80.96>
- Prev Health:    <92.0>
+ Current Health: <88.11>
+ Prev Health:    <99.0>
  Health Runs:    <2>
  Feed Runs:      <0>
- Feed Value:     <0>
+ Feed Value:     <0.0>
+-------------------------------------------------------------------
+*******************************************************************
+***** Feeding all animals... *****
+*******************************************************************
+****************** printRandomFeedValue() ******************
+Monkey   = <22>
+Giraffe  = <16>
+Elephant = <23>
+************************************************************
+
+*******************************************************************
+***** Printing attributes of all instances... *****
+*******************************************************************
+ Type:           <Monkey>
+ Name:           <Monkey-1>
+ Idx:            <1>
+ Status:         <HEALTHY>
+ Current Health: <95.4772>
+ Prev Health:    <78.26>
+ Health Runs:    <2>
+ Feed Runs:      <1>
+ Feed Value:     <22.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-2>
+ Idx:            <2>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <87.42>
+ Health Runs:    <2>
+ Feed Runs:      <1>
+ Feed Value:     <22.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-3>
+ Idx:            <3>
+ Status:         <HEALTHY>
+ Current Health: <95.40399>
+ Prev Health:    <78.2>
+ Health Runs:    <2>
+ Feed Runs:      <1>
+ Feed Value:     <22.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-4>
+ Idx:            <4>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <94.05>
+ Health Runs:    <2>
+ Feed Runs:      <1>
+ Feed Value:     <22.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-5>
+ Idx:            <5>
+ Status:         <HEALTHY>
+ Current Health: <100.0>
+ Prev Health:    <88.11>
+ Health Runs:    <2>
+ Feed Runs:      <1>
+ Feed Value:     <22.0>
 -------------------------------------------------------------------
 

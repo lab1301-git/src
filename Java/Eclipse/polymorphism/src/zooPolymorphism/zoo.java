@@ -38,15 +38,19 @@
 ***********************************************************************************************/
 
 package zoo;
-import java.util.TimeZone;
+
 import java.util.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 
 public class zoo {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 				
-		System.out.println("Java version: <" + System.getProperty("java.version") + ">");
+		System.out.println("Java version:    <" + System.getProperty("java.version") + ">");
+		System.out.println("Java VM Version: <"+System.getProperty("java.vm.version") + ">");
 		System.out.println();
 		animal.printBannerMsg("Starting zoo simulation");
 		
@@ -75,10 +79,22 @@ public class zoo {
 		}
 		*/
 		
-		//animal obj = animal.getObject(1);
-		animal obj = it.next();		
-		obj.adjustHealthDownAllAnimals();
+		// get the first/any object from container
+		animal obj = animal.getObject(1);
 		obj.printAllInstanceAttributes();
+		
+		obj.adjustHealthDownAllAnimals();
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
+		obj.adjustHealthDownAllAnimals();
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
+		obj.feedAllAnimals();
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
 		System.exit(0);
 	}    
 }

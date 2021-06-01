@@ -8,9 +8,9 @@ public class monkey extends animal {
 	private String status;
 	private float  chealth;
 	private float  lhealth;	
-	private int    feedRunCount;
-	private int    healthRunCount;
-	private int    feedValue;
+	private int    localFeedRunCount;
+	private int    localHealthRunCount;
+	private float  feedValue;
 	
 	monkey(int idx) {
 		System.out.println("monkey::ctor(): Initialising instance: <" + idx + ">");
@@ -31,7 +31,7 @@ public class monkey extends animal {
 		return (this.type);
 	}
 	
-	public int getThreshold() {
+	public float getThreshold() {
 		return m_threshold;
 	}
 	
@@ -79,22 +79,35 @@ public class monkey extends animal {
 	public float getPrevHealth() {
 		return (this.lhealth);
 	}
-	
-	public void setHealthRunCount(int count) {
-		this.healthRunCount = count;
+			
+	public void setLocalHealthRunCount(int val) {
+		this.localHealthRunCount = val;
 		return;
 	}
 	
-	public int 	getHealthRunCount() {
-		return healthRunCount;
+	public int getLocalHealthRunCount() {
+		return (localHealthRunCount);
 	}
 	
-	public void setFeedValue(int val) {
-		this.feedValue = val;
+	public int getLocalFeedRunCount() {
+		return (localFeedRunCount);		
 	}
 	
-	public int getFeedValue() {
-		return (feedValue);
+	public void setLocalFeedRunCount(int frun) {
+		this.localFeedRunCount = frun;				
+		return;
 	}
-
+			
+	public void setFeedValue() {
+		this.feedValue = getMrandomValue();		
+		return;
+	}
+	
+	public float getFeedValue() {		
+		return (feedValue);		
+	}
+	
+	public int getFeedRandomValue() {
+		return (getMrandomValue());
+	}
 }

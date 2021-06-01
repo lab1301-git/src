@@ -2,7 +2,7 @@ package zoo;
 
 import java.util.*;
 import java.util.stream.Stream;
-
+import java.lang.FunctionalInterface;
 
 public abstract class animal {
 	private static Vector<animal> data = new Vector<animal>();
@@ -17,16 +17,15 @@ public abstract class animal {
 	final static String GIRAFFE		= "Giraffe";
 	final static String ELEPHANT	= "Elephant";
 	final static String	DASH		= "-";
-	//final static int  m_threshold    = 30;  // DELME
-	final static int    m_threshold	   = 90;
-	final static int    g_threshold	   = 50;
-	final static int    E_threshold	   = 70;
-	static int          feedRunCount   = 0;
-	static int          healthRunCount = 0;
+	final static float  m_threshold    = 30;	
+	final static float  g_threshold	   = 50;
+	final static float  E_threshold	   = 70;
+	static int          gFeedRunCount   = 0;
+	static int          gHealthRunCount = 0;
 	
-	private int m_feed_rnum = 0;  // Monkey   specific feed random number range: 10 - 25
-	private int g_feed_rnum = 0;  // Giraffe  specific feed random number range: 10 - 25
-	private int e_feed_rnum = 0;  // Elephant specific feed random number range: 10 - 25
+	private static int m_feed_rnum = 0;  // Monkey   specific feed random number range: 10 - 25
+	private static int g_feed_rnum = 0;  // Giraffe  specific feed random number range: 10 - 25
+	private static int e_feed_rnum = 0;  // Elephant specific feed random number range: 10 - 25
 			
 	protected String   evalName(String type, int idx) {
 		return(type + DASH + idx);
@@ -40,8 +39,7 @@ public abstract class animal {
         setStatus(HEALTHY); 
         setIdx(idx);
         setCurrentHealth(100);
-        setPrevHealth(0);
-        setFeedValue(0);
+        setPrevHealth(0);                
         return;
 	}
 	
@@ -69,15 +67,39 @@ public abstract class animal {
 	
 	public abstract float 	getPrevHealth();
 	
-	public abstract void 	setHealthRunCount(int count);
+	public abstract void 	setLocalHealthRunCount(int count);
 	
-	public abstract int 	getHealthRunCount();
+	public abstract int 	getLocalHealthRunCount();
 	
-	public abstract int getThreshold();
+	public static int 	getGlobalFeedRunCount() {
+		return (animal.gFeedRunCount);
+	}
 	
-	public abstract void setFeedValue(int val);
+	public static int getGlobalHealthRunCount() {
+		return (animal.gHealthRunCount);		
+	}
 	
-	public abstract int getFeedValue();
+	public abstract void 	setLocalFeedRunCount(int count);
+		
+	public abstract int 	getLocalFeedRunCount();
+		
+	public abstract float 	getThreshold();
+	
+	public abstract int 	getFeedRandomValue();
+	
+	public static void 		incrementFeedCount() {
+		gFeedRunCount++;
+		return;
+	}
+	
+	public static void incrementHealthCount() {
+		gHealthRunCount++;
+		return;
+	}
+	
+	public abstract void setFeedValue();
+	
+	public abstract float getFeedValue();
 	
 	/*
 	public abstract animal animalFactory(int idx);  // Factory design pattern
@@ -126,7 +148,7 @@ public abstract class animal {
 	    return;
 	}
 	
-	public int getRandomValue(int min, int max) {
+	public static int getRandomValue(int min, int max) {
 		return (int)(Math.random() * (((max - min) + 1)) + min);
 	}
 	
@@ -136,7 +158,7 @@ public abstract class animal {
 	 *  protected but my preference is private as this is an internal method that is not exposed
 	 *  in derived classes.
 	 */
-	private void setRandomFeedValue() {
+	private static void setFeedRandomValues() {
 		
 		m_feed_rnum = getRandomValue(10, 25);
 		g_feed_rnum = getRandomValue(10, 25);
@@ -144,15 +166,15 @@ public abstract class animal {
 		return;
 	}
 	
-	public double getMrandomValue() {
+		public int getMrandomValue() {
 		return (m_feed_rnum);
 	}
 
-	public double getGrandomValue() {
+	public int getGrandomValue() {
 		return (g_feed_rnum);
 	}
 
-	public double getErandomValue() {
+	public int getErandomValue() {
 		return (e_feed_rnum);
 	}
 
@@ -166,76 +188,141 @@ public abstract class animal {
 	}
 	
 	public void changeStatus(animal obj) {
+		/*
+		 * When an Elephant has a health below 70% it cannot walk. If its health does
+		 * not return above 70% once the subsequent hour has elapsed, it is pronounced
+		 * dead.
+		 * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
+		 * pronounced dead straight away.
+		 *		 		
+		 * Set ret from Float.compare() by comparing two floats
+		 *  ret > 0      chealth > threshold
+		 *  ret < 0      chealth < threshold
+		 *  ret = 0      chealth == threshold
+		 */		
+		
+		int ret = Float.compare(getCurrentHealth(), getThreshold());
 		
 		if (obj.getStatus() == animal.DEAD) {
 			return;
-		} else if ( getStatus() == animal.LAME  &&	getCurrentHealth() < getThreshold()) {
+		} else if ( getStatus() == animal.LAME  &&	ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.DEAD + " for <" + getName() + ">");
 			setStatus(animal.DEAD);
-		} else if ( getStatus() == animal.LAME  &&	getCurrentHealth() > getThreshold()) {
+		} else if ( getStatus() == animal.LAME  &&	ret > 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.HEALTHY + " for <" + getName() + ">");
 			setStatus(animal.HEALTHY);
-		} else if (getType() == animal.ELEPHANT && getCurrentHealth() < getThreshold()) {
+		} else if (getType() == animal.ELEPHANT && ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.LAME + " for <" + getName() + ">");
 			setStatus(animal.LAME);			
-		} else if (getCurrentHealth() < getThreshold()) {
+		} else if (ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.DEAD + " for <" + getName() + ">");
 			setStatus(animal.DEAD);
 		} else {
-			System.out.println("animal::changeStatus(): No change to status: <" + getStatus() + "> for <" + getName() + ">");
+			System.out.println("animal::changeStatus(): No change to status: <" + getStatus() + "> for <" + getName() + "> (ret=" + ret + ")");
 		}
 	}
 	
-	public void feedAnimal() {
-		if (getStatus() == DEAD)			
+	public void feedAnimal(animal obj) {		
+		if (getStatus() == animal.DEAD)			
 			return;
 		
-		// Generate and set the three feed random values
-		setRandomFeedValue();
+		int frun = getGlobalFeedRunCount();
+		obj.setLocalFeedRunCount(frun);		
+		obj.setFeedValue();  // set local feedValue to return by global animal specific random number
+		/*
+		 * Calculate new health for just fed animal using the animal specific random number
+		*/
+		int frnum = getFeedRandomValue();  // This returns the animal specific random number
+		float chealth = obj.getCurrentHealth();  // Aptly named current health of animal instance
+		obj.setPrevHealth(chealth);
+		float nhealth = chealth + (chealth * (float)frnum/100);
+		/*
+		 * You can't have an nhealth > 100%
+		 */
+		float maxHealth = 100;
+		if (Float.compare(nhealth, 100) > 0) {
+			nhealth = 100;
+		}		
+		obj.setCurrentHealth(nhealth);
+		return;
+	}
+	
+	public void feedAllAnimals() {
 		
+		animal.printBannerMsg("Feeding all animals...");
+		/*
+		* The user must be able to feed the animals in the zoo. When this happens,
+		* the zoo should generate three random values between 10 and 25; one for each
+		* type of animal.
+		* Generate and set the three static feed random values via setRandomFeedValue().
+		*/
+		setFeedRandomValues();
+		printRandomFeedValue();
+		incrementFeedCount();
+		/*
+		 * Iterate around the data list and call feedAnimal()
+		 */
+		List<animal> myData = animal.getData();
+		Iterator<animal> it = myData.listIterator();
+		animal.incrementHealthCount();		
+		while (it.hasNext()) {
+			animal obj = it.next(); 
+			feedAnimal(obj);
+		}		
+		return;
 	}
 	
 	/*
-	 * Each time this method is called it should generate a random number between 0 and 20 for each
+	 * Each time adjustHealthDown() is called it should generate a random number between 0 and 20 for each
 	 * animal.  This value is passed to the appropriate animal whose health is then reduced by
 	 * the percentage of their current health. 
 	 */
-	public int adjustHealthDown(animal obj, int value) {
+	public int adjustHealthDown(animal obj) {
 		int ret = 0;
 		
-		if (obj.getStatus() == animal.DEAD) {
+		if (getStatus() == animal.DEAD) {
 			return 0;
-		}		
-		//setHealthRunCount()
+		}
+		
+		/*
+		 *  Every hour that passes, a random value between 0 and 20 is to be generated
+		 *  for each animal.  This value should be passed to the appropriate animal, whose
+		 *  health is then reduced by that percentage of their current health.
+		 */
+		int rvalue = getRandomValue(0, 20);		
+		int hrun = getGlobalHealthRunCount();
+		setLocalHealthRunCount(hrun);
 		float chealth = obj.getCurrentHealth();
 		obj.setPrevHealth(chealth);
-		float nhealth = (float) chealth - (chealth * value/100);
+		float nhealth = (float) chealth - (chealth * rvalue/100);		
 		setCurrentHealth(nhealth);		
 		obj.changeStatus(obj);		
 		return ret;
 	}
 	
 	public void adjustHealthDownAllAnimals() {		
-		animal.printBannerMsg("Adjusting health of animal down...");
+		printBannerMsg("Adjusting health of animal down...");
 		List<animal> myData = animal.getData();
 		Iterator<animal> it = myData.listIterator();
+		animal.incrementHealthCount();
+		
 		while (it.hasNext()) {
 			animal obj = it.next();
-			// Generate a random number for each animal between 0 and 20
-			int val = getRandomValue(0, 20);
-			obj.adjustHealthDown(obj, val);
+			obj.adjustHealthDown(obj);
 		}
 		return;
 	}
 
 	public void printInstanceAttributes(animal obj) {
-		System.out.println(" Type:      <" + getType() + ">");
-		System.out.println(" Name:      <" + getName() + ">");
-		System.out.println(" Idx:       <" + getIdx() + ">");
-		System.out.println(" Status:    <" + getStatus() + ">");
-		System.out.println(" chealth:   <" + getCurrentHealth() + ">");
-		System.out.println(" lhealth:   <" + getPrevHealth() + ">");
-		System.out.println(" FeedValue: <" + getFeedValue() + ">");
+		System.out.println(" Type:           <" + obj.getType() + ">");
+		System.out.println(" Name:           <" + obj.getName() + ">");
+		System.out.println(" Idx:            <" + obj.getIdx() + ">");
+		System.out.println(" Status:         <" + obj.getStatus() + ">");
+		System.out.println(" Current Health: <" + obj.getCurrentHealth() + ">");
+		System.out.println(" Prev Health:    <" + obj.getPrevHealth() + ">");
+		System.out.println(" Health Runs:    <" + obj.getLocalHealthRunCount() + ">");
+		System.out.println(" Feed Runs:      <" + obj.getLocalFeedRunCount() + ">");
+		System.out.println(" Feed Value:     <" + obj.getFeedValue() + ">");		
 		System.out.println("-------------------------------------------------------------------");
 		return;
 	}
@@ -243,10 +330,10 @@ public abstract class animal {
 	public void printAllInstanceAttributes() {
 		animal.printBannerMsg("Printing attributes of all instances...");
 		List<animal> myData = animal.getData();
-		Iterator<animal> it = myData.listIterator();
+		Iterator<animal> it = myData.listIterator();		
 		while (it.hasNext()) {
-			animal obj = it.next();
-			obj.printInstanceAttributes(obj);
+			animal obj = it.next();			
+			printInstanceAttributes(obj);
 		}
 		return;
 	}
