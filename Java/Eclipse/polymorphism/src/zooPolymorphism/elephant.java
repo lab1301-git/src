@@ -32,7 +32,7 @@ public class elephant extends animal {
 	}
 	
 	public float getThreshold() {
-		return animal.m_threshold;
+		return animal.e_threshold;
 	}
 	
 	public void setName(String name) {
