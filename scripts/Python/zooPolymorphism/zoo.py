@@ -164,7 +164,7 @@ class animals(ABC):
         print("\n---------- printInstance() ----------")
         print("    Name      = %s" % self.getName())
         print("    Idx       = %d" % self.getIdx())
-        print("    Health    = %d  (Threshold=%d)" % (self.getHealth(), self.getThresholdConst()))
+        print("    Health    = %f  (Threshold=%d)" % (self.getHealth(), self.getThresholdConst()))
         print("    FeedVal   = %d  %s" % (self.getFeedValue(), rval))
         print("    FeedRuns  = %s  %s" % (self.getFeedRun(), fedNum))
         print("    HealthRun = %s  %s" % (self.getHealthRunDown(), healthRed))
@@ -250,11 +250,11 @@ class animals(ABC):
         self.setFeedRun(val) # The instance now has the number of feed runs
         rnum = self.getFeedValue()
         chealth =  self.getHealth()  # current health
-        nhealth = (self.getHealth() + (self.getHealth() * (rnum/100)))
+        nhealth = (self.getHealth() + (self.getHealth() * float(rnum/100)))
 
         # We don't want health to be more than 100% so use the lambda ternary
         # below to cap nhealth at 100% 
-        nhealth = ((lambda: nhealth, lambda: 100)[ nhealth > 100]())
+        nhealth = float(((lambda: nhealth, lambda: 100)[ nhealth > 100]()))
         self.setHealth(nhealth)          
 
         # The status may change for elephants as they may go LAME -> HEALTHY
@@ -501,11 +501,11 @@ class monkey(animals):
         return self.__idx
 
     def setHealth(self, health):
-        self.__health = health
+        self.__health = float(health)
         return 0
 
     def getHealth(self):
-        return self.__health
+        return float(self.__health)
 
     def setStatus(self, status):
         self.__status = status
@@ -578,11 +578,11 @@ class giraffe(animals):
 
     def setHealth(self, health):
         if (self.getStatus() != animals.DEAD):
-            self.__health = health
+            self.__health = float(health)
         return 0
 
     def getHealth(self):
-        return self.__health
+        return float(self.__health)
 
     def setStatus(self, status):
         self.__status = status
@@ -653,11 +653,11 @@ class elephant(animals):
         return self.__idx
 
     def setHealth(self, health):
-        self.__health = health
+        self.__health = float(health)
         return 0
 
     def getHealth(self):
-        return self.__health
+        return float(self.__health)
 
     def setStatus(self, status):
         self.__status = status

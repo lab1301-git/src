@@ -235,7 +235,7 @@ public abstract class animal {
 		int frnum = getFeedRandomValue();  // This returns the animal specific random number
 		float chealth = obj.getCurrentHealth();  // Aptly named current health of animal instance
 		obj.setPrevHealth(chealth);
-		float nhealth = chealth + (chealth * (float)frnum/100);
+		float nhealth = chealth + (chealth * (float) frnum/100);
 		/*
 		 * You can't have an nhealth > 100%
 		 */
@@ -294,7 +294,7 @@ public abstract class animal {
 		obj.setLocalHealthRunCount(hrun);
 		float chealth = obj.getCurrentHealth();
 		obj.setPrevHealth(chealth);
-		float nhealth = (float) chealth - (chealth * rvalue/100);		
+		float nhealth = chealth - (chealth * (float) rvalue/100);		
 		obj.setCurrentHealth(nhealth);		
 		obj.changeStatus(obj);		
 		return ret;
