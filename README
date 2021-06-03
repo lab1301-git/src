@@ -6,7 +6,9 @@ The source files have an header that details what the code is trying to address.
 * The polymorphism.cpp example demonstrates smart pointers, abstract classes etc
 1)  src/C++/polymorphism/polymorphism.cpp
 
- * The two zoo code examples below meet the following requirement specification:
+ * The solution to the zoo example is provided in C++, Java and Python using
+ * the OO "is a" relationship. The code meets the following requirement
+*  specification:
  * Write a simple Zoo simulator which contains 3 different types of animals:
  *  monkey,
  *  giraffe
