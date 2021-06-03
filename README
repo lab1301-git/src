@@ -65,7 +65,7 @@ The source files have an header that details what the code is trying to address.
  *
 5)  The Python version of polymorphism demonstrates inheritance, list/array,
  *  dictionary containers in an abstract base accessed via class methods,
- *  method overriding and factory methods.
+ *  method overriding, lambda and factory methods.
 *  src/scripts/Python/polymorphism/polymorphism.py
  *
 6) The Python version of the zoo simulation:
