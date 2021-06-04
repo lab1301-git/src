@@ -2,7 +2,6 @@ package zoo;
 
 import java.util.*;
 import java.util.stream.Stream;
-import java.lang.FunctionalInterface;
 
 public abstract class animal {
 	private static Vector<animal> data = new Vector<animal>();
@@ -268,7 +267,9 @@ public abstract class animal {
 		while (it.hasNext()) {
 			animal obj = it.next(); 
 			feedAnimal(obj);
-		}		
+		}	
+		//long deadAnimals = myData.parallelStream().filter(data -> (data.getStatus().count()));
+		//long deadAnimals = myData.parallelStream().filter(string -> string.getStatus());
 		return;
 	}
 	
@@ -289,8 +290,9 @@ public abstract class animal {
 		 *  for each animal.  This value should be passed to the appropriate animal, whose
 		 *  health is then reduced by that percentage of their current health.
 		 */
-		int rvalue = obj.getRandomValue(0, 20);		
-		int hrun = obj.getGlobalHealthRunCount();
+		
+		int rvalue = animal.getRandomValue(0, 20);		
+		int hrun   = animal.getGlobalHealthRunCount();
 		obj.setLocalHealthRunCount(hrun);
 		float chealth = obj.getCurrentHealth();
 		obj.setPrevHealth(chealth);

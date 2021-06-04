@@ -39,11 +39,6 @@
 
 package zoo;
 
-import java.util.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-
 public class zoo {
 	
 	public static void main(String[] args) {
@@ -68,12 +63,8 @@ public class zoo {
 			animal.loadData(elephant.animalFactory(++j));
 			System.out.println();
 		}		
-		
-		List<animal> myData = animal.getData();
-		Iterator<animal> it = myData.listIterator();
-		
+				
 		System.out.println();		
-		
 		// get the first/any object from container
 		animal obj = animal.getObject(1);
 		obj.printAllInstanceAttributes();
@@ -82,6 +73,10 @@ public class zoo {
 		System.out.println();
 		obj.printAllInstanceAttributes();
 		
+		obj.feedAllAnimals();
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
 		obj.adjustHealthDownAllAnimals();
 		System.out.println();
 		obj.printAllInstanceAttributes();
@@ -92,12 +87,22 @@ public class zoo {
 		obj.adjustHealthDownAllAnimals();
 		obj.adjustHealthDownAllAnimals();
 		obj.adjustHealthDownAllAnimals();
+		
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
 		obj.adjustHealthDownAllAnimals();
 		obj.adjustHealthDownAllAnimals();
 		obj.adjustHealthDownAllAnimals();
 		obj.adjustHealthDownAllAnimals();
 		
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
 		obj.feedAllAnimals();
+		System.out.println();
+		obj.printAllInstanceAttributes();
+		
 		obj.adjustHealthDownAllAnimals();
 		System.out.println();
 		obj.printAllInstanceAttributes();

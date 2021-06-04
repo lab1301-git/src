@@ -233,7 +233,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <99.0>     (Threshold: <30.0>)
+ Current Health: <85.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -243,7 +243,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <98.0>     (Threshold: <50.0>)
+ Current Health: <82.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -253,7 +253,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <84.0>     (Threshold: <70.0>)
+ Current Health: <96.0>     (Threshold: <70.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -263,7 +263,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <87.0>     (Threshold: <30.0>)
+ Current Health: <85.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -273,7 +273,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <88.0>     (Threshold: <50.0>)
+ Current Health: <92.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -283,7 +283,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <HEALTHY>
- Current Health: <90.0>     (Threshold: <70.0>)
+ Current Health: <86.0>     (Threshold: <70.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -293,7 +293,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-7>
  Idx:            <7>
  Status:         <HEALTHY>
- Current Health: <92.0>     (Threshold: <30.0>)
+ Current Health: <96.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -303,7 +303,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <HEALTHY>
- Current Health: <84.0>     (Threshold: <50.0>)
+ Current Health: <96.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -313,7 +313,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <HEALTHY>
- Current Health: <82.0>     (Threshold: <70.0>)
+ Current Health: <94.0>     (Threshold: <70.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -323,7 +323,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-10>
  Idx:            <10>
  Status:         <HEALTHY>
- Current Health: <83.0>     (Threshold: <30.0>)
+ Current Health: <96.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -333,7 +333,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <HEALTHY>
- Current Health: <85.0>     (Threshold: <50.0>)
+ Current Health: <84.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -343,7 +343,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <HEALTHY>
- Current Health: <91.0>     (Threshold: <70.0>)
+ Current Health: <82.0>     (Threshold: <70.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -353,7 +353,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-13>
  Idx:            <13>
  Status:         <HEALTHY>
- Current Health: <81.0>     (Threshold: <30.0>)
+ Current Health: <94.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -363,7 +363,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <HEALTHY>
- Current Health: <99.0>     (Threshold: <50.0>)
+ Current Health: <83.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -373,7 +373,7 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <70.0>)
+ Current Health: <89.0>     (Threshold: <70.0>)
  Prev Health:    <100.0>
  Health Runs:    <1>
  Feed Runs:      <0>
@@ -383,9 +383,9 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
 ***** Feeding all animals... *****
 *******************************************************************
 ****************** printRandomFeedValue() ******************
-Monkey   = <17>
-Giraffe  = <14>
-Elephant = <22>
+Monkey   = <21>
+Giraffe  = <12>
+Elephant = <11>
 ************************************************************
 
 *******************************************************************
@@ -395,151 +395,151 @@ Elephant = <22>
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <30.0>)
- Prev Health:    <99.0>
+ Current Health: <95.2>     (Threshold: <30.0>)
+ Prev Health:    <85.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <50.0>)
- Prev Health:    <98.0>
+ Current Health: <91.84>     (Threshold: <50.0>)
+ Prev Health:    <82.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <95.76>     (Threshold: <70.0>)
- Prev Health:    <84.0>
+ Current Health: <100.0>     (Threshold: <70.0>)
+ Prev Health:    <96.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <99.18>     (Threshold: <30.0>)
- Prev Health:    <87.0>
+ Current Health: <95.2>     (Threshold: <30.0>)
+ Prev Health:    <85.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <HEALTHY>
  Current Health: <100.0>     (Threshold: <50.0>)
- Prev Health:    <88.0>
+ Prev Health:    <92.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <70.0>)
- Prev Health:    <90.0>
+ Current Health: <96.32>     (Threshold: <70.0>)
+ Prev Health:    <86.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-7>
  Idx:            <7>
  Status:         <HEALTHY>
  Current Health: <100.0>     (Threshold: <30.0>)
- Prev Health:    <92.0>
+ Prev Health:    <96.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <HEALTHY>
- Current Health: <95.76>     (Threshold: <50.0>)
- Prev Health:    <84.0>
+ Current Health: <100.0>     (Threshold: <50.0>)
+ Prev Health:    <96.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <HEALTHY>
- Current Health: <93.479996>     (Threshold: <70.0>)
- Prev Health:    <82.0>
+ Current Health: <100.0>     (Threshold: <70.0>)
+ Prev Health:    <94.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-10>
  Idx:            <10>
  Status:         <HEALTHY>
- Current Health: <94.62>     (Threshold: <30.0>)
- Prev Health:    <83.0>
+ Current Health: <100.0>     (Threshold: <30.0>)
+ Prev Health:    <96.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <HEALTHY>
- Current Health: <96.9>     (Threshold: <50.0>)
- Prev Health:    <85.0>
+ Current Health: <94.08>     (Threshold: <50.0>)
+ Prev Health:    <84.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <70.0>)
- Prev Health:    <91.0>
+ Current Health: <91.84>     (Threshold: <70.0>)
+ Prev Health:    <82.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-13>
  Idx:            <13>
  Status:         <HEALTHY>
- Current Health: <92.34>     (Threshold: <30.0>)
- Prev Health:    <81.0>
+ Current Health: <100.0>     (Threshold: <30.0>)
+ Prev Health:    <94.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <50.0>)
- Prev Health:    <99.0>
+ Current Health: <92.96>     (Threshold: <50.0>)
+ Prev Health:    <83.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <HEALTHY>
- Current Health: <100.0>     (Threshold: <70.0>)
- Prev Health:    <100.0>
+ Current Health: <99.68>     (Threshold: <70.0>)
+ Prev Health:    <89.0>
  Health Runs:    <1>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
 *******************************************************************
 ***** Adjusting health of animal down... *****
@@ -567,151 +567,151 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <HEALTHY>
- Current Health: <99.0>     (Threshold: <30.0>)
- Prev Health:    <100.0>
+ Current Health: <76.159996>     (Threshold: <30.0>)
+ Prev Health:    <95.2>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <HEALTHY>
- Current Health: <83.0>     (Threshold: <50.0>)
- Prev Health:    <100.0>
+ Current Health: <90.0032>     (Threshold: <50.0>)
+ Prev Health:    <91.84>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <HEALTHY>
- Current Health: <81.396>     (Threshold: <70.0>)
- Prev Health:    <95.76>
+ Current Health: <90.0>     (Threshold: <70.0>)
+ Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <HEALTHY>
- Current Health: <82.3194>     (Threshold: <30.0>)
- Prev Health:    <99.18>
+ Current Health: <82.824>     (Threshold: <30.0>)
+ Prev Health:    <95.2>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <HEALTHY>
- Current Health: <85.0>     (Threshold: <50.0>)
+ Current Health: <98.0>     (Threshold: <50.0>)
  Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <HEALTHY>
- Current Health: <91.0>     (Threshold: <70.0>)
- Prev Health:    <100.0>
+ Current Health: <91.504>     (Threshold: <70.0>)
+ Prev Health:    <96.32>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-7>
  Idx:            <7>
  Status:         <HEALTHY>
- Current Health: <90.0>     (Threshold: <30.0>)
+ Current Health: <94.0>     (Threshold: <30.0>)
  Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <HEALTHY>
- Current Health: <85.2264>     (Threshold: <50.0>)
- Prev Health:    <95.76>
+ Current Health: <100.0>     (Threshold: <50.0>)
+ Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <HEALTHY>
- Current Health: <83.1972>     (Threshold: <70.0>)
- Prev Health:    <93.479996>
+ Current Health: <86.0>     (Threshold: <70.0>)
+ Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-10>
  Idx:            <10>
  Status:         <HEALTHY>
- Current Health: <83.2656>     (Threshold: <30.0>)
- Prev Health:    <94.62>
+ Current Health: <82.0>     (Threshold: <30.0>)
+ Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <HEALTHY>
- Current Health: <78.489>     (Threshold: <50.0>)
- Prev Health:    <96.9>
+ Current Health: <78.0864>     (Threshold: <50.0>)
+ Prev Health:    <94.08>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <HEALTHY>
- Current Health: <88.0>     (Threshold: <70.0>)
- Prev Health:    <100.0>
+ Current Health: <77.1456>     (Threshold: <70.0>)
+ Prev Health:    <91.84>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-13>
  Idx:            <13>
  Status:         <HEALTHY>
- Current Health: <76.6422>     (Threshold: <30.0>)
- Prev Health:    <92.34>
+ Current Health: <94.0>     (Threshold: <30.0>)
+ Prev Health:    <100.0>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <HEALTHY>
- Current Health: <94.0>     (Threshold: <50.0>)
- Prev Health:    <100.0>
+ Current Health: <90.171196>     (Threshold: <50.0>)
+ Prev Health:    <92.96>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <HEALTHY>
- Current Health: <85.0>     (Threshold: <70.0>)
- Prev Health:    <100.0>
+ Current Health: <96.6896>     (Threshold: <70.0>)
+ Prev Health:    <99.68>
  Health Runs:    <3>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
 *******************************************************************
 ***** Adjusting health of animal down... *****
@@ -725,24 +725,6 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-6> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-9> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-11> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-12> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-15> (ret=1)
-*******************************************************************
-***** Adjusting health of animal down... *****
-*******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-2> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-3> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-5> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-6> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-9>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-11> (ret=1)
 animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-12>
@@ -757,12 +739,12 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-2> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-3> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-5> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-6> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-6>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
-animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-9>
+animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-9>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-11>
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-11> (ret=1)
 animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-12>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
@@ -774,11 +756,13 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-2> (ret=1)
 animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-3>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-5>
-animal::changeStatus(): No change to status: <HEALTHY> for <Elephant-6> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-5> (ret=1)
+animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-6>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
+animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-9>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-11> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
 animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-15>
@@ -786,10 +770,22 @@ animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-15>
 ***** Adjusting health of animal down... *****
 *******************************************************************
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-2> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-2>
 animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-3>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> LAME for <Elephant-6>
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-5> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-11>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
+*******************************************************************
+***** Adjusting health of animal down... *****
+*******************************************************************
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-5> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
@@ -799,196 +795,197 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
 ***** Adjusting health of animal down... *****
 *******************************************************************
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-2>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
-animal::changeStatus(): Status Changed from: LAME -> DEAD for <Elephant-6>
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-5>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-8> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-14>
+
+*******************************************************************
+***** Printing attributes of all instances... *****
+*******************************************************************
+ Type:           <Monkey>
+ Name:           <Monkey-1>
+ Idx:            <1>
+ Status:         <HEALTHY>
+ Current Health: <35.568176>     (Threshold: <30.0>)
+ Prev Health:    <42.85322>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
+-------------------------------------------------------------------
+ Type:           <Giraffe>
+ Name:           <Giraffe-2>
+ Idx:            <2>
+ Status:         <DEAD>
+ Current Health: <47.136627>     (Threshold: <50.0>)
+ Prev Health:    <58.193367>
+ Health Runs:    <7>
+ Feed Runs:      <1>
+ Feed Value:     <12.0>
+-------------------------------------------------------------------
+ Type:           <Elephant>
+ Name:           <Elephant-3>
+ Idx:            <3>
+ Status:         <DEAD>
+ Current Health: <55.74096>     (Threshold: <70.0>)
+ Prev Health:    <65.5776>
+ Health Runs:    <7>
+ Feed Runs:      <1>
+ Feed Value:     <11.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-4>
+ Idx:            <4>
+ Status:         <HEALTHY>
+ Current Health: <43.29501>     (Threshold: <30.0>)
+ Prev Health:    <54.118763>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
+-------------------------------------------------------------------
+ Type:           <Giraffe>
+ Name:           <Giraffe-5>
+ Idx:            <5>
+ Status:         <DEAD>
+ Current Health: <49.90949>     (Threshold: <50.0>)
+ Prev Health:    <54.249443>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <12.0>
+-------------------------------------------------------------------
+ Type:           <Elephant>
+ Name:           <Elephant-6>
+ Idx:            <6>
+ Status:         <DEAD>
+ Current Health: <64.934166>     (Threshold: <70.0>)
+ Prev Health:    <67.639755>
+ Health Runs:    <6>
+ Feed Runs:      <1>
+ Feed Value:     <11.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-7>
+ Idx:            <7>
+ Status:         <HEALTHY>
+ Current Health: <45.91187>     (Threshold: <30.0>)
+ Prev Health:    <48.32828>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
+-------------------------------------------------------------------
+ Type:           <Giraffe>
+ Name:           <Giraffe-8>
+ Idx:            <8>
+ Status:         <HEALTHY>
+ Current Health: <50.85791>     (Threshold: <50.0>)
+ Prev Health:    <57.79308>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <12.0>
+-------------------------------------------------------------------
+ Type:           <Elephant>
+ Name:           <Elephant-9>
+ Idx:            <9>
+ Status:         <DEAD>
+ Current Health: <54.83635>     (Threshold: <70.0>)
+ Prev Health:    <66.8736>
+ Health Runs:    <6>
+ Feed Runs:      <1>
+ Feed Value:     <11.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-10>
+ Idx:            <10>
+ Status:         <HEALTHY>
+ Current Health: <33.87886>     (Threshold: <30.0>)
+ Prev Health:    <38.498707>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
+-------------------------------------------------------------------
+ Type:           <Giraffe>
+ Name:           <Giraffe-11>
+ Idx:            <11>
+ Status:         <DEAD>
+ Current Health: <45.930878>     (Threshold: <50.0>)
+ Prev Health:    <56.704784>
+ Health Runs:    <7>
+ Feed Runs:      <1>
+ Feed Value:     <12.0>
+-------------------------------------------------------------------
+ Type:           <Elephant>
+ Name:           <Elephant-12>
+ Idx:            <12>
+ Status:         <DEAD>
+ Current Health: <49.373184>     (Threshold: <70.0>)
+ Prev Health:    <61.71648>
+ Health Runs:    <5>
+ Feed Runs:      <1>
+ Feed Value:     <11.0>
+-------------------------------------------------------------------
+ Type:           <Monkey>
+ Name:           <Monkey-13>
+ Idx:            <13>
+ Status:         <HEALTHY>
+ Current Health: <51.174267>     (Threshold: <30.0>)
+ Prev Health:    <60.921745>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
+-------------------------------------------------------------------
+ Type:           <Giraffe>
+ Name:           <Giraffe-14>
+ Idx:            <14>
+ Status:         <DEAD>
+ Current Health: <47.440758>     (Threshold: <50.0>)
+ Prev Health:    <57.854584>
+ Health Runs:    <9>
+ Feed Runs:      <1>
+ Feed Value:     <12.0>
+-------------------------------------------------------------------
+ Type:           <Elephant>
+ Name:           <Elephant-15>
+ Idx:            <15>
+ Status:         <DEAD>
+ Current Health: <57.828117>     (Threshold: <70.0>)
+ Prev Health:    <68.842995>
+ Health Runs:    <6>
+ Feed Runs:      <1>
+ Feed Value:     <11.0>
+-------------------------------------------------------------------
+*******************************************************************
+***** Adjusting health of animal down... *****
+*******************************************************************
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
 animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-8>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Giraffe-14> (ret=1)
-
-*******************************************************************
-***** Printing attributes of all instances... *****
-*******************************************************************
- Type:           <Monkey>
- Name:           <Monkey-1>
- Idx:            <1>
- Status:         <HEALTHY>
- Current Health: <45.42283>     (Threshold: <30.0>)
- Prev Health:    <56.077564>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <17.0>
--------------------------------------------------------------------
- Type:           <Giraffe>
- Name:           <Giraffe-2>
- Idx:            <2>
- Status:         <DEAD>
- Current Health: <40.353867>     (Threshold: <50.0>)
- Prev Health:    <50.442333>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <14.0>
--------------------------------------------------------------------
- Type:           <Elephant>
- Name:           <Elephant-3>
- Idx:            <3>
- Status:         <DEAD>
- Current Health: <46.262104>     (Threshold: <70.0>)
- Prev Health:    <57.82763>
- Health Runs:    <8>
- Feed Runs:      <1>
- Feed Value:     <22.0>
--------------------------------------------------------------------
- Type:           <Monkey>
- Name:           <Monkey-4>
- Idx:            <4>
- Status:         <HEALTHY>
- Current Health: <39.869247>     (Threshold: <30.0>)
- Prev Health:    <49.83656>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <17.0>
--------------------------------------------------------------------
- Type:           <Giraffe>
- Name:           <Giraffe-5>
- Idx:            <5>
- Status:         <DEAD>
- Current Health: <47.893654>     (Threshold: <50.0>)
- Prev Health:    <56.345478>
- Health Runs:    <7>
- Feed Runs:      <1>
- Feed Value:     <14.0>
--------------------------------------------------------------------
- Type:           <Elephant>
- Name:           <Elephant-6>
- Idx:            <6>
- Status:         <DEAD>
- Current Health: <59.267284>     (Threshold: <70.0>)
- Prev Health:    <65.12888>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <22.0>
--------------------------------------------------------------------
- Type:           <Monkey>
- Name:           <Monkey-7>
- Idx:            <7>
- Status:         <HEALTHY>
- Current Health: <37.418686>     (Threshold: <30.0>)
- Prev Health:    <38.9778>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <17.0>
--------------------------------------------------------------------
- Type:           <Giraffe>
- Name:           <Giraffe-8>
- Idx:            <8>
- Status:         <DEAD>
- Current Health: <49.47647>     (Threshold: <50.0>)
- Prev Health:    <60.337162>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <14.0>
--------------------------------------------------------------------
- Type:           <Elephant>
- Name:           <Elephant-9>
- Idx:            <9>
- Status:         <DEAD>
- Current Health: <61.883244>     (Threshold: <70.0>)
- Prev Health:    <66.54112>
- Health Runs:    <6>
- Feed Runs:      <1>
- Feed Value:     <22.0>
--------------------------------------------------------------------
- Type:           <Monkey>
- Name:           <Monkey-10>
- Idx:            <10>
- Status:         <HEALTHY>
- Current Health: <54.88025>     (Threshold: <30.0>)
- Prev Health:    <60.307964>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <17.0>
--------------------------------------------------------------------
- Type:           <Giraffe>
- Name:           <Giraffe-11>
- Idx:            <11>
- Status:         <DEAD>
- Current Health: <48.59756>     (Threshold: <50.0>)
- Prev Health:    <53.40391>
- Health Runs:    <6>
- Feed Runs:      <1>
- Feed Value:     <14.0>
--------------------------------------------------------------------
- Type:           <Elephant>
- Name:           <Elephant-12>
- Idx:            <12>
- Status:         <DEAD>
- Current Health: <61.06901>     (Threshold: <70.0>)
- Prev Health:    <67.1088>
- Health Runs:    <6>
- Feed Runs:      <1>
- Feed Value:     <22.0>
--------------------------------------------------------------------
- Type:           <Monkey>
- Name:           <Monkey-13>
- Idx:            <13>
- Status:         <HEALTHY>
- Current Health: <34.904728>     (Threshold: <30.0>)
- Prev Health:    <43.092255>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <17.0>
--------------------------------------------------------------------
- Type:           <Giraffe>
- Name:           <Giraffe-14>
- Idx:            <14>
- Status:         <HEALTHY>
- Current Health: <50.58567>     (Threshold: <50.0>)
- Prev Health:    <54.393196>
- Health Runs:    <9>
- Feed Runs:      <1>
- Feed Value:     <14.0>
--------------------------------------------------------------------
- Type:           <Elephant>
- Name:           <Elephant-15>
- Idx:            <15>
- Status:         <DEAD>
- Current Health: <55.300537>     (Threshold: <70.0>)
- Prev Health:    <67.43968>
- Health Runs:    <7>
- Feed Runs:      <1>
- Feed Value:     <22.0>
--------------------------------------------------------------------
 *******************************************************************
 ***** Adjusting health of animal down... *****
 *******************************************************************
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-10>
 animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Giraffe-14>
-*******************************************************************
-***** Adjusting health of animal down... *****
-*******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-7>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-13>
-*******************************************************************
-***** Adjusting health of animal down... *****
-*******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-1> (ret=1)
-animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-4>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
 *******************************************************************
 ***** Adjusting health of animal down... *****
 *******************************************************************
 animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-1>
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-4> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
+*******************************************************************
+***** Adjusting health of animal down... *****
+*******************************************************************
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-4>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-7> (ret=1)
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
 
 *******************************************************************
 ***** Printing attributes of all instances... *****
@@ -997,159 +994,159 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <DEAD>
- Current Health: <26.752924>     (Threshold: <30.0>)
- Prev Health:    <33.0283>
- Health Runs:    <13>
+ Current Health: <26.223705>     (Threshold: <30.0>)
+ Prev Health:    <32.779633>
+ Health Runs:    <12>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <DEAD>
- Current Health: <40.353867>     (Threshold: <50.0>)
- Prev Health:    <50.442333>
- Health Runs:    <9>
+ Current Health: <47.136627>     (Threshold: <50.0>)
+ Prev Health:    <58.193367>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <DEAD>
- Current Health: <46.262104>     (Threshold: <70.0>)
- Prev Health:    <57.82763>
- Health Runs:    <8>
+ Current Health: <55.74096>     (Threshold: <70.0>)
+ Prev Health:    <65.5776>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <DEAD>
- Current Health: <27.667902>     (Threshold: <30.0>)
- Prev Health:    <33.741344>
- Health Runs:    <12>
+ Current Health: <25.514334>     (Threshold: <30.0>)
+ Prev Health:    <30.016863>
+ Health Runs:    <13>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <DEAD>
- Current Health: <47.893654>     (Threshold: <50.0>)
- Prev Health:    <56.345478>
- Health Runs:    <7>
+ Current Health: <49.90949>     (Threshold: <50.0>)
+ Prev Health:    <54.249443>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <DEAD>
- Current Health: <59.267284>     (Threshold: <70.0>)
- Prev Health:    <65.12888>
- Health Runs:    <9>
+ Current Health: <64.934166>     (Threshold: <70.0>)
+ Prev Health:    <67.639755>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-7>
  Idx:            <7>
- Status:         <DEAD>
- Current Health: <26.402624>     (Threshold: <30.0>)
- Prev Health:    <31.431696>
- Health Runs:    <11>
+ Status:         <HEALTHY>
+ Current Health: <31.157997>     (Threshold: <30.0>)
+ Prev Health:    <38.466663>
+ Health Runs:    <13>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <DEAD>
- Current Health: <49.47647>     (Threshold: <50.0>)
- Prev Health:    <60.337162>
- Health Runs:    <9>
+ Current Health: <43.7378>     (Threshold: <50.0>)
+ Prev Health:    <50.85791>
+ Health Runs:    <10>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <DEAD>
- Current Health: <61.883244>     (Threshold: <70.0>)
- Prev Health:    <66.54112>
+ Current Health: <54.83635>     (Threshold: <70.0>)
+ Prev Health:    <66.8736>
  Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-10>
  Idx:            <10>
- Status:         <HEALTHY>
- Current Health: <35.46552>     (Threshold: <30.0>)
- Prev Health:    <42.72954>
- Health Runs:    <13>
+ Status:         <DEAD>
+ Current Health: <27.275871>     (Threshold: <30.0>)
+ Prev Health:    <32.862495>
+ Health Runs:    <11>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <DEAD>
- Current Health: <48.59756>     (Threshold: <50.0>)
- Prev Health:    <53.40391>
- Health Runs:    <6>
+ Current Health: <45.930878>     (Threshold: <50.0>)
+ Prev Health:    <56.704784>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <DEAD>
- Current Health: <61.06901>     (Threshold: <70.0>)
- Prev Health:    <67.1088>
- Health Runs:    <6>
+ Current Health: <49.373184>     (Threshold: <70.0>)
+ Prev Health:    <61.71648>
+ Health Runs:    <5>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-13>
  Idx:            <13>
- Status:         <DEAD>
- Current Health: <26.115717>     (Threshold: <30.0>)
- Prev Health:    <30.367113>
- Health Runs:    <11>
+ Status:         <HEALTHY>
+ Current Health: <35.080982>     (Threshold: <30.0>)
+ Prev Health:    <35.080982>
+ Health Runs:    <13>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <DEAD>
- Current Health: <42.997818>     (Threshold: <50.0>)
- Prev Health:    <50.58567>
- Health Runs:    <10>
+ Current Health: <47.440758>     (Threshold: <50.0>)
+ Prev Health:    <57.854584>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <DEAD>
- Current Health: <55.300537>     (Threshold: <70.0>)
- Prev Health:    <67.43968>
- Health Runs:    <7>
+ Current Health: <57.828117>     (Threshold: <70.0>)
+ Prev Health:    <68.842995>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
 *******************************************************************
 ***** Feeding all animals... *****
 *******************************************************************
 ****************** printRandomFeedValue() ******************
-Monkey   = <11>
-Giraffe  = <24>
-Elephant = <13>
+Monkey   = <15>
+Giraffe  = <17>
+Elephant = <23>
 ************************************************************
 
 *******************************************************************
@@ -1159,156 +1156,157 @@ Elephant = <13>
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <DEAD>
- Current Health: <26.752924>     (Threshold: <30.0>)
- Prev Health:    <33.0283>
- Health Runs:    <13>
+ Current Health: <26.223705>     (Threshold: <30.0>)
+ Prev Health:    <32.779633>
+ Health Runs:    <12>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <DEAD>
- Current Health: <40.353867>     (Threshold: <50.0>)
- Prev Health:    <50.442333>
- Health Runs:    <9>
+ Current Health: <47.136627>     (Threshold: <50.0>)
+ Prev Health:    <58.193367>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <DEAD>
- Current Health: <46.262104>     (Threshold: <70.0>)
- Prev Health:    <57.82763>
- Health Runs:    <8>
+ Current Health: <55.74096>     (Threshold: <70.0>)
+ Prev Health:    <65.5776>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <DEAD>
- Current Health: <27.667902>     (Threshold: <30.0>)
- Prev Health:    <33.741344>
- Health Runs:    <12>
+ Current Health: <25.514334>     (Threshold: <30.0>)
+ Prev Health:    <30.016863>
+ Health Runs:    <13>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <DEAD>
- Current Health: <47.893654>     (Threshold: <50.0>)
- Prev Health:    <56.345478>
- Health Runs:    <7>
+ Current Health: <49.90949>     (Threshold: <50.0>)
+ Prev Health:    <54.249443>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <DEAD>
- Current Health: <59.267284>     (Threshold: <70.0>)
- Prev Health:    <65.12888>
- Health Runs:    <9>
+ Current Health: <64.934166>     (Threshold: <70.0>)
+ Prev Health:    <67.639755>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-7>
  Idx:            <7>
- Status:         <DEAD>
- Current Health: <26.402624>     (Threshold: <30.0>)
- Prev Health:    <31.431696>
- Health Runs:    <11>
- Feed Runs:      <1>
- Feed Value:     <17.0>
+ Status:         <HEALTHY>
+ Current Health: <36.454857>     (Threshold: <30.0>)
+ Prev Health:    <31.157997>
+ Health Runs:    <13>
+ Feed Runs:      <2>
+ Feed Value:     <15.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <DEAD>
- Current Health: <49.47647>     (Threshold: <50.0>)
- Prev Health:    <60.337162>
- Health Runs:    <9>
+ Current Health: <43.7378>     (Threshold: <50.0>)
+ Prev Health:    <50.85791>
+ Health Runs:    <10>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <DEAD>
- Current Health: <61.883244>     (Threshold: <70.0>)
- Prev Health:    <66.54112>
+ Current Health: <54.83635>     (Threshold: <70.0>)
+ Prev Health:    <66.8736>
  Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-10>
  Idx:            <10>
- Status:         <HEALTHY>
- Current Health: <43.97724>     (Threshold: <30.0>)
- Prev Health:    <35.46552>
- Health Runs:    <13>
- Feed Runs:      <2>
- Feed Value:     <11.0>
+ Status:         <DEAD>
+ Current Health: <27.275871>     (Threshold: <30.0>)
+ Prev Health:    <32.862495>
+ Health Runs:    <11>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <DEAD>
- Current Health: <48.59756>     (Threshold: <50.0>)
- Prev Health:    <53.40391>
- Health Runs:    <6>
+ Current Health: <45.930878>     (Threshold: <50.0>)
+ Prev Health:    <56.704784>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <DEAD>
- Current Health: <61.06901>     (Threshold: <70.0>)
- Prev Health:    <67.1088>
- Health Runs:    <6>
+ Current Health: <49.373184>     (Threshold: <70.0>)
+ Prev Health:    <61.71648>
+ Health Runs:    <5>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-13>
  Idx:            <13>
- Status:         <DEAD>
- Current Health: <26.115717>     (Threshold: <30.0>)
- Prev Health:    <30.367113>
- Health Runs:    <11>
- Feed Runs:      <1>
- Feed Value:     <17.0>
+ Status:         <HEALTHY>
+ Current Health: <41.04475>     (Threshold: <30.0>)
+ Prev Health:    <35.080982>
+ Health Runs:    <13>
+ Feed Runs:      <2>
+ Feed Value:     <15.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <DEAD>
- Current Health: <42.997818>     (Threshold: <50.0>)
- Prev Health:    <50.58567>
- Health Runs:    <10>
+ Current Health: <47.440758>     (Threshold: <50.0>)
+ Prev Health:    <57.854584>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <DEAD>
- Current Health: <55.300537>     (Threshold: <70.0>)
- Prev Health:    <67.43968>
- Health Runs:    <7>
+ Current Health: <57.828117>     (Threshold: <70.0>)
+ Prev Health:    <68.842995>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
 *******************************************************************
 ***** Adjusting health of animal down... *****
 *******************************************************************
-animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
+animal::changeStatus(): Status Changed from: HEALTHY -> DEAD for <Monkey-7>
+animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-13> (ret=1)
 
 *******************************************************************
 ***** Printing attributes of all instances... *****
@@ -1317,150 +1315,150 @@ animal::changeStatus(): No change to status: <HEALTHY> for <Monkey-10> (ret=1)
  Name:           <Monkey-1>
  Idx:            <1>
  Status:         <DEAD>
- Current Health: <26.752924>     (Threshold: <30.0>)
- Prev Health:    <33.0283>
- Health Runs:    <13>
+ Current Health: <26.223705>     (Threshold: <30.0>)
+ Prev Health:    <32.779633>
+ Health Runs:    <12>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-2>
  Idx:            <2>
  Status:         <DEAD>
- Current Health: <40.353867>     (Threshold: <50.0>)
- Prev Health:    <50.442333>
- Health Runs:    <9>
+ Current Health: <47.136627>     (Threshold: <50.0>)
+ Prev Health:    <58.193367>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-3>
  Idx:            <3>
  Status:         <DEAD>
- Current Health: <46.262104>     (Threshold: <70.0>)
- Prev Health:    <57.82763>
- Health Runs:    <8>
+ Current Health: <55.74096>     (Threshold: <70.0>)
+ Prev Health:    <65.5776>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-4>
  Idx:            <4>
  Status:         <DEAD>
- Current Health: <27.667902>     (Threshold: <30.0>)
- Prev Health:    <33.741344>
- Health Runs:    <12>
+ Current Health: <25.514334>     (Threshold: <30.0>)
+ Prev Health:    <30.016863>
+ Health Runs:    <13>
  Feed Runs:      <1>
- Feed Value:     <17.0>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-5>
  Idx:            <5>
  Status:         <DEAD>
- Current Health: <47.893654>     (Threshold: <50.0>)
- Prev Health:    <56.345478>
- Health Runs:    <7>
+ Current Health: <49.90949>     (Threshold: <50.0>)
+ Prev Health:    <54.249443>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-6>
  Idx:            <6>
  Status:         <DEAD>
- Current Health: <59.267284>     (Threshold: <70.0>)
- Prev Health:    <65.12888>
- Health Runs:    <9>
+ Current Health: <64.934166>     (Threshold: <70.0>)
+ Prev Health:    <67.639755>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-7>
  Idx:            <7>
  Status:         <DEAD>
- Current Health: <26.402624>     (Threshold: <30.0>)
- Prev Health:    <31.431696>
- Health Runs:    <11>
- Feed Runs:      <1>
- Feed Value:     <17.0>
+ Current Health: <29.528435>     (Threshold: <30.0>)
+ Prev Health:    <36.454857>
+ Health Runs:    <15>
+ Feed Runs:      <2>
+ Feed Value:     <15.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-8>
  Idx:            <8>
  Status:         <DEAD>
- Current Health: <49.47647>     (Threshold: <50.0>)
- Prev Health:    <60.337162>
- Health Runs:    <9>
+ Current Health: <43.7378>     (Threshold: <50.0>)
+ Prev Health:    <50.85791>
+ Health Runs:    <10>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-9>
  Idx:            <9>
  Status:         <DEAD>
- Current Health: <61.883244>     (Threshold: <70.0>)
- Prev Health:    <66.54112>
+ Current Health: <54.83635>     (Threshold: <70.0>)
+ Prev Health:    <66.8736>
  Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-10>
  Idx:            <10>
- Status:         <HEALTHY>
- Current Health: <37.380653>     (Threshold: <30.0>)
- Prev Health:    <43.97724>
- Health Runs:    <15>
- Feed Runs:      <2>
- Feed Value:     <11.0>
+ Status:         <DEAD>
+ Current Health: <27.275871>     (Threshold: <30.0>)
+ Prev Health:    <32.862495>
+ Health Runs:    <11>
+ Feed Runs:      <1>
+ Feed Value:     <21.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-11>
  Idx:            <11>
  Status:         <DEAD>
- Current Health: <48.59756>     (Threshold: <50.0>)
- Prev Health:    <53.40391>
- Health Runs:    <6>
+ Current Health: <45.930878>     (Threshold: <50.0>)
+ Prev Health:    <56.704784>
+ Health Runs:    <7>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-12>
  Idx:            <12>
  Status:         <DEAD>
- Current Health: <61.06901>     (Threshold: <70.0>)
- Prev Health:    <67.1088>
- Health Runs:    <6>
+ Current Health: <49.373184>     (Threshold: <70.0>)
+ Prev Health:    <61.71648>
+ Health Runs:    <5>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
  Type:           <Monkey>
  Name:           <Monkey-13>
  Idx:            <13>
- Status:         <DEAD>
- Current Health: <26.115717>     (Threshold: <30.0>)
- Prev Health:    <30.367113>
- Health Runs:    <11>
- Feed Runs:      <1>
- Feed Value:     <17.0>
+ Status:         <HEALTHY>
+ Current Health: <33.246246>     (Threshold: <30.0>)
+ Prev Health:    <41.04475>
+ Health Runs:    <15>
+ Feed Runs:      <2>
+ Feed Value:     <15.0>
 -------------------------------------------------------------------
  Type:           <Giraffe>
  Name:           <Giraffe-14>
  Idx:            <14>
  Status:         <DEAD>
- Current Health: <42.997818>     (Threshold: <50.0>)
- Prev Health:    <50.58567>
- Health Runs:    <10>
+ Current Health: <47.440758>     (Threshold: <50.0>)
+ Prev Health:    <57.854584>
+ Health Runs:    <9>
  Feed Runs:      <1>
- Feed Value:     <14.0>
+ Feed Value:     <12.0>
 -------------------------------------------------------------------
  Type:           <Elephant>
  Name:           <Elephant-15>
  Idx:            <15>
  Status:         <DEAD>
- Current Health: <55.300537>     (Threshold: <70.0>)
- Prev Health:    <67.43968>
- Health Runs:    <7>
+ Current Health: <57.828117>     (Threshold: <70.0>)
+ Prev Health:    <68.842995>
+ Health Runs:    <6>
  Feed Runs:      <1>
- Feed Value:     <22.0>
+ Feed Value:     <11.0>
 -------------------------------------------------------------------
 
