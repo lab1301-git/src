@@ -202,15 +202,15 @@ public abstract class animal {
 		
 		int ret = Float.compare(obj.getCurrentHealth(), obj.getThreshold());
 		
-		if (obj.getStatus() == animal.DEAD) {
+		if (obj.getStatus().equals(animal.DEAD)) {
 			return;
-		} else if ( obj.getStatus() == animal.LAME  &&	ret < 0) {
+		} else if ( obj.getStatus().equals(animal.LAME)  &&	ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.DEAD + " for <" + getName() + ">");
 			setStatus(animal.DEAD);
-		} else if ( obj.getStatus() == animal.LAME  &&	ret > 0) {
+		} else if ( obj.getStatus().equals(animal.LAME)  &&	ret > 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.HEALTHY + " for <" + getName() + ">");
 			obj.setStatus(animal.HEALTHY);
-		} else if (getType() == animal.ELEPHANT && ret < 0) {
+		} else if (getType().equals(animal.ELEPHANT) && ret < 0) {
 			System.out.println("animal::changeStatus(): Status Changed from: " + getStatus() + " -> " + animal.LAME + " for <" + getName() + ">");
 			obj.setStatus(animal.LAME);			
 		} else if (ret < 0) {
@@ -222,7 +222,7 @@ public abstract class animal {
 	}
 	
 	public void feedAnimal(animal obj) {		
-		if (obj.getStatus() == animal.DEAD)			
+		if (obj.getStatus().equals(animal.DEAD))			
 			return;
 		
 		int frun = getGlobalFeedRunCount();
@@ -281,7 +281,7 @@ public abstract class animal {
 	public int adjustHealthDown(animal obj) {
 		int ret = 0;
 		
-		if (obj.getStatus() == animal.DEAD) {
+		if (obj.getStatus().equals(animal.DEAD)) {
 			return 0;
 		}
 		
