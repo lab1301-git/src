@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 Lakshman Brodie
 https://github.com/lab1301-git/src
 
@@ -18,7 +15,7 @@ https://github.com/lab1301-git/src
  * All versions of the zoo simulator use the OO "is a" relationship. The code
  * meets the following requirement specification:
  *
- *     <i>Write a simple Zoo simulator which contains 3 different types of
+ *     Write a simple Zoo simulator which contains 3 different types of
  *     animals:
  *         monkey
  *         giraffe
@@ -46,7 +43,7 @@ https://github.com/lab1301-git/src
  *     does not return above 70% once the subsequent hour has elapsed, it is
  *     pronounced dead.
  *     When a Monkey has a health below 30%, or a Giraffe below 50%, it is
- *     pronounced dead straight away.</i> 
+ *     pronounced dead straight away.
  *          ** End of Requirements Specification **
  *
  * A runtime output file, zoo.out, is provided that can be used to verify that
