@@ -36,6 +36,8 @@ https://github.com/lab1301-git/src
  * dead.
  * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
  * pronounced dead straight away.
+ * The output file will generate a report that can be used to verify that
+ * the above specifications have been met.
  *
  * The source files have a header that details what the code is implementing.
  *
