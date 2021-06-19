@@ -1,16 +1,18 @@
-Lakshman Brodie
+Lakshman Brodie (lab1301@gmail.com)
 https://github.com/lab1301-git/src
 
-The source files have an header that details what the code is trying to address.
+The source files have a header that details what the code is trying to address.
 
 * The polymorphism.cpp example demonstrates smart pointers, abstract classes etc
 1)  src/C++/polymorphism/polymorphism.cpp
 
- * The solution to the zoo example is provided in C++, Java and Python using
- * the OO "is a" relationship. The code meets the following requirement
-*  specification:
+ * The zoo simulator was originally developed in C++ and then migrated to Java,
+ * and Python to provide exactly the same functionality.  All versions of the 
+ * zoo simulator use the OO "is a" relationship. The code meets the following
+ * requirement specification:
+ *
  * Write a simple Zoo simulator which contains 3 different types of animals:
- *  monkey,
+ *  monkey
  *  giraffe
  *  elephant
  *
