@@ -1,5 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
 Lakshman Brodie
 https://github.com/lab1301-git/src
+
+ * I left the CHOTS project, ICL Defence Systems, Bracknell in 1992, with only
+ * Shell, 'C' programming and UNIX/Secure Unix in my skills set.  Everything
+ * else has been gained on the job while contracting.  My first City contract 
+ * was the International Petroleum Exchange (IPE) By Tower Bridge in 1997
+ * followed by Warburg Dillon Reed in Broadgate.
+ *
 
  * The zoo simulator was originally developed in C++ and then migrated to Java,
  * and Python to provide exactly the same functionality as the C++ version.
@@ -8,36 +18,39 @@ https://github.com/lab1301-git/src
  * All versions of the zoo simulator use the OO "is a" relationship. The code
  * meets the following requirement specification:
  *
- * Write a simple Zoo simulator which contains 3 different types of animals:
- *  monkey
- *  giraffe
- *  elephant
+ *     <i>Write a simple Zoo simulator which contains 3 different types of
+ *     animals:
+ *         monkey
+ *         giraffe
+ *         elephant
  *
- * The zoo should open with 5 of each type of animal.
- * Each animal has a health value held as a percentage (100% is completely
- * healthy)
- * Every animal starts at 100% health. This value should be a floating point
- * value.
+ *     The zoo should open with 5 of each type of animal.
+ *     Each animal has a health value held as a percentage (100% is
+ *     completely healthy).
+ *     Every animal starts at 100% health. This value should be a floating
+ *     point value.
  *
- * The application should act as a simulator, with time passing at the rate of
- * 1 hour with each iteration. Every hour that passes, a random value between 0
- * and 20 is to be generated for each animal. This value should be passed to
- * the appropriate animal, whose health is then reduced by that percentage of
- * their current health.
+ *     The application should act as a simulator, with time passing at the
+ *     rate of 1 hour with each iteration. Every hour that passes, a random
+ *     value between 0 and 20 is to be generated for each animal. This value
+ *     should be passed to the appropriate animal, whose health is then
+ *     reduced by that percentage of their current health.
  *
- * The user must be able to feed the animals in the zoo. When this happens,
- * the zoo should generate three random values between 10 and 25; one for each
- * type of animal. The health of the respective animals is to be increased by
- * the specified percentage of their current health. Health should be capped
- * at 100%.
+ *     The user must be able to feed the animals in the zoo. When this
+ *     happens, the zoo should generate three random values between 10 and 25;
+ *     one for each type of animal. The health of the respective animals is to
+ *     be increased by the specified percentage of their current health.
+ *     Health should be capped at 100%.
  *
- * When an Elephant has a health below 70% it cannot walk. If its health does
- * not return above 70% once the subsequent hour has elapsed, it is pronounced
- * dead.
- * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
- * pronounced dead straight away.
- * The output file will generate a report that can be used to verify that
- * the above specifications have been met.
+ *     When an Elephant has a health below 70% it cannot walk. If its health
+ *     does not return above 70% once the subsequent hour has elapsed, it is
+ *     pronounced dead.
+ *     When a Monkey has a health below 30%, or a Giraffe below 50%, it is
+ *     pronounced dead straight away.</i> 
+ *          ** End of Requirements Specification **
+ *
+ * A runtime output file, zoo.out, is provided that can be used to verify that
+ * the above specification has been met.
  *
  * The source files have a header that details what the code is implementing.
  *
@@ -50,36 +63,38 @@ https://github.com/lab1301-git/src
  * C++/zooPolymorphism/zoo.out and C++/zooVisitorPattern/zooVisitor.out
  *
  * The polymorphism.cpp example demonstrates smart pointers, abstract classes
- * etc
+ * etc but they are all used in the zoo simulation as well
  3)  src/C++/polymorphism/polymorphism.cpp
  *
  4) The Java 15 version of polymorphism.cpp demonstrates Collections,
- *  iterators exceptions and the Java 8 specific new feature; Streams 
+ *  iterators exceptions and the Java 8 specific new feature; Streams but
+ *  they are all used in the zoo simulation as well. 
  *  src/Eclipse/Java/polymorphism/src/polymorphismExamples/B.java
  *  src/Eclipse/Java/polymorphism/src/polymorphismExamples/D1.java
  *  src/Eclipse/Java/polymorphism/src/polymorphismExamples/D2.java
  *  src/Eclipse/Java/polymorphism/src/polymorphismExamples/polymorphism.java
  *
  5) The Java 15 version of zoo simulation:
- * src/Eclipse/Java/polymorphism/src/zoo/animal.java
- * src/Eclipse/Java/polymorphism/src/zoo/monkey.java
- * src/Eclipse/Java/polymorphism/src/zoo/giraffe.java
- * src/Eclipse/Java/polymorphism/src/zoo/elephant.java
- * src/Eclipse/Java/polymorphism/src/zoo/zoo.java
- * src/Eclipse/Java/polymorphism/src/zoo/zoo.out
+ *  src/Eclipse/Java/polymorphism/src/zoo/animal.java
+ *  src/Eclipse/Java/polymorphism/src/zoo/monkey.java
+ *  src/Eclipse/Java/polymorphism/src/zoo/giraffe.java
+ *  src/Eclipse/Java/polymorphism/src/zoo/elephant.java
+ *  src/Eclipse/Java/polymorphism/src/zoo/zoo.java
+ *  src/Eclipse/Java/polymorphism/src/zoo/zoo.out
  *  The output file:
  *       zoo.out
  *  could be used to verify that the program meets the specified requirements.
  *
- 6)  The Python version of polymorphism demonstrates inheritance, list/array,
+ 6) The Python version of polymorphism demonstrates inheritance, list/array,
  *  dictionary containers in an abstract base accessed via class methods,
  *  method overriding, lambda and factory methods.
  *  src/scripts/Python/polymorphism/polymorphism.py
  *
  7) The Python version of the zoo simulation:
- * src/scripts/Python/zooPolymorphism/zoo.py
+ *  src/scripts/Python/zooPolymorphism/zoo.py
  *  The output file zoo.out could be used to verify that the program meets
  *  the specified requirements.
  *  The output file:
  *       zoo.out
  *  could be used to verify that the program meets the specified requirements.
+ *
