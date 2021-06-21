@@ -2,7 +2,7 @@ Lakshman Brodie
 https://github.com/lab1301-git/src
 
  * I left the CHOTS project, ICL Defence Systems, Bracknell in 1992, with only
- * 'C'/shell programming and UNIX/Secure Unix in my skills set.  Everything
+ * 'C'/Shell programming and UNIX/Secure Unix in my skills set.  Everything
  * else has been gained on the job while contracting.  My first City contract 
  * was with the International Petroleum Exchange (IPE) By Tower Bridge in 1997
  * followed by Warburg Dillon Reed in Broadgate (see red box on page 4 of CV
@@ -58,7 +58,8 @@ https://github.com/lab1301-git/src
  *       zoo.out
  *  could be used to verify that the program meets the specified requirements.
  * The runntime output from the programs can be viewed in the files:
- * C++/zooPolymorphism/zoo.out and C++/zooVisitorPattern/zooVisitor.out
+ *     C++/zooPolymorphism/zoo.out and
+ *     C++/zooVisitorPattern/zooVisitor.out
  *
  * The polymorphism.cpp example demonstrates smart pointers, abstract classes
  * etc but they are all used in the zoo simulation as well
