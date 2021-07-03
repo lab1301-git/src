@@ -112,6 +112,9 @@ class D1(Base):
         print("D1::ctor invoked (idx=%-2d name=%s)." % (idx, D1.getName()))
         self.setIdx(idx) 
 
+    def __del__(self):
+        print("D1::dtor invoked (idx=%-2d name=%s)." % (self.getIdx(), self.getName()))
+
     @classmethod
     def D1Factory(cls, seq):  # Factory method for D1
         return D1(seq)
@@ -134,6 +137,9 @@ class D2(Base):
     def __init__(self, idx):  # ctor method
         print("D2::ctor invoked (idx=%-2d name=%s)." % (idx, D2.getName()))
         self.setIdx(idx) 
+
+    def __del__(self):
+        print("D2::dtor invoked (idx=%-2d name=%s)." % (self.getIdx(), self.getName()))
 
     @classmethod
     def D2Factory(cls, seq):  # Factory method for D2

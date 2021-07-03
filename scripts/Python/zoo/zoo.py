@@ -482,6 +482,10 @@ class monkey(animals):
         print("monkey::ctor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
+    def __del__(self):
+        print("monkey::dtor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
+
     @classmethod
     def monkeyFactory(cls, idx): # return an annonyamous instance
         return monkey(idx)
@@ -556,6 +560,10 @@ class giraffe(animals):
         self.feedRuns = 0
         self.__healthRunDown = 0
         print("giraffe::ctor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
+
+    def __del__(self):
+        print("giraffe::dtor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     @classmethod
@@ -632,6 +640,10 @@ class elephant(animals):
         self.feedRuns = 0
         self.__healthRunDown = 0
         print("elephant::ctor name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
+
+    def __del__(self):
+        print("elephant::dtor name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     @classmethod

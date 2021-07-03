@@ -1,7 +1,7 @@
 -----------------------------
 Entered polymorphism.py
-Date: 2021-05-23 13:50:47.582596
-Python version: 3.8.9 (default, May  5 2021, 08:05:34) 
+Date: 2021-07-03 11:15:38.389609
+Python version: 3.8.10 (default, May 20 2021, 11:41:59) 
 [GCC 10.2.0]
 -----------------------------
 
@@ -67,3 +67,14 @@ idx= 11  name=D2
 
 Printing contents of stats in dictionary: {'D1': 5, 'D2': 6}
 ==================================
+D2::dtor invoked (idx=11 name=D2).
+D2::dtor invoked (idx=10 name=D2).
+D1::dtor invoked (idx=9  name=D1).
+D2::dtor invoked (idx=8  name=D2).
+D1::dtor invoked (idx=7  name=D1).
+D2::dtor invoked (idx=6  name=D2).
+D1::dtor invoked (idx=5  name=D1).
+D2::dtor invoked (idx=4  name=D2).
+D1::dtor invoked (idx=3  name=D1).
+D2::dtor invoked (idx=2  name=D2).
+D1::dtor invoked (idx=1  name=D1).
