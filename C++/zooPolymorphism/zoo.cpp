@@ -153,11 +153,15 @@ class animal {
             */
             cout << "** Updating derived instances with the latest feed random numbers... **" << endl;
             cout << endl;
+            /*
+             *  infer type of iterator 'it' using the new C++ 11 auto keyword.
+             *
             for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
-                                                      it != zoo.end(); it++) {
-                (*it)->set_m_rnum(get_m_rnum());
-                (*it)->set_g_rnum(get_g_rnum());
-                (*it)->set_e_rnum(get_e_rnum());
+            */
+            for (auto it : zoo) {
+                (*it).set_m_rnum(get_m_rnum());
+                (*it).set_g_rnum(get_g_rnum());
+                (*it).set_e_rnum(get_e_rnum());
             }
             return;
         }
@@ -472,14 +476,18 @@ void adjustAllAnimalHealthDownWrapper(animal *aptr) {
     cout << "-----------------------------------" << endl;
     const vector<shared_ptr<animal>>& zoo = aptr->getContainer();
 
-    for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
-                                                             it != zoo.end(); it++) {
-        (*it)->adjustHealthDown();
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword.
+     *
+        //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
+    */
+    for (auto it : zoo) {
+        (*it).adjustHealthDown();
 
         /*
          * Reset the status to reflect the changed health
         */
-        (*it)->changeStatus();
+        (*it).changeStatus();
     }
     return;
 }
@@ -489,9 +497,13 @@ void printVectorContentsWrapper(animal *aptr) {
     const vector<shared_ptr<animal>>& zoo = aptr->getContainer();
     cout << "-----------------------------------" << endl;
 
-    for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
-                                                     it != zoo.end(); it++) { 
-        (*it)->printInstance();
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword.
+        //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
+     *
+    */
+    for (auto it : zoo) {
+        (*it).printInstance();
     }
     return;
 }
@@ -515,14 +527,18 @@ void feedAllAnimalsWrapper(animal *aptr) {
     /*
      * All instances now have the required data for us to implement feeding
     */
-    for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
-                                                    it != zoo.end(); it++) { 
-        (*it)->feedAnimal();
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword.
+     *
+        //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
+    */
+    for (auto it : zoo ) {
+        (*it).feedAnimal();
 
         /*
          * Reset the status as animals have been fed
         */
-        (*it)->changeStatus();
+        (*it).changeStatus();
     }
     return;
 }

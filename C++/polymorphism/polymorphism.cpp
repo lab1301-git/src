@@ -101,7 +101,8 @@ int main() {
     cout << "Entered main()" << endl;
     D1 d1;
     B *bptr = &d1;
-    const vector<shared_ptr<B>>& data = bptr->getVector();
+    //const vector<shared_ptr<B>>& data = bptr->getVector();
+    const auto& data = bptr->getVector();
 
     cout << endl;
     cout << "Loading vector..." << endl;
@@ -114,13 +115,16 @@ int main() {
     cout << "Iterating around vector..." << endl;
     /*
      * Const iterator 'it' is a pointer to a vector container holding objects of type B
-    */
     vector<shared_ptr<B>>::const_iterator  it;
+    Code above commented out as we now use auto keyword to inder the type in
+    the for loop below.
+    */
 
     /*
-     * Iterate around vector container and called derived class vfunc() polymorphically.
+     * Iterate around vector container and called derived class vfunc()
+     * polymorphically.  We use the new C++ 11 feature by using auto below
     */
-    for (it = data.begin(); it != data.end(); it++) {
+    for (auto it = data.begin(); it != data.end(); it++) {
         int rnum=bptr->getIdx();
         (*it)->vfunc(rnum);
     }
