@@ -56,7 +56,7 @@ const int HOURLY_MAX_RVAL    = 20;
 const int FEED_MIN_RVAL      = 10;
 const int FEED_MAX_RVAL      = 25;
 
-float getRangeNumber(int min, int max);
+const float getRangeNumber(const int min, const int max);
 
 class animal;
 
@@ -498,7 +498,7 @@ void giraffe::accept(visitorBase *v) {v->visit(this); }
 void elephant::accept(visitorBase *v) {v->visit(this); }
 
 
-float getRangeNumber(int min, int max) {
+const float getRangeNumber(const int min, const int max) {
     static bool srand_flg;
     if (srand_flg == 0) {
         srand_flg = 1;
@@ -515,14 +515,20 @@ void adjustAllAnimalHealthDownWrapper(animal *aptr) {
     cout << "-----------------------------------" << endl;
     const vector<shared_ptr<animal>>& zoo = aptr->getContainer();
 
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword as
+     *  well as using range based loop rather than the less readable commented
+     *  out code below.
     for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
-                                                             it != zoo.end(); it++) {
-        (*it)->adjustHealthDown();
+                                                      it != zoo.end(); it++) {
+    */
+    for (auto it : zoo) {
+        (*it).adjustHealthDown();
 
         /*
          * Reset the status to reflect the changed health
         */
-        (*it)->changeStatus();
+        (*it).changeStatus();
     }
     return;
 }
@@ -531,10 +537,15 @@ void printVectorContentsWrapper(animal *aptr) {
 
     const vector<shared_ptr<animal>>& zoo = aptr->getContainer();
     cout << "-----------------------------------" << endl;
-
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword as
+     *  well as using range based loop rather than the less readable commented
+     *  out code below.
     for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
                                                      it != zoo.end(); it++) { 
-        (*it)->printInstance();
+    */
+    for (auto it : zoo) {
+        (*it).printInstance();
     }
     return;
 }
@@ -559,13 +570,20 @@ void feedAllAnimalsWrapper(animal *aptr) {
     callFeedAnimal feedAnimal;
     const vector<shared_ptr<animal>>& zoo = aptr->getContainer();
 
+    /*
+     *  infer type of iterator 'it' using the new C++ 11 auto keyword as
+     *  well as using range based loop rather than the less readable commented
+     *  out code below.
     for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin(); it != zoo.end(); it++) { 
-        (*it)->accept(&feedAnimal);
+     *
+    */
+    for (auto it : zoo) {
+        (*it).accept(&feedAnimal);
 
         /*
          * Reset the status as animals have been fed
         */
-        (*it)->changeStatus();
+        (*it).changeStatus();
     }
     return;
 }
