@@ -56,7 +56,7 @@ const int HOURLY_MAX_RVAL    = 20;
 const int FEED_MIN_RVAL      = 10;
 const int FEED_MAX_RVAL      = 25;
 
-float getRangeNumber(int min, int max);
+const float getRangeNumber(int min, int max);
 
 class animal;
 
@@ -121,9 +121,9 @@ class animal {
          * Method getRnum() returns the animal specific rnum via the
          * get_m_rnum(), get_g_rnum() & get_e_rnum() methods.
         */
-        virtual float getRnum() = 0;
+        virtual constexpr float getRnum() = 0;
 
-        float getRangeNumber(int min, int max) {
+        const float getRangeNumber(const int min, const int max) {
             static bool srand_flg;
             if (srand_flg == 0) {
                 srand_flg = 1;
@@ -321,7 +321,7 @@ class elephant : public animal {
             return;
         };
 
-        virtual float getRnum() {
+        virtual constexpr float getRnum() {
             return (this->get_e_rnum());
         }
 
@@ -388,7 +388,7 @@ class monkey : public animal {
             return;
         }
 
-        virtual float getRnum() {
+        virtual constexpr float getRnum() {
             return (this->get_m_rnum());
         }
 
@@ -455,7 +455,7 @@ class giraffe : public animal {
             return;
         }
 
-        virtual float getRnum() {
+        virtual constexpr float getRnum() {
             return (this->get_g_rnum());
         }
 
