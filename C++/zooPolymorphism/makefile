@@ -6,10 +6,10 @@ PRG_SUFFIX_FLAG := 0
 #
 CC := g++
 LIBS = -lpthread
-LDFLAGS := -L -std=c++14 -g -Wall
+LDFLAGS := -L -std=c++17 -g -Wall
 LDFLAGS := -g -lpthread
 CFLAGS_INC := -I.
-CFLAGS := -std=c++14 -g $(CFLAGS_INC) -Wall
+CFLAGS := -std=c++17 -g $(CFLAGS_INC) -Wall
 #
 ## ==================- NOTHING TO CHANGE BELOW THIS LINE ===================
 ##
