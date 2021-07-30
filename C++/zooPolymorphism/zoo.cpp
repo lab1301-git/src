@@ -60,15 +60,6 @@ const float getRangeNumber(int min, int max);
 
 class animal;
 
-class zoo {
-    private:
-        int n;
-
-    public:
-        zoo() {}
-        animal *aptr;
-};
-
 class animal {
     private:
         // Access to zoo container is only via getContainer() or loadVector().
@@ -272,6 +263,14 @@ class elephant : public animal {
             cout << "elephant(const elephant &obj) - default copy ctor" << endl;
         }
 
+        /*
+         * push_back would call the move constructor.  We are using
+         * emplace_back to construct the object in place.
+        */
+        elephant(elephant&& obj) noexcept {
+            cout << "elephant(elephant&& obj) - move ctor" << endl;
+        }
+
         elephant& operator=(const elephant& obj) {
             cout << "operator=(const elephant &obj) - assignment operator" << endl;
             return *this;
@@ -354,6 +353,14 @@ class monkey : public animal {
             cout << "monkey(const monkey &obj) - default copy ctor" << endl;
         }
 
+       /*
+        * push_back would call the move constructor.  We are using
+        * emplace_back to construct the object in place.
+       */
+        monkey(monkey&& obj) noexcept {
+            cout << "monkey(monkey&& obj) - move ctor" << endl;
+        }
+
         monkey& operator=(const monkey& obj) {
             cout << "operator=(const monkey &obj) - assignment operator" << endl;
             return *this;
@@ -419,6 +426,14 @@ class giraffe : public animal {
 
         giraffe(const giraffe &obj) {
             cout << "giraffe(const giraffe &obj) - default copy ctor" << endl;
+        }
+
+        /*
+         * push_back would call the move constructor.  We are using
+         * emplace_back to construct the object in place.
+        */
+        giraffe(giraffe&& obj) noexcept {
+            cout << "giraffe(giraffe&& obj) - move ctor" << endl;
         }
 
         giraffe& operator=(const giraffe& obj) {
