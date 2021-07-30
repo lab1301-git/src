@@ -112,7 +112,7 @@ class animal {
          * Method getRnum() returns the animal specific rnum via the
          * get_m_rnum(), get_g_rnum() & get_e_rnum() methods.
         */
-        virtual constexpr float getRnum() = 0;
+        virtual float getRnum() = 0;
 
         const float getRangeNumber(const int min, const int max) {
             static bool srand_flg;
@@ -320,7 +320,7 @@ class elephant : public animal {
             return;
         };
 
-        virtual constexpr float getRnum() {
+        virtual float getRnum() {
             return (this->get_e_rnum());
         }
 
@@ -395,7 +395,7 @@ class monkey : public animal {
             return;
         }
 
-        virtual constexpr float getRnum() {
+        virtual float getRnum() {
             return (this->get_m_rnum());
         }
 
@@ -470,7 +470,7 @@ class giraffe : public animal {
             return;
         }
 
-        virtual constexpr float getRnum() {
+        virtual float getRnum() {
             return (this->get_g_rnum());
         }
 
