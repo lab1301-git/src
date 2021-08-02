@@ -1,6 +1,6 @@
 Lakshman Brodie
-[github repository](https://github.com/lab1301-git/src)
-[dockerhub repository](https://hub.docker.com/r/52834/zoo_simulation)
+![github repository](https://github.com/lab1301-git/src)
+![dockerhub repository](https://hub.docker.com/r/52834/zoo_simulation)
 
  * The zoo simulator was originally developed in C++ and then migrated to Java,
  * and Python to provide exactly the same functionality as the C++ version.
