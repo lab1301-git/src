@@ -1,0 +1,3400 @@
+Python version: 3.8.10 (default, May 20 2021, 11:41:59) 
+[GCC 10.2.0]
+
+#############################################################
+########## Starting zoo simulation ##########
+#############################################################
+
+monkey::ctor   name = <Monkey-1   >  idx=<1 >  health=<100.000000>
+giraffe::ctor  name = <Giraffe-2  >  idx=<2 >  health=<100.000000>
+elephant::ctor name = <Elephant-3 >  idx=<3 >  health=<100.000000>
+monkey::ctor   name = <Monkey-4   >  idx=<4 >  health=<100.000000>
+giraffe::ctor  name = <Giraffe-5  >  idx=<5 >  health=<100.000000>
+elephant::ctor name = <Elephant-6 >  idx=<6 >  health=<100.000000>
+monkey::ctor   name = <Monkey-7   >  idx=<7 >  health=<100.000000>
+giraffe::ctor  name = <Giraffe-8  >  idx=<8 >  health=<100.000000>
+elephant::ctor name = <Elephant-9 >  idx=<9 >  health=<100.000000>
+monkey::ctor   name = <Monkey-10  >  idx=<10>  health=<100.000000>
+giraffe::ctor  name = <Giraffe-11 >  idx=<11>  health=<100.000000>
+elephant::ctor name = <Elephant-12>  idx=<12>  health=<100.000000>
+monkey::ctor   name = <Monkey-13  >  idx=<13>  health=<100.000000>
+giraffe::ctor  name = <Giraffe-14 >  idx=<14>  health=<100.000000>
+elephant::ctor name = <Elephant-15>  idx=<15>  health=<100.000000>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 0     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 94.360000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 86.702000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 94.464000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 97.461000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 81.822000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 95.586000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 95.959000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 92.556000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 93.611000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 84.765000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 88.136000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 91.617000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 97.695000  (Threshold=30)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 83.220000  (Threshold=50)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 89.439000  (Threshold=70)
+    FeedVal   = 0    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 0     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<13>
+animals::setFeedRval(): g_feed_rnum=<23>
+animals::setFeedRval(): e_feed_rnum=<16>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 96.095538  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 100.000000  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 1     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 74.191603  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 82.228784  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 90.189741  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 83.266517  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 70.379653  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 83.494891  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 78.732978  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 74.494127  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 91.272009  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 75.207184  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 89.238308  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 78.249336  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 71.427178  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 84.151359  (Threshold=50)
+    FeedVal   = 23    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 87.374030  (Threshold=70)
+    FeedVal   = 16    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 1     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<17>
+animals::setFeedRval(): g_feed_rnum=<15>
+animals::setFeedRval(): e_feed_rnum=<12>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 87.138780  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 94.911751  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 97.797357  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 81.235010  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 93.673753  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 92.472670  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 85.984101  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 88.331590  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 87.788712  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 83.891935  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 97.130865  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 98.025798  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 3     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 70.409877  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 91.448422  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 93.365000  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 92.343198  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 79.905193  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 93.560407  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 85.192297  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 76.750269  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 88.890000  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 80.102619  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 81.254000  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 83.193851  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 83.104190  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 82.880796  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 93.204889  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 4     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 63.428034  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 89.874594  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 77.901889  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 74.508033  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 72.807215  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 87.426587  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 77.705598  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 66.662213  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 84.758393  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 72.002642  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 67.023987  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 79.690558  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 67.766481  (Threshold=30)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 73.899004  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 86.604119  (Threshold=70)
+    FeedVal   = 12    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 2     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<10>
+animals::setFeedRval(): g_feed_rnum=<18>
+animals::setFeedRval(): e_feed_rnum=<11>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 70.004252  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 87.033548  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 82.233026  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 85.974400  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 97.674732  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 85.762114  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 78.718075  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 94.693772  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 79.467876  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 79.145275  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 89.031885  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 74.792509  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 87.263639  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 96.755854  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 5     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 62.314985  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 94.899000  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 71.520688  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 68.223807  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 76.246396  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 83.791245  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 68.777785  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 77.269662  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 84.258518  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 77.918252  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 67.391410  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 86.169510  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 63.177981  (Threshold=30)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 84.258279  (Threshold=50)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 89.691709  (Threshold=70)
+    FeedVal   = 11    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 3     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<13>
+animals::setFeedRval(): g_feed_rnum=<10>
+animals::setFeedRval(): e_feed_rnum=<21>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 70.594154  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 100.000000  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 87.103616  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 77.288022  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 84.025816  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 77.915602  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 85.153486  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 88.270471  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 74.267356  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 71.571807  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 92.855151  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 6     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 66.519459  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 88.898000  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 74.905626  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 67.191115  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 81.030296  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 83.915000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 77.550957  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 71.543404  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 90.527000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 78.936752  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 64.173679  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 93.611000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 69.451850  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 82.135024  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 98.511000  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 7     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 55.898297  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 85.613219  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 72.113893  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 65.589279  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 65.559181  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 79.402890  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 63.595662  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 68.949240  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 72.579117  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 63.495144  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 62.450616  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 85.795418  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 69.363646  (Threshold=30)
+    FeedVal   = 13    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 76.253335  (Threshold=50)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 88.087551  (Threshold=70)
+    FeedVal   = 21    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 4     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<18>
+animals::setFeedRval(): g_feed_rnum=<15>
+animals::setFeedRval(): e_feed_rnum=<17>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 66.183584  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 99.185482  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 84.467724  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 77.657706  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 75.952278  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 93.005400  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 75.297264  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 79.879763  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 85.012646  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 75.178251  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 72.350912  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 82.126557  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 88.341776  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 100.000000  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 8     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(3): Status now HEALTHY -> LAME    for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 65.379453  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 81.907371  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 68.688309  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = LAME
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 69.151858  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 60.843092  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 88.238873  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 63.368671  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 77.235743  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 70.103978  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 69.465455  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 70.408290  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 97.142000  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 68.601134  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 83.365484  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 87.509000  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 9     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(1): Status now LAME    -> DEAD    for <Elephant-3 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-5  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(3): Status now HEALTHY -> LAME    for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 57.779746  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 71.558375  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 55.452875  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 53.498114  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 78.988792  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 55.950735  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 73.005541  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 65.142719  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = LAME
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 58.783752  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 59.330250  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 91.556335  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 67.484308  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 80.462698  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 82.228707  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(4): Status now HEALTHY -> DEAD    for <Giraffe-5  >
+adjustHealthDownAllAnimals(3): Status now HEALTHY -> LAME    for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(1): Status now LAME    -> DEAD    for <Elephant-9 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 51.775852  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 65.722790  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 48.322190  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 66.560695  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = LAME
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 47.971041  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 72.557287  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 49.596440  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 55.936560  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 81.195820  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 55.270998  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 68.252483  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 81.697509  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(1): Status now LAME    -> DEAD    for <Elephant-6 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 45.775549  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 57.310273  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 43.748978  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 53.745765  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 42.679835  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 65.520682  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 47.888338  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 51.037076  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 71.151085  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 48.433975  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 62.927425  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 79.278446  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = HEALTHY
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(4): Status now HEALTHY -> DEAD    for <Giraffe-11 >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(3): Status now HEALTHY -> LAME    for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 43.840616  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 52.958704  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 42.359948  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 53.745765  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 41.145068  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 65.036484  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 40.541788  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 43.537688  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 70.810272  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 44.084120  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 57.808908  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 67.487363  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = LAME
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(4): Status now HEALTHY -> DEAD    for <Giraffe-2  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(3): Status now HEALTHY -> LAME    for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-14 >
+adjustHealthDownAllAnimals(1): Status now LAME    -> DEAD    for <Elephant-15>
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 36.109324  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 47.342963  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 36.945499  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 53.745765  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 38.218420  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 52.538423  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 37.888328  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 43.537688  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 63.712250  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = LAME
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 36.889592  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 54.833483  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 63.344989  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+
+animals::adjustHealthDownAllAnimals(): Adjusting health down
+
+#############################################################
+########## adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(1): Status now LAME    -> DEAD    for <Elephant-12>
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+adjustHealthDownAllAnimals(4): Status now HEALTHY -> DEAD    for <Giraffe-14 >
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 31.082906  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 47.342963  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 32.019925  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 53.745765  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 37.653551  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 52.251563  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 37.254835  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 43.537688  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 57.776180  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 33.651423  (Threshold=30)
+    FeedVal   = 18    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 45.331389  (Threshold=50)
+    FeedVal   = 15    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 63.344989  (Threshold=70)
+    FeedVal   = 17    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+
+animals::feedAllAnimals(): Feeding all animals
+
+animals::setFeedRval(): m_feed_rnum=<20>
+animals::setFeedRval(): g_feed_rnum=<20>
+animals::setFeedRval(): e_feed_rnum=<10>
+
+
+#############################################################
+########## feedAllAnimals() is feeding all animals in zoo list ##########
+#############################################################
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-1   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-4   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-7   >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Giraffe-8  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-10  >
+adjustHealthDownAllAnimals(5): No change to status (HEALTHY) for <Monkey-13  >
+
+#############################################################
+########## printAllInstances() is dumping zoo list data ##########
+#############################################################
+
+---------- printInstance() ----------
+    Name      = Monkey-1
+    Idx       = 1
+    Health    = 37.484430  (Threshold=30)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-2
+    Idx       = 2
+    Health    = 47.342963  (Threshold=50)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-3
+    Idx       = 3
+    Health    = 62.374479  (Threshold=70)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 10     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-4
+    Idx       = 4
+    Health    = 38.614429  (Threshold=30)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-5
+    Idx       = 5
+    Health    = 45.422038  (Threshold=50)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-6
+    Idx       = 6
+    Health    = 53.745765  (Threshold=70)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 12     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-7
+    Idx       = 7
+    Health    = 45.408300  (Threshold=30)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-8
+    Idx       = 8
+    Health    = 62.861765  (Threshold=50)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Elephant-9
+    Idx       = 9
+    Health    = 55.734156  (Threshold=70)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 11     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-10
+    Idx       = 10
+    Health    = 44.927469  (Threshold=30)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-11
+    Idx       = 11
+    Health    = 43.537688  (Threshold=50)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 13     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-12
+    Idx       = 12
+    Health    = 57.776180  (Threshold=70)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Monkey-13
+    Idx       = 13
+    Health    = 40.581934  (Threshold=30)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 6     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = HEALTHY
+
+---------- printInstance() ----------
+    Name      = Giraffe-14
+    Idx       = 14
+    Health    = 45.331389  (Threshold=50)
+    FeedVal   = 20    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 15     ** number of times health reduced **
+    Status    = DEAD
+
+---------- printInstance() ----------
+    Name      = Elephant-15
+    Idx       = 15
+    Health    = 63.344989  (Threshold=70)
+    FeedVal   = 10    Animal type  specific feed random number (0 == not fed yet!)
+    FeedRuns  = 5     ** number of times fed **
+    HealthRun = 14     ** number of times health reduced **
+    Status    = DEAD
+========================================
+==================================
+elephant::dtor name = <Elephant-15>  idx=<15>  health=<63.344989>
+giraffe::dtor  name = <Giraffe-14 >  idx=<14>  health=<45.331389>
+monkey::dtor   name = <Monkey-13  >  idx=<13>  health=<40.581934>
+elephant::dtor name = <Elephant-12>  idx=<12>  health=<57.776180>
+giraffe::dtor  name = <Giraffe-11 >  idx=<11>  health=<43.537688>
+monkey::dtor   name = <Monkey-10  >  idx=<10>  health=<44.927469>
+elephant::dtor name = <Elephant-9 >  idx=<9 >  health=<55.734156>
+giraffe::dtor  name = <Giraffe-8  >  idx=<8 >  health=<62.861765>
+monkey::dtor   name = <Monkey-7   >  idx=<7 >  health=<45.408300>
+elephant::dtor name = <Elephant-6 >  idx=<6 >  health=<53.745765>
+giraffe::dtor  name = <Giraffe-5  >  idx=<5 >  health=<45.422038>
+monkey::dtor   name = <Monkey-4   >  idx=<4 >  health=<38.614429>
+elephant::dtor name = <Elephant-3 >  idx=<3 >  health=<62.374479>
+giraffe::dtor  name = <Giraffe-2  >  idx=<2 >  health=<47.342963>
+monkey::dtor   name = <Monkey-1   >  idx=<1 >  health=<37.484430>
