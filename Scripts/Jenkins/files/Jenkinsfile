@@ -1,13 +1,13 @@
 #!/usr/bin/env groovy
 
-######################################################################
-# Author:      Lakshman Brodie
-# Date:        1st September 2021
-# Description: Jenkins file
-#
-######################################################################
+/*********************************************************************
+ Author:      Lakshman Brodie
+ Date:        1st September 2021
+ Description: Jenkins file
 
-# Jenkinsfile (Declarative Pipeline)
+*********************************************************************/
+
+// Jenkinsfile (Declarative Pipeline)
 
 pipeline {
     agent any 
