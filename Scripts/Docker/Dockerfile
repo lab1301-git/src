@@ -35,21 +35,25 @@ RUN apt clean && \
 USER devusr
 
 RUN cd src/C++/zooVisitorPattern && \
-       make zooVisitor && \
-       ./zooVisitor > zooVisitor.out 2>&1 && \
+        make zooVisitor && \
+        ./zooVisitor > zooVisitor.out 2>&1 && \
     cd ../zooPolymorphism && \
-       make zoo &&  \
-       ./zoo > zoo.out 2>&1    && \
+        make zoo &&  \
+        ./zoo > zoo.out 2>&1    && \
     cd ../polymorphism && \
-       make polymorphism &&  \
-       ./polymorphism > polymorphism.out 2>&1
+        make polymorphism &&  \
+        ./polymorphism > polymorphism.out 2>&1
+    cd ../../Scripts//Python/polymorphism && \
+        polymorphism.py > polymorphism.out 2>&1 && \
+    cd ../zoo && \
+        zoo.py > zoo.out 2>&1
 
 RUN cd src/Eclipse/Java/zooSimulation && \
-       mvn clean package 2>&1 | tee bld-log && \
-       mvn compile 2>&1 | tee -a bld-log && \
-       mvn package 2>&1 | tee -a bld-log && \
+        mvn clean package 2>&1 | tee bld-log && \
+        mvn compile 2>&1 | tee -a bld-log && \
+        mvn package 2>&1 | tee -a bld-log && \
     cd src/Eclipse/Java/polymorphism && \
-       mvn clean package 2>&1 | tee bld-log && \
-       mvn compile 2>&1 | tee -a bld-log && \
-       mvn package 2>&1 | tee -a bld-log
+        mvn clean package 2>&1 | tee bld-log && \
+        mvn compile 2>&1 | tee -a bld-log && \
+        mvn package 2>&1 | tee -a bld-log
 
