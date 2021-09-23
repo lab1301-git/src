@@ -15,8 +15,8 @@ WORKDIR /usr/apps
 RUN apt-get update  -y && \
     apt-get install -y sudo curl git-core gnupg build-essential && \
     apt-get install -y python3 && \
-    apt-get install -y maven && \
     apt-get install -y vim && \
+    DEBIAN_FRONTEND='noninteractive' apt-get install -y maven && \
     groupadd --gid 6001 devusr && \
     useradd --home-dir /home/devusr --create-home --uid 6001 --gid 6001 --shell /bin/bash --skel /dev/null devusr && \
     apt clean && \
@@ -29,24 +29,23 @@ RUN apt-get update  -y && \
 USER devusr
 
 RUN cd src/C++/zooVisitorPattern && \
-        make zooVisitor && \
-        ./zooVisitor > zooVisitor.out 2>&1 && \
+        make zooVisitor 2>&1 | tee zooVisitor.out &&  \
+           ./zooVisitor 2>&1 | tee -a zooVisitor.out && \
     cd ../zooPolymorphism && \
-        make zoo &&  \
-        ./zoo > zoo.out 2>&1    && \
+        make zoo 2>&1 | tee zoo.out &&  \
+           ./zoo 2>&1 | tee -a zoo.out && \
     cd ../polymorphism && \
-        make polymorphism &&  \
-        ./polymorphism > polymorphism.out 2>&1 && \
-    cd ../../Scripts//Python/polymorphism && \
-        polymorphism.py > polymorphism.out 2>&1 && \
+        make polymorphism 2>&1 | tee polymorphism.out &&  \
+        ./polymorphism  2>&1 | tee -a polymorphism.out && \
+    cd ../../Scripts/Python/polymorphism && \
+        python3 polymorphism.py 2>&1 | tee polymorphism.py.out 2>&1 && \
     cd ../zoo && \
-        zoo.py > zoo.out 2>&1 && \
-    cd src/Eclipse/Java/zooSimulation && \
+        python3 zoo.py 2>&1 | tee zoo.py.out 2>&1 && \
+    cd ../../../Eclipse/Java/zooSimulation && \
         mvn clean package 2>&1 | tee bld-log && \
         mvn compile 2>&1 | tee -a bld-log && \
         mvn package 2>&1 | tee -a bld-log && \
-    cd src/Eclipse/Java/polymorphism && \
+    cd ../../../Eclipse/Java/polymorphism && \
         mvn clean package 2>&1 | tee bld-log && \
         mvn compile 2>&1 | tee -a bld-log && \
         mvn package 2>&1 | tee -a bld-log
-
