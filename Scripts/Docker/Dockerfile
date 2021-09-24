@@ -29,8 +29,9 @@ RUN apt-get update  -y && \
 
 USER devusr
 
-RUN cp /home/devusr/src/Scripts/Docker/.profile /home/devusr/.profile && \
-    cd src/C++/zooVisitorPattern && \
+COPY /home/devusr/src/Scripts/Docker/.profile /home/devusr/.profile
+
+RUN cd src/C++/zooVisitorPattern && \
         make zooVisitor 2>&1 | tee zooVisitor.out &&  \
            ./zooVisitor 2>&1 | tee -a zooVisitor.out && \
     cd ../zooPolymorphism && \
