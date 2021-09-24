@@ -17,6 +17,7 @@ RUN apt-get update  -y && \
     apt-get install -y python3 && \
     apt-get install -y vim && \
     DEBIAN_FRONTEND='noninteractive' apt-get install -y maven && \
+    apt-get update  -y && \
     groupadd --gid 6001 devusr && \
     useradd --home-dir /home/devusr --create-home --uid 6001 --gid 6001 --shell /bin/bash --skel /dev/null devusr && \
     apt clean && \
@@ -28,7 +29,8 @@ RUN apt-get update  -y && \
 
 USER devusr
 
-RUN cd src/C++/zooVisitorPattern && \
+RUN cp ${HOME}/src/Scripts/Docker/.profile ${HOME}/.profile && \
+    cd src/C++/zooVisitorPattern && \
         make zooVisitor 2>&1 | tee zooVisitor.out &&  \
            ./zooVisitor 2>&1 | tee -a zooVisitor.out && \
     cd ../zooPolymorphism && \
