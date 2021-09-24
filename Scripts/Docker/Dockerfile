@@ -22,6 +22,7 @@ RUN apt-get update  -y && \
     useradd --home-dir /home/devusr --create-home --uid 6001 --gid 6001 --shell /bin/bash --skel /dev/null devusr && \
     apt clean && \
     mkdir logs bin && \
+    apt-get -y install git && \
     git clone https://github.com/lab1301-git/src && \
     chown -R devusr logs bin src && \
     chgrp -R devusr logs bin src && \ 
@@ -29,21 +30,19 @@ RUN apt-get update  -y && \
 
 USER devusr
 
-COPY /home/devusr/src/Scripts/Docker/.profile /home/devusr/.profile
-
 RUN cd src/C++/zooVisitorPattern && \
         make zooVisitor 2>&1 | tee zooVisitor.out &&  \
-           ./zooVisitor 2>&1 | tee -a zooVisitor.out && \
+            ./zooVisitor 2>&1 | tee -a zooVisitor.out && \
     cd ../zooPolymorphism && \
         make zoo 2>&1 | tee zoo.out &&  \
-           ./zoo 2>&1 | tee -a zoo.out && \
+            ./zoo 2>&1 | tee -a zoo.out && \
     cd ../polymorphism && \
         make polymorphism 2>&1 | tee polymorphism.out &&  \
-        ./polymorphism  2>&1 | tee -a polymorphism.out && \
+            ./polymorphism  2>&1 | tee -a polymorphism.out && \
     cd ../../Scripts/Python/polymorphism && \
-        python3 polymorphism.py 2>&1 | tee polymorphism.py.out 2>&1 && \
+            python3 polymorphism.py 2>&1 | tee polymorphism.py.out 2>&1 && \
     cd ../zoo && \
-        python3 zoo.py 2>&1 | tee zoo.py.out 2>&1 && \
+            python3 zoo.py 2>&1 | tee zoo.py.out 2>&1 && \
     cd ../../../Eclipse/Java/zooSimulation && \
         mvn clean package 2>&1 | tee bld-log && \
         mvn compile 2>&1 | tee -a bld-log && \
@@ -52,3 +51,4 @@ RUN cd src/C++/zooVisitorPattern && \
         mvn clean package 2>&1 | tee bld-log && \
         mvn compile 2>&1 | tee -a bld-log && \
         mvn package 2>&1 | tee -a bld-log
+
