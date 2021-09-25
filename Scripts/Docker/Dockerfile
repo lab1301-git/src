@@ -44,11 +44,11 @@ RUN cd src/C++/zooVisitorPattern && \
     cd ../zoo && \
             python3 zoo.py 2>&1 | tee zoo.py.out 2>&1 && \
     cd ../../../Eclipse/Java/zooSimulation && \
-        mvn clean package 2>&1 | tee bld-log && \
-        mvn compile 2>&1 | tee -a bld-log && \
-        mvn package 2>&1 | tee -a bld-log && \
+        mvn clean package 2>&1 | tee zooSimulation-bld.log && \
+        mvn compile 2>&1 | tee -a zooSimulation-bld.log && \
+        mvn package 2>&1 | tee -a zooSimulation-bld.log && \
     cd ../../../Eclipse/Java/polymorphism && \
-        mvn clean package 2>&1 | tee bld-log && \
-        mvn compile 2>&1 | tee -a bld-log && \
-        mvn package 2>&1 | tee -a bld-log
+        mvn clean package 2>&1 | tee polymorphism-bld.log && \
+        mvn compile 2>&1 | tee -a polymorphism-bld.log && \
+        mvn package 2>&1 | tee -a polymorphism-bld.log
 
