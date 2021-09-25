@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ zooSimulation ---
+[INFO] Deleting C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zooSimulation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ zooSimulation ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ zooSimulation ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\zooSimulation-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.451 s
+[INFO] Finished at: 2021-09-25T20:44:14+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.770 s
+[INFO] Finished at: 2021-09-25T20:44:21+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zooSimulation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ zooSimulation ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ zooSimulation ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\zooSimulation-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.639 s
+[INFO] Finished at: 2021-09-25T20:44:31+01:00
+[INFO] ------------------------------------------------------------------------
