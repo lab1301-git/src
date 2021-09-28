@@ -2,9 +2,9 @@ Lakshman Brodie
 
  * The zoo simulator was originally developed in C++ and then migrated to Java,
  * and Python to provide exactly the same functionality as the C++ version.
- * The zoo simulator is containerised via the dockerfile in src/Scripts.
- * I've just installed Rust and I will probably port the Zoo simulator to Rust
- * very soon.
+ * The zoo simulator has been containerised via the dockerfile in src/Scripts
+ * and pushed out to Dockerhub https://hub.docker.com/u/52834. 
+ * 
  * All versions of the zoo simulator use the OO "is a" relationship. The code
  * meets the following requirement specification:
  *
