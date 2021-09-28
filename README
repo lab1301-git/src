@@ -1,9 +1,8 @@
 Lakshman Brodie
-<a href=”https://github.com/lab1301-git/src”>github repository</a>
-<a href=”https://hub.docker.com/r/52834/zoo_simulation”>dockerhub repository</a>
 
  * The zoo simulator was originally developed in C++ and then migrated to Java,
  * and Python to provide exactly the same functionality as the C++ version.
+ * The zoo simulator is containerised via the dockerfile in src/Scripts.
  * I've just installed Rust and I will probably port the Zoo simulator to Rust
  * very soon.
  * All versions of the zoo simulator use the OO "is a" relationship. The code
@@ -90,3 +89,6 @@ Lakshman Brodie
  *       zoo.out
  *  could be used to verify that the program meets the specified requirements.
  *
+ 8) Dockerfile to containerise the zoo simulator
+ *  The file src/Scripts/Docker/Dockerfile builds and runs the zoo simulator.
+ *  The image has been pushed out to Docker Hub: https://hub.docker.com/u/52834
