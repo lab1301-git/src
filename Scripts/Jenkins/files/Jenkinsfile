@@ -1,31 +1,84 @@
 #!/usr/bin/env groovy
-
 /*********************************************************************
  Author:      Lakshman Brodie
  Date:        1st September 2021
- Description: Jenkins file
-
+ Description: Jenkinsfile (Declarative Pipeline)
+              I have C:\cygwin64\bin in my windows PATH so I can use UNIX
+              commands.  I have deliberately not writted a shell script to
+              do the build as the whole purpose of this exercise is to write
+              a groovy script.
 *********************************************************************/
 
-// Jenkinsfile (Declarative Pipeline)
-
 pipeline {
-    agent any 
+    agent any
     stages {
         stage('Build') {
             steps {
-                echo 'Building...' 
+                echo "========  The Workspace directory is ${WORKSPACE}"
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                    /*
+                     * This block will either build on WINDOWS or Cygwin.
+                     * My Java code is developed in Eclipse under Windows 10
+                    */
+                    sh "pwd"
+                    sh "mvn clean package"
+                    sh "mvn compile"
+                    sh "mvn package"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/polymorphism') {
+                    /*
+                     * This block will either build on WINDOWS or Cygwin.
+                     * My Java code is developed in Eclipse under Windows 10
+                    */
+                    sh "pwd"
+                    sh "mvn clean package"
+                    sh "mvn compile"
+                    sh "mvn package"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism') {
+                    /*
+                     *  This block will only build on Cygwin as my C++ code is 
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "make polymorphism"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism') {
+                    /*
+                     *  This block will only build on Cygwin as my C++ code is 
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "make zoo"  // naming convention of src file is out of step with directory name!
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern') {
+                    /*
+                     *  This block will only build on Cygwin as my C++ code is 
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "make zooVisitor"
+                }
             }
         }
+
         stage('Test') {
             steps {
-                echo 'Testing...' 
+                echo 'Testing...'
+                powershell 'Write-Output "cd /home/lab1301/src/lab1301-git/src/C++//zooVisitorPattern"'
+                powershell 'Write-Output "./zooVisitor.exe"'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...' 
+                echo 'Deploying...'
             }
         }
     }
 }
+
