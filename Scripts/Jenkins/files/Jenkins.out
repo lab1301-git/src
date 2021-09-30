@@ -1,0 +1,274 @@
+Started by user Lakshman Brodie
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Users\lab1301\AppData\Local\Jenkins\.jenkins\workspace\GroovyTest
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] echo
+========  The Workspace directory is C:\Users\lab1301\AppData\Local\Jenkins\.jenkins\workspace\GroovyTest
+[Pipeline] dir
+Running in C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation
+[Pipeline] {
+[Pipeline] sh
++ pwd
+/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation
+[Pipeline] sh
++ mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ zooSimulation ---
+[INFO] Deleting C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zooSimulation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ zooSimulation ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ zooSimulation ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\zooSimulation-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.481 s
+[INFO] Finished at: 2021-09-30T21:46:51+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] sh
++ mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.148 s
+[INFO] Finished at: 2021-09-30T21:46:57+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] sh
++ mvn package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< zooSimulation:zooSimulation >---------------------
+[INFO] Building zooSimulation 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zooSimulation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zooSimulation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zooSimulation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ zooSimulation ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ zooSimulation ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\zooSimulation\target\zooSimulation-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.037 s
+[INFO] Finished at: 2021-09-30T21:47:04+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] dir
+Running in C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/polymorphism
+[Pipeline] {
+[Pipeline] sh
++ pwd
+/home/lab1301/src/lab1301-git/src/Eclipse/Java/polymorphism
+[Pipeline] sh
++ mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< polymorphism:polymorphism >----------------------
+[INFO] Building polymorphism 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ polymorphism ---
+[INFO] Deleting C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ polymorphism ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ polymorphism ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ polymorphism ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ polymorphism ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ polymorphism ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ polymorphism ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target\polymorphism-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.951 s
+[INFO] Finished at: 2021-09-30T21:47:12+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] sh
++ mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< polymorphism:polymorphism >----------------------
+[INFO] Building polymorphism 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ polymorphism ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ polymorphism ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.860 s
+[INFO] Finished at: 2021-09-30T21:47:18+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] sh
++ mvn package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< polymorphism:polymorphism >----------------------
+[INFO] Building polymorphism 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ polymorphism ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ polymorphism ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ polymorphism ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ polymorphism ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ polymorphism ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ polymorphism ---
+[INFO] Building jar: C:\cygwin64\home\lab1301\src\lab1301-git\src\Eclipse\Java\polymorphism\target\polymorphism-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.969 s
+[INFO] Finished at: 2021-09-30T21:47:25+01:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] dir
+Running in C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism
+[Pipeline] {
+[Pipeline] sh
++ pwd
+/home/lab1301/src/lab1301-git/src/C++/polymorphism
+[Pipeline] sh
++ make polymorphism
+$#################################################
+$  List of source files being compiled are: polymorphism.cpp
+$#################################################
+make: 'polymorphism' is up to date.
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] dir
+Running in C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism
+[Pipeline] {
+[Pipeline] sh
++ pwd
+/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism
+[Pipeline] sh
++ make zoo
+$#################################################
+$  List of source files being compiled are: zoo.cpp
+$#################################################
+make: 'zoo' is up to date.
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] dir
+Running in C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern
+[Pipeline] {
+[Pipeline] sh
++ pwd
+/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern
+[Pipeline] sh
++ make zooVisitor
+$#################################################
+$  List of source files being compiled are: zooVisitor.cpp
+$#################################################
+make: 'zooVisitor' is up to date.
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] echo
+Testing...
+[Pipeline] powershell
+cd /home/lab1301/src/lab1301-git/src/C++//zooVisitorPattern
+[Pipeline] powershell
+./zooVisitor.exe
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] echo
+Deploying...
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
