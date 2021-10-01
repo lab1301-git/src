@@ -1,8 +1,7 @@
-#!/usr/bin/env groovy
 /*********************************************************************
  Author:      Lakshman Brodie
  Date:        1st September 2021
- Description: Jenkinsfile (Declarative Pipeline)
+ Description: Jenkinsfile (Scripted Pipeline)
               I have C:\cygwin64\bin in my windows PATH so I can use UNIX
               commands.  I have deliberately not writted a shell script to
               do the build as the whole purpose of this exercise is to write
@@ -15,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "========  The Workspace directory is ${WORKSPACE}"
-                
+
                 dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
                     /*
                      * This block will either build on WINDOWS or Cygwin.
@@ -26,7 +25,7 @@ pipeline {
                     sh "mvn compile"
                     sh "mvn package"
                 }
-                
+
                 dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/polymorphism') {
                     /*
                      * This block will either build on WINDOWS or Cygwin.
@@ -37,31 +36,34 @@ pipeline {
                     sh "mvn compile"
                     sh "mvn package"
                 }
-                
+
                 dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism') {
                     /*
-                     *  This block will only build on Cygwin as my C++ code is 
+                     *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
                     */
                     sh "pwd"
+                    sh "make clean"
                     sh "make polymorphism"
                 }
-                
+
                 dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism') {
                     /*
-                     *  This block will only build on Cygwin as my C++ code is 
+                     *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
                     */
                     sh "pwd"
+                    sh "make clean"
                     sh "make zoo"  // naming convention of src file is out of step with directory name!
                 }
-                
+
                 dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern') {
                     /*
-                     *  This block will only build on Cygwin as my C++ code is 
+                     *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
                     */
                     sh "pwd"
+                    sh "make clean"
                     sh "make zooVisitor"
                 }
             }
@@ -72,8 +74,50 @@ pipeline {
                 echo 'Testing...'
                 powershell 'Write-Output "cd /home/lab1301/src/lab1301-git/src/C++//zooVisitorPattern"'
                 powershell 'Write-Output "./zooVisitor.exe"'
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern') {
+                    /*
+                     *  This block will only run on Cygwin as my C++ code is
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "ls -al"
+                    sh "./zooVisitor.exe"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism') {
+                    /*
+                     *  This block will only run on Cygwin as my C++ code is
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "ls -al"
+                    sh "./zoo.exe"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism') {
+                    /*
+                     *  This block will only run on Cygwin as my C++ code is
+                     *  developed under UNIX/Cygwin using vi
+                    */
+                    sh "pwd"
+                    sh "ls -al"
+                    sh "./polymorphism.exe"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Scripts/Python/polymorphism') {
+                    sh "pwd"
+                    sh "ls -al"
+                    sh "python3 ./polymorphism.py"
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Scripts/Python/zoo') {
+                    sh "pwd"
+                    sh "ls -al"
+                    sh "python3 ./zoo.py"
+                }
             }
         }
+        
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
@@ -81,4 +125,3 @@ pipeline {
         }
     }
 }
-
