@@ -115,6 +115,12 @@ pipeline {
                     sh "ls -al"
                     sh "python3 ./zoo.py"
                 }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                    sh "pwd"
+                    sh "ls -al"
+                    sh 'javaw.exe -p "/cygwin64/home/lab1301/src/Eclipse/Java/zooSimulation/target/classes" -m zooSimulation/zoo.zoo'
+                }
             }
         }
         
@@ -125,3 +131,4 @@ pipeline {
         }
     }
 }
+
