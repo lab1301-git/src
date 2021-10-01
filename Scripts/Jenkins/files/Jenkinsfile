@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 /*********************************************************************
  Author:      Lakshman Brodie
  Date:        1st September 2021
@@ -120,6 +121,12 @@ pipeline {
                     sh "pwd"
                     sh "ls -al"
                     sh 'javaw.exe -p "/cygwin64/home/lab1301/src/Eclipse/Java/zooSimulation/target/classes" -m zooSimulation/zoo.zoo'
+                }
+                
+                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                    sh "pwd"
+                    sh "ls -al"
+                    sh 'javaw.exe -p "/cygwin64/home/lab1301/src/Eclipse/java/polymorphism/target/classes" -XX:+ShowCodeDetailsInExceptionMessages -m Polymorphisim/polymorphismExamples.polymorphism'
                 }
             }
         }
