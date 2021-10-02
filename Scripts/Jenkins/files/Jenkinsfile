@@ -2,7 +2,7 @@
 /*********************************************************************
  Author:      Lakshman Brodie
  Date:        1st September 2021
- Description: Jenkinsfile (Scripted Pipeline)
+ Description: Jenkinsfile (Declartive Pipeline)
               I have C:\cygwin64\bin in my windows PATH so I can use UNIX
               commands.  I have deliberately not writted a shell script to
               do the build as the whole purpose of this exercise is to write
@@ -11,12 +11,18 @@
 
 pipeline {
     agent any
+    
+    environment {
+        BASE_DIR = 'C:/cygwin64/home/lab1301/src/lab1301-git/src'
+    }
+    
     stages {
         stage('Build') {
             steps {
                 echo "========  The Workspace directory is ${WORKSPACE}"
+                echo "========  The BASE_DIR  directory is ${BASE_DIR}"
 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                dir("${BASE_DIR}/Eclipse/Java/zooSimulation") {
                     /*
                      * This block will either build on WINDOWS or Cygwin.
                      * My Java code is developed in Eclipse under Windows 10
@@ -27,7 +33,7 @@ pipeline {
                     sh "mvn package"
                 }
 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/polymorphism') {
+                dir("${BASE_DIR}/Eclipse/Java/polymorphism") {
                     /*
                      * This block will either build on WINDOWS or Cygwin.
                      * My Java code is developed in Eclipse under Windows 10
@@ -38,7 +44,7 @@ pipeline {
                     sh "mvn package"
                 }
 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism') {
+                dir("${BASE_DIR}/C++/polymorphism") {
                     /*
                      *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -48,7 +54,7 @@ pipeline {
                     sh "make polymorphism"
                 }
 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism') {
+                dir("${BASE_DIR}/C++/zooPolymorphism") {
                     /*
                      *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -58,7 +64,7 @@ pipeline {
                     sh "make zoo"  // naming convention of src file is out of step with directory name!
                 }
 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern') {
+                dir("${BASE_DIR}/C++/zooVisitorPattern") {
                     /*
                      *  This block will only build on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -71,11 +77,17 @@ pipeline {
         }
 
         stage('Test') {
+            
+            environment {
+                JDIR = '/cygwin64/home/lab1301/src/Eclipse/Java'
+            }
+            
             steps {
                 echo 'Testing...'
                 powershell 'Write-Output "cd /home/lab1301/src/lab1301-git/src/C++//zooVisitorPattern"'
                 powershell 'Write-Output "./zooVisitor.exe"'
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern') {
+                
+                dir("${BASE_DIR}/C++/zooVisitorPattern") {
                     /*
                      *  This block will only run on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -85,7 +97,7 @@ pipeline {
                     sh "./zooVisitor.exe"
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/zooPolymorphism') {
+                dir("${BASE_DIR}/C++/zooPolymorphism") {
                     /*
                      *  This block will only run on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -95,7 +107,7 @@ pipeline {
                     sh "./zoo.exe"
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/C++/polymorphism') {
+                dir("${BASE_DIR}/C++/polymorphism") {
                     /*
                      *  This block will only run on Cygwin as my C++ code is
                      *  developed under UNIX/Cygwin using vi
@@ -105,28 +117,28 @@ pipeline {
                     sh "./polymorphism.exe"
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Scripts/Python/polymorphism') {
+                dir("${BASE_DIR}/Scripts/Python/polymorphism") {
                     sh "pwd"
                     sh "ls -al"
                     sh "python3 ./polymorphism.py"
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Scripts/Python/zoo') {
+                dir("${BASE_DIR}/Scripts/Python/zoo") {
                     sh "pwd"
                     sh "ls -al"
                     sh "python3 ./zoo.py"
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                dir("${BASE_DIR}/Eclipse/Java/zooSimulation") {
                     sh "pwd"
                     sh "ls -al"
-                    sh 'javaw.exe -p "/cygwin64/home/lab1301/src/Eclipse/Java/zooSimulation/target/classes" -m zooSimulation/zoo.zoo'
+                    sh 'javaw.exe -p "${JDIR}/zooSimulation/target/classes" -m zooSimulation/zoo.zoo'
                 }
                 
-                dir('C:/cygwin64/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation') {
+                dir("${BASE_DIR}/Eclipse/Java/polymorphism") {
                     sh "pwd"
                     sh "ls -al"
-                    sh 'javaw.exe -p "/cygwin64/home/lab1301/src/Eclipse/java/polymorphism/target/classes" -XX:+ShowCodeDetailsInExceptionMessages -m Polymorphisim/polymorphismExamples.polymorphism'
+                    sh 'javaw.exe -p "${JDIR}/polymorphism/target/classes" -XX:+ShowCodeDetailsInExceptionMessages -m Polymorphisim/polymorphismExamples.polymorphism'
                 }
             }
         }
