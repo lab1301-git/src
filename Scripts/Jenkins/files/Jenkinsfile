@@ -13,11 +13,15 @@ pipeline {
     agent any
     
     environment {
+        AWS_ACCESS_KEY_ID     = credentials('Jenkins-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
         BASE_DIR = 'C:/cygwin64/home/lab1301/src/lab1301-git/src'
     }
     
     stages {
+        
         stage('Build') {
+            
             steps {
                 echo "========  The Workspace directory is ${WORKSPACE}"
                 echo "========  The BASE_DIR  directory is ${BASE_DIR}"
@@ -79,7 +83,7 @@ pipeline {
         stage('Test') {
             
             environment {
-                JDIR = '/cygwin64/home/lab1301/src/Eclipse/Java'
+                JDIR = 'C:/cygwin64/home/lab1301/src/Eclipse/Java'
             }
             
             steps {
@@ -144,8 +148,15 @@ pipeline {
         }
         
         stage('Deploy') {
+            
+            environment {
+                LBIN = 'C:/cygwin64/home/lab1301/.local/bin'
+            }
+            
             steps {
                 echo 'Deploying...'
+                sh "${LBIN}/aws --version"
+                sh "${LBIN}/aws configure set region us-east-2"
             }
         }
     }
