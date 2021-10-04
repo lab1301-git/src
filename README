@@ -6,7 +6,7 @@ Lakshman Brodie
  * The zoo simulator has been containerised via the dockerfile in src/Scripts
  * and pushed out to Dockerhub https://hub.docker.com/u/52834. 
  * 
- * The Jenkinsfile is a scripted CI/CD pipeline.
+ * The Jenkinsfile is a CI/CD pipeline of C++, Java and Python applications.
  * 
  * All versions of the zoo simulator use the OO "is a" relationship. The code
  * meets the following requirement specification:
