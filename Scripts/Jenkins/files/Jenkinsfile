@@ -151,9 +151,18 @@ pipeline {
             /*
              *  To deploy to AWS, from the AWS Management Console overview page:
              *   1) Enable Elastic Beanstalk (EB) service
-              *  2) Select the S3 service understorage
-              *  Both the above are chargeable services so keep an eye on AWS resources via link below:
+              *  2) Select the S3 service under storage option
+              *  Both the above are chargeable services so keep an eye on AWS resources via links below:
               *        https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:
+              *        https://console.aws.amazon.com/cost-management/home?region=us-east-2#/dashboard
+              *  Disable "Free-Tier" services that areincurring charges via link below:
+              *        https://console.aws.amazon.com/billing/home#/freetier
+              *  Cancel services identified above via link below:
+              *        https://us-west-2.console.aws.amazon.com/ec2
+              
+              *  I have stopped all services and terminated my AWS instance as I've incurred
+              *  charges from the above two services.  The only resources that I'm now using are 1 key pair and 
+              *  8 Security Groups.
              */
             
             environment {
