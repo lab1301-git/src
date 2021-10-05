@@ -148,6 +148,13 @@ pipeline {
         }
         
         stage('Deploy') {
+            /*
+             *  To deploy to AWS, from the AWS Management Console overview page:
+             *   1) Enable Elastic Beanstalk (EB) service
+              *  2) Select the S3 service understorage
+              *  Both the above are chargeable services so keep an eye on AWS resources via link below:
+              *        https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:
+             */
             
             environment {
                 LBIN = 'C:/cygwin64/home/lab1301/.local/bin'
@@ -156,7 +163,11 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 sh "${LBIN}/aws --version"
-                sh "${LBIN}/aws configure set region us-east-2"
+                //sh "${LBIN}/aws configure set region us-east-2"
+                //sh "${LBIN}/aws s3 cp <list of files to be copies to AWS instance...."
+                
+                //sh "${LBIN}/aws ec2 describe-instance-attribute --instance-id   i-0934d5d085832524e --attribute userData"
+                //sh "${LBIN}/aws  ec2 describe-availability-zones --output table"
             }
         }
     }
