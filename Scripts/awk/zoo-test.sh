@@ -1,28 +1,35 @@
 #!/bin/sh
 
 ######################################################################
-# Author:      Lakshman Brodie - May 2021
-# Date:        24th May 2021
-# Description: Parse output of zoo simulation for testing purposes
+# Author:      Lakshman Brodie
+# Date:        5th October 2021
+# Description: Parse output of zoo simulation for testing purposes.
+#              This script reports on the final status of each animal.
 ######################################################################
 
 awk ' 
                                            { LINE[NR] = $0     }
     /^Number of /                          { initial[a++] = NR }
     /^Printing vector contents\.\.\.\.$/   { end[b++] = NR     }
-    END {
 
+    END {
 
     # Array initial contains the line number of all matched patterns that
     # we are interested in
+
+    if (ARGC != 2) {
+        printf("USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
+        exit
+    }
+
+    printf("Processing logfile: %s...\n", FILENAME)
+    printf("%s\n", ARGV[1])
     for (a in initial) {
         start_pos=initial[a]
-        #printf("start_pos=%d   end_pos=%d   a=%d\n", start_pos, end_pos, a)
         # The if statement below is a safety measure as we do not want to
         # go past  array boundary
         if (start_pos < NR) {
             n = split(LINE[start_pos], arrA)
-            #printf("%d)=%s    (%d)\n", start_pos, LINE[start_pos], arrA[n])
             printf("We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
              
         } else {
@@ -65,7 +72,6 @@ awk '
             t = split(LINE[i], arrT) 
             count++
         } 
-        #printf("%s\n", LINE[i])
     }
 
-}' ~/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out
+}' $1
