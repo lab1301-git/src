@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/sh
 ######################################################################
 # Author:      Lakshman Brodie
 # Date:        5th October 2021
@@ -74,4 +73,4 @@ awk '
         } 
     }
 
-}' $1
+}' ${HOME}/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out
