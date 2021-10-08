@@ -6,6 +6,25 @@
 #              This script reports on the final status of each animal.
 ######################################################################
 
+SCRIPT=$(basename ${0})
+BASE=${HOME}/src/lab1301-git/src
+INPUT=${BASE}/C++/zooVisitorPattern/zooVisitor.out
+
+if [ ! -z "${1}" ]  && [ -r "${1}" ]
+then
+    echo "We have been passed an arg ('${1}')"
+    echo "${SCRIPT}: Using file '${INPUT}'... "
+    INPUT=${1}
+else
+    if [ ! -r "{$1}" ]
+    then 
+        echo "${SCRIPT}: **** FATAL - The specified input file '${1}' is not accessible ****"
+        exit 1
+    fi
+fi
+
+echo "${SCRIPT}: Using input file '${INPUT}'... "
+
 awk ' 
                                            { LINE[NR] = $0     }
     /^Number of /                          { initial[a++] = NR }
@@ -72,5 +91,4 @@ awk '
             count++
         } 
     }
-
-}' ${HOME}/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out
+}' ${INPUT}
