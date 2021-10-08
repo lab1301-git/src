@@ -26,7 +26,7 @@ fi
 
 if [ ! -z "${1}" ]
 then
-    echo "We have been passed an arg ('${1}')"
+    echo "${SCRIPT}: We have been passed an arg ('${1}')"
     echo "${SCRIPT}: Using file '${INPUT}'... "
     INPUT=${1}
 else
@@ -60,10 +60,10 @@ awk '
             # go past  array boundary
             if (start_pos < NR) {
                 n = split(LINE[start_pos], arrA)
-                printf("We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
+                printf("'${SCRIPT}': We are starting with '%d' healthy '%s'\n\n", arrA[n], arrA[3])
              
             } else {
-                printf("\n*** Warning! %d > %d ***\n", start_pos, NR)
+                printf("\n'${SCRIPT}': *** Warning! %d > %d ***\n", start_pos, NR)
                 return(1) 
             }
         }
@@ -72,9 +72,9 @@ awk '
         # very end and that information is available in this loop
         count=0
         for (i=end_zoo_visitor[b - 1]; i<NR; i++) {
-            if ( LINE[i] ~ /-----------/ || LINE[i] ~ /virtual /) {
+            if ( LINE[i] ~ /-----------/) {
                 if (count > 0) {
-                    printf("Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", arrQ[q], arrP[p], arrS[s], arrR[r], arrT[t])
+                    printf("'${SCRIPT}': Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", arrQ[q], arrP[p], arrS[s], arrR[r], arrT[t])
                 }
                 continue
             } 
@@ -127,7 +127,7 @@ awk '
             str=arrA[n]
             p = split(arrA[n], arrB, ">")  
         }
-        printf("We are starting with '%s' healthy animals\n", arrB[p - 1])
+        printf("'${SCRIPT}': We are starting with '%s' healthy animals\n\n", arrB[p - 1])
 
         # We are only interested in the Status of the animals at the
         # very end and that information is available in this loop
@@ -192,19 +192,19 @@ awk '
     # we are interested in
 
     if (ARGC != 2) {
-        printf("USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
+        printf("'${SCRIPT}': USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
         exit
     }
 
     printf("Processing logfile: %s...\n", FILENAME)
-    printf("%s\n", ARGV[1])
+    printf("'${SCRIPT}': %s\n", ARGV[1])
 
     if (b > 0) {
-        printf("\nDetected that the input file is from zooVisitor.cpp...\n\n")
+        printf("\n'${SCRIPT}': Detected that the input file is from zooVisitor.cpp...\n\n")
         ret = zooVisitorPattern_C_PlusPlus()
 
     } else if (c > 0) {
-        printf("\nDetected that the input file is from zoo.java ...\n")
+        printf("\n'${SCRIPT}': Detected that the input file is from zoo.java ...\n")
         if (ret = zoo_java() != 0) {
             ret=1;
         }
