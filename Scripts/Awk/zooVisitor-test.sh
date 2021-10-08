@@ -7,8 +7,12 @@
 ######################################################################
 
 SCRIPT=$(basename ${0})
-BASE=${HOME}/src/lab1301-git/src
-INPUT=${BASE}/C++/zooVisitorPattern/zooVisitor.out
+
+if [ -z "${BASE_DIR}" ]
+then
+    echo "${SCRIPT}: BASE_DIR not set.  Setting BASE_DIR to '${BASE_DIR}'... "
+    BASE_DIR=${HOME}/src/lab1301-git/src
+fi
 
 if [ ! -z "${1}" ]  && [ -r "${1}" ]
 then
@@ -16,11 +20,14 @@ then
     echo "${SCRIPT}: Using file '${INPUT}'... "
     INPUT=${1}
 else
-    if [ ! -r "{$1}" ]
-    then 
-        echo "${SCRIPT}: **** FATAL - The specified input file '${1}' is not accessible ****"
-        exit 1
-    fi
+    INPUT=${BASE_DIR}/C++/zooVisitorPattern/zooVisitor.out
+    echo "${SCRIPT}: Setting input file to '${INPUT}'"
+fi
+
+if [ ! -r "${INPUT}" ]
+then 
+    echo "${SCRIPT}: **** FATAL - The specified input file '${INPUT}' is not accessible ****"
+    exit 1
 fi
 
 echo "${SCRIPT}: Using input file '${INPUT}'... "
