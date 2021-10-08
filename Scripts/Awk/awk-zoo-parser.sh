@@ -165,7 +165,7 @@ awk '
              
             if ( LINE[i] ~ /--------------/) {
                 if (count > 0) {
-                    printf("Animal id: %-2d has been fed %d times and has an health of <%-2.2f> and is <%s>\n", name, feedRun, currentHealth, status)
+                    printf("Animal id: %-11s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", name, feedRun, currentHealth, status)
                 }
                 continue
             } 

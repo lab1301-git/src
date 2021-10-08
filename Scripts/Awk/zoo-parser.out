@@ -1,4 +1,4 @@
-Fri Oct  8 21:53:24 BST 2021
+Fri Oct  8 22:00:00 BST 2021
 CYGWIN_NT-10.0 lab1301-Ryzen5 3.2.0(0.340/5/3) 2021-03-29 08:42 x86_64 Cygwin
 
 Processing /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
@@ -12,21 +12,21 @@ Processing logfile: /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation
 
 Detected that the input file is from zoo.java ...
 We are starting with 15 healthy animals
-Animal id: 0  has been fed 2 times and has an health of <30.00> and is <HEALTHY>
-Animal id: 0  has been fed 1 times and has an health of <50.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <70.00> and is <DEAD>
-Animal id: 0  has been fed 2 times and has an health of <30.00> and is <HEALTHY>
-Animal id: 0  has been fed 1 times and has an health of <50.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <70.00> and is <DEAD>
-Animal id: 0  has been fed 2 times and has an health of <30.00> and is <HEALTHY>
-Animal id: 0  has been fed 1 times and has an health of <50.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <70.00> and is <DEAD>
-Animal id: 0  has been fed 2 times and has an health of <30.00> and is <HEALTHY>
-Animal id: 0  has been fed 1 times and has an health of <50.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <70.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <30.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <50.00> and is <DEAD>
-Animal id: 0  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
 
 
 ==========================================
