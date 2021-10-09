@@ -3,7 +3,10 @@ awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git
 awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
 awk-zoo-log-parser.sh: Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
 
+********************************************
 awk-zoo-log-parser.sh: **** Detected that the input file is from zooVisitor.cpp ****
+
+********************************************
 
 awk-zoo-log-parser.sh: We are starting with 5 healthy Elephants
 awk-zoo-log-parser.sh: We are starting with 5 healthy Monkeys
@@ -32,7 +35,10 @@ awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git
 awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
 awk-zoo-log-parser.sh: Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
 
+********************************************
 awk-zoo-log-parser.sh: **** Detected that the input file is from zoo.java ****
+********************************************
+
 awk-zoo-log-parser.sh: We are starting with 15 healthy animals
 
 Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
@@ -59,7 +65,9 @@ awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git
 awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
 awk-zoo-log-parser.sh: Processing logfile: ../../C++/zooPolymorphism/zoo.out...
 
+********************************************
 awk-zoo-log-parser.sh: **** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
 
 awk-zoo-log-parser.sh: We are starting with 5 healthy Elephants
 awk-zoo-log-parser.sh: We are starting with 5 healthy Monkeys
@@ -88,7 +96,10 @@ awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git
 awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
 awk-zoo-log-parser.sh: Processing logfile: ../Python/zoo/zoo.out...
 
+********************************************
 awk-zoo-log-parser.sh: **** Detected that the input file is from zoo.py ****
+********************************************
+
 awk-zoo-log-parser.sh: We are starting with 15 healthy animals
 awk-zoo-log-parser.sh: Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
 awk-zoo-log-parser.sh: Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>

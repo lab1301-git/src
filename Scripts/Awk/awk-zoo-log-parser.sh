@@ -12,6 +12,11 @@
 #              animal.  The output files all differ so we can't have a generic parser.
 #              The solution is to have functions for each logfile.  The header
 #              of the functions tells you more.
+#              This script recognises the following file formats:
+#                  C++/zooPolymorphism/zoo.out
+#                  C++/zooVisitorPattern/zooVisitor.out
+#                  Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+#                  Scripts/Python/zoo/zoo.out
 #####################################################################
 
 SCRIPT=$(basename ${0})
@@ -71,7 +76,10 @@ awk '
         for (i=end_zoo_c_plus_plus[b - 1]; i<NR; i++) {
             if ( LINE[i] ~ /-----------/) {
                 if (count > 0) {
-                    printf("'${SCRIPT}': Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", arrQ[q], arrP[p], arrS[s], arrR[r], arrT[t])
+                    printf(  \
+                        "'${SCRIPT}': Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n",\
+                        arrQ[q], arrP[p], arrS[s], arrR[r], arrT[t]\
+                    )
                 }
                 continue
             } 
@@ -167,7 +175,10 @@ awk '
              
             if ( LINE[i] ~ /--------------/) {
                 if (count > 0) {
-                    printf("Animal id: %-11s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", name, feedRun, currentHealth, status)
+                    printf(  \
+                        "Animal id: %-11s has been fed %d times and has an health of <%-2.2f> and is <%s>\n"   \
+                         , name, feedRun, currentHealth, status  \
+                    )
                 }
                 continue
             } 
@@ -275,21 +286,29 @@ awk '
 
     if (b > 0) {
         if (z > 0) {
-            printf("\n'${SCRIPT}': **** Detected that the input file is from zooPolymorphism.cpp ****\n\n")
+            printf("\n********************************************")
+            printf("\n'${SCRIPT}': **** Detected that the input file is from zooPolymorphism.cpp ****\n")
+            printf("********************************************\n\n")
         } else {
+            printf("\n********************************************")
             printf("\n'${SCRIPT}': **** Detected that the input file is from zooVisitor.cpp ****\n\n")
+            printf("********************************************\n\n")
         } 
         ret = zoo_C_PlusPlus_logs()
 
     } else if (c > 0) {
+        printf("\n********************************************")
         printf("\n'${SCRIPT}': **** Detected that the input file is from zoo.java ****\n")
+        printf("********************************************\n\n")
         if (ret = zoo_java_log() != 0) {
             ret=1;
         }
 
 
     } else if (e > 0) {
+        printf("\n********************************************")
         printf("\n'${SCRIPT}': **** Detected that the input file is from zoo.py ****\n")
+        printf("********************************************\n\n")
         if (ret = zoo_python_log() != 0) {
             ret=1;
         }
