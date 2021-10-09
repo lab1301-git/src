@@ -5,7 +5,6 @@ Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
 
 ********************************************
 **** Detected that the input file is from zooVisitor.cpp ****
-
 ********************************************
 
 We are starting with 5 healthy Elephants
@@ -30,9 +29,6 @@ Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is 
 ********************************************
 Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
 ********************************************
-
-==========================================
-
 awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
 awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
 awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
@@ -63,9 +59,6 @@ Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is 
 ********************************************
 Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
 ********************************************
-
-==========================================
-
 awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
 awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
 awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
@@ -97,9 +90,6 @@ Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is
 ********************************************
 Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
 ********************************************
-
-==========================================
-
 awk-zoo-log-parser.sh ../Python/zoo/zoo.out
 awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
 awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
@@ -129,6 +119,3 @@ Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and 
 ********************************************
 Finished processing logfile: ../Python/zoo/zoo.out
 ********************************************
-
-==========================================
-

@@ -125,7 +125,6 @@ awk '
     #              1 - Failure 
     ############################################################
     function zoo_java_log() {
-
         for (a in a_count_java_zoo) {
             start_pos=a_count_java_zoo[c - 1]
             # The if below 
@@ -195,7 +194,6 @@ awk '
     #              1 - Failure 
     ############################################################
     function zoo_python_log() {
-
             start_pos=a_count_python_zoo[e -1]
             # The if statement below is a safety measure as we do not want to
             # go past  array boundary.  The chances of it happening are probably nil though
@@ -249,32 +247,28 @@ awk '
         return(0)
     }
 
-
                                            { LINE[NR] = $0                 }
     ###########################
     # Pattern matching for C++/zooVisitorPattern/zooVisitor.out
     #                      and C++/zooPolymorphism/zoo.cpp
     ###########################
-    /^Number of /                          { initial_val_c_plus_plus[a++] = NR }
-    /^Printing vector contents\.\.\.\.$/   { end_zoo_c_plus_plus[b++] = NR     }
-    / rnumFeed: /                          { c_plus_plus[z++] = NR             }
+    /^Number of /                            { initial_val_c_plus_plus[a++] = NR }
+    /^Printing vector contents\.\.\.\.$/     { end_zoo_c_plus_plus[b++] = NR     }
+    / rnumFeed: /                            { c_plus_plus[z++] = NR             }
 
     ###########################
     # Pattern matching for Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
     ###########################
-    /::animalFactory\(\): Returning new obj/ { a_count_java_zoo[c++] = NR    }
-    / Printing attributes of all instance/   { end_zoo_java_log[d++] = NR    }
+    /::animalFactory\(\): Returning new obj/ { a_count_java_zoo[c++] = NR        }
+    / Printing attributes of all instance/   { end_zoo_java_log[d++] = NR        }
 
     ###########################
     # Pattern matching for Scripts/Python/zoo/zoo.out
     ###########################
-    /::ctor name = </                      { a_count_python_zoo[e++] = NR    }
-    /printAllInstances\(\) is dumping zoo /  { end_zoo_python_log[f++] = NR    }
+    /::ctor name = </                        { a_count_python_zoo[e++] = NR      }
+    /printAllInstances\(\) is dumping zoo /  { end_zoo_python_log[f++] = NR      }
 
     END {
-
-    # Array initial_val_c_plus_plus contains the line number of all matched patterns that
-    # we are interested in
 
     if (ARGC != 2) {
         printf("USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
@@ -291,7 +285,7 @@ awk '
             printf("********************************************\n\n")
         } else {
             printf("\n********************************************")
-            printf("\n**** Detected that the input file is from zooVisitor.cpp ****\n\n")
+            printf("\n**** Detected that the input file is from zooVisitor.cpp ****\n")
             printf("********************************************\n\n")
         } 
         ret = zoo_C_PlusPlus_logs()
@@ -303,7 +297,6 @@ awk '
         if (ret = zoo_java_log() != 0) {
             ret=1;
         }
-
 
     } else if (e > 0) {
         printf("\n********************************************")
