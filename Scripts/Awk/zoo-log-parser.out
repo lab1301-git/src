@@ -1,0 +1,71 @@
+Fri Oct  8 22:15:17 BST 2021
+CYGWIN_NT-10.0 lab1301-Ryzen5 3.2.0(0.340/5/3) 2021-03-29 08:42 x86_64 Cygwin
+
+Processing /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+awk-zoo-parser.sh /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-parser.sh: BASE_DIR not set.  Setting BASE_DIR to '/home/lab1301/src/lab1301-git/src'... 
+awk-zoo-parser.sh: We have been passed an arg ('/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+awk-zoo-parser.sh: Using file ''... 
+awk-zoo-parser.sh: Using input file '/home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out'... 
+Processing logfile: /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+awk-zoo-parser.sh: /home/lab1301/src/lab1301-git/src/Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+
+awk-zoo-parser.sh: Detected that the input file is from zoo.java ...
+awk-zoo-parser.sh: We are starting with 15 healthy animals
+
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+
+==========================================
+
+
+Processing /home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out...
+awk-zoo-parser.sh /home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-parser.sh: BASE_DIR not set.  Setting BASE_DIR to '/home/lab1301/src/lab1301-git/src'... 
+awk-zoo-parser.sh: We have been passed an arg ('/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out')
+awk-zoo-parser.sh: Using file ''... 
+awk-zoo-parser.sh: Using input file '/home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out'... 
+Processing logfile: /home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out...
+awk-zoo-parser.sh: /home/lab1301/src/lab1301-git/src/C++/zooVisitorPattern/zooVisitor.out
+
+awk-zoo-parser.sh: Detected that the input file is from zooVisitor.cpp...
+
+awk-zoo-parser.sh: We are starting with 5 healthy Elephants
+
+awk-zoo-parser.sh: We are starting with 5 healthy Monkeys
+
+awk-zoo-parser.sh: We are starting with 5 healthy Giraffe's's
+
+awk-zoo-parser.sh: Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+awk-zoo-parser.sh: Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+awk-zoo-parser.sh: Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+awk-zoo-parser.sh: Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+awk-zoo-parser.sh: Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+awk-zoo-parser.sh: Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+awk-zoo-parser.sh: Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+awk-zoo-parser.sh: Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+awk-zoo-parser.sh: Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+awk-zoo-parser.sh: Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+awk-zoo-parser.sh: Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+awk-zoo-parser.sh: Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+awk-zoo-parser.sh: Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+awk-zoo-parser.sh: Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+awk-zoo-parser.sh: Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+
+==========================================
+
