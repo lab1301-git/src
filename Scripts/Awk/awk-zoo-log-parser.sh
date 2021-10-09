@@ -62,10 +62,10 @@ awk '
             # go past  array boundary
             if (start_pos < NR) {
                 n = split(LINE[start_pos], arrA)
-                printf("'${SCRIPT}': We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
+                printf("We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
              
             } else {
-                printf("\n'${SCRIPT}': *** Warning! %d > %d ***\n", start_pos, NR)
+                printf("\n*** Warning! %d > %d ***\n", start_pos, NR)
                 return(1) 
             }
         }
@@ -77,7 +77,7 @@ awk '
             if ( LINE[i] ~ /-----------/) {
                 if (count > 0) {
                     printf(  \
-                        "'${SCRIPT}': Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n",\
+                        "Animal id: %-2d %-8s has been fed %d times and has an health of <%-2.2f> and is <%s>\n",\
                         arrQ[q], arrP[p], arrS[s], arrR[r], arrT[t]\
                     )
                 }
@@ -137,7 +137,7 @@ awk '
             str=arrA[n]
             p = split(arrA[n], arrB, ">")  
         }
-        printf("'${SCRIPT}': We are starting with '%s' healthy animals\n\n", arrB[p - 1])
+        printf("We are starting with '%s' healthy animals\n\n", arrB[p - 1])
 
         # We are only interested in the Status of the animals at the
         # very end and that information is available in this loop
@@ -202,9 +202,9 @@ awk '
             if (start_pos < NR) {
                 n = split(LINE[start_pos], arrA)
                 animalNum=substr(arrA[5], 6, 2)
-                printf("'${SCRIPT}': We are starting with '%d' healthy animals\n", animalNum)
+                printf("We are starting with '%d' healthy animals\n", animalNum)
             } else {
-                printf("\n'${SCRIPT}': *** Warning! %d > %d ***\n", start_pos, NR)
+                printf("\n*** Warning! %d > %d ***\n", start_pos, NR)
                 return(1) 
             }
 
@@ -216,7 +216,7 @@ awk '
         for (i=end_zoo_python_log[f - 1] + 4; i<NR; i++) {
             if (LINE[i] ~ /--------/ || LINE[i] ~ /^========================================$/) { 
                 if (count > 0) {
-                    printf("'${SCRIPT}': Animal id: %-2d %-11s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", arrQ[q], arrP[p], arrS[3], arrR[r - 1], arrT[t])
+                    printf("Animal id: %-2d %-11s has been fed %d times and has an health of <%-2.2f> and is <%s>\n", arrQ[q], arrP[p], arrS[3], arrR[r - 1], arrT[t])
                 }
                 continue
             } 
@@ -277,28 +277,28 @@ awk '
     # we are interested in
 
     if (ARGC != 2) {
-        printf("'${SCRIPT}': USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
+        printf("USAGE:\n%s <zoo simulation logfile>\n", ARGV[0])
         exit
     }
 
-    printf("'${SCRIPT}': Processing logfile: %s...\n", FILENAME)
-    #printf("'${SCRIPT}': %s\n", ARGV[1])
+    printf("Processing logfile: %s...\n", FILENAME)
+    #printf("%s\n", ARGV[1])
 
     if (b > 0) {
         if (z > 0) {
             printf("\n********************************************")
-            printf("\n'${SCRIPT}': **** Detected that the input file is from zooPolymorphism.cpp ****\n")
+            printf("\n**** Detected that the input file is from zooPolymorphism.cpp ****\n")
             printf("********************************************\n\n")
         } else {
             printf("\n********************************************")
-            printf("\n'${SCRIPT}': **** Detected that the input file is from zooVisitor.cpp ****\n\n")
+            printf("\n**** Detected that the input file is from zooVisitor.cpp ****\n\n")
             printf("********************************************\n\n")
         } 
         ret = zoo_C_PlusPlus_logs()
 
     } else if (c > 0) {
         printf("\n********************************************")
-        printf("\n'${SCRIPT}': **** Detected that the input file is from zoo.java ****\n")
+        printf("\n**** Detected that the input file is from zoo.java ****\n")
         printf("********************************************\n\n")
         if (ret = zoo_java_log() != 0) {
             ret=1;
@@ -307,17 +307,19 @@ awk '
 
     } else if (e > 0) {
         printf("\n********************************************")
-        printf("\n'${SCRIPT}': **** Detected that the input file is from zoo.py ****\n")
+        printf("\n**** Detected that the input file is from zoo.py ****\n")
         printf("********************************************\n\n")
         if (ret = zoo_python_log() != 0) {
             ret=1;
         }
 
     } else {
-        printf("\n'${SCRIPT}': *** FATAL *** Unsupported file type passed as an argument\n")
+        printf("\n*** FATAL *** Unsupported file type passed as an argument\n")
         ret=1  
     }
 
-    printf("\n")
+    printf("\n********************************************")
+    printf("\nFinished processing logfile: %s\n", FILENAME)
+    printf("********************************************\n")
     exit(ret)
 }' ${INPUT}
