@@ -125,18 +125,16 @@ awk '
     #              1 - Failure 
     ############################################################
     function zoo_java_log() {
-        for (a in a_count_java_zoo) {
-            start_pos=a_count_java_zoo[c - 1]
-            # The if below 
-            if (start_pos > NR) {
-                printf("\n'${SCXRIPT}':zoo_java_log(): start_pos > NR (%d > %d)\n", start_pos, NR)
-                return(1) 
-            }
-            n = split(LINE[start_pos], arrA, "<")
-            str=arrA[n]
-            p = split(arrA[n], arrB, ">")  
+        start_pos=a_count_java_zoo[c - 1]
+        # The if below 
+        if (start_pos > NR) {
+            printf("\n'${SCRIPT}':zoo_java_log(): start_pos > NR (%d > %d)\n", start_pos, NR)
+            return(1) 
         }
-        printf("We are starting with '%s' healthy animals\n\n", arrB[p - 1])
+        n = split(LINE[start_pos], arrA, "<")
+        str=arrA[n]
+        p = split(arrA[n], arrB, ">")  
+        printf("We are starting with '%s' healthy animals\n", arrB[p - 1])
 
         # We are only interested in the Status of the animals at the
         # very end and that information is available in this loop

@@ -39,7 +39,6 @@ Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out.
 ********************************************
 
 We are starting with 15 healthy animals
-
 Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
 Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
 Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
