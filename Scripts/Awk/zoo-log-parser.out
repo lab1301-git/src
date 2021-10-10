@@ -118,3 +118,723 @@ Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and 
 ********************************************
 Finished processing logfile: ../Python/zoo/zoo.out
 ********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooVisitorPattern/zooVisitor.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooVisitorPattern/zooVisitor.out')
+Processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out...
+
+********************************************
+**** Detected that the input file is from zooVisitor.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 0 times and has an health of <45.49> and is <Live>
+Animal id: 1  Giraffe  has been fed 0 times and has an health of <48.63> and is <Dead>
+Animal id: 2  Elephant has been fed 0 times and has an health of <55.58> and is <Dead>
+Animal id: 3  Monkey   has been fed 0 times and has an health of <42.91> and is <Live>
+Animal id: 4  Giraffe  has been fed 0 times and has an health of <49.58> and is <Dead>
+Animal id: 5  Elephant has been fed 0 times and has an health of <52.37> and is <Dead>
+Animal id: 6  Monkey   has been fed 0 times and has an health of <27.15> and is <Dead>
+Animal id: 7  Giraffe  has been fed 0 times and has an health of <48.29> and is <Dead>
+Animal id: 8  Elephant has been fed 0 times and has an health of <53.15> and is <Dead>
+Animal id: 9  Monkey   has been fed 0 times and has an health of <47.89> and is <Live>
+Animal id: 10 Giraffe  has been fed 0 times and has an health of <44.29> and is <Dead>
+Animal id: 11 Elephant has been fed 0 times and has an health of <67.60> and is <Dead>
+Animal id: 12 Monkey   has been fed 0 times and has an health of <27.98> and is <Dead>
+Animal id: 13 Giraffe  has been fed 0 times and has an health of <49.20> and is <Dead>
+Animal id: 14 Elephant has been fed 0 times and has an health of <61.30> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooVisitorPattern/zooVisitor.out
+********************************************
+awk-zoo-log-parser.sh ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out')
+Processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.java ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: Monkey-1    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-2   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-3  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-4    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-5   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-6  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-7    has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-8   has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-9  has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-10   has been fed 2 times and has an health of <30.00> and is <HEALTHY>
+Animal id: Giraffe-11  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-12 has been fed 1 times and has an health of <70.00> and is <DEAD>
+Animal id: Monkey-13   has been fed 1 times and has an health of <30.00> and is <DEAD>
+Animal id: Giraffe-14  has been fed 1 times and has an health of <50.00> and is <DEAD>
+Animal id: Elephant-15 has been fed 1 times and has an health of <70.00> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../../Eclipse/Java/zooSimulation/target/classes/zoo/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../../C++/zooPolymorphism/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../../C++/zooPolymorphism/zoo.out')
+Processing logfile: ../../C++/zooPolymorphism/zoo.out...
+
+********************************************
+**** Detected that the input file is from zooPolymorphism.cpp ****
+********************************************
+
+We are starting with 5 healthy Elephants
+We are starting with 5 healthy Monkeys
+We are starting with 5 healthy Giraffe's's
+Animal id: 0  Monkey   has been fed 14 times and has an health of <57.47> and is <Live>
+Animal id: 1  Giraffe  has been fed 18 times and has an health of <47.90> and is <Dead>
+Animal id: 2  Elephant has been fed 23 times and has an health of <57.41> and is <Dead>
+Animal id: 3  Monkey   has been fed 14 times and has an health of <29.00> and is <Dead>
+Animal id: 4  Giraffe  has been fed 18 times and has an health of <43.03> and is <Dead>
+Animal id: 5  Elephant has been fed 23 times and has an health of <55.93> and is <Dead>
+Animal id: 6  Monkey   has been fed 14 times and has an health of <56.02> and is <Live>
+Animal id: 7  Giraffe  has been fed 18 times and has an health of <46.33> and is <Dead>
+Animal id: 8  Elephant has been fed 23 times and has an health of <55.72> and is <Dead>
+Animal id: 9  Monkey   has been fed 14 times and has an health of <49.60> and is <Live>
+Animal id: 10 Giraffe  has been fed 18 times and has an health of <47.24> and is <Dead>
+Animal id: 11 Elephant has been fed 23 times and has an health of <58.38> and is <Dead>
+Animal id: 12 Monkey   has been fed 14 times and has an health of <28.34> and is <Dead>
+Animal id: 13 Giraffe  has been fed 18 times and has an health of <46.35> and is <Dead>
+Animal id: 14 Elephant has been fed 23 times and has an health of <62.55> and is <Dead>
+
+********************************************
+Finished processing logfile: ../../C++/zooPolymorphism/zoo.out
+********************************************
+awk-zoo-log-parser.sh ../Python/zoo/zoo.out
+awk-zoo-log-parser.sh: Env var BASE_DIR is set to '/home/lab1301/src/lab1301-git/src'
+awk-zoo-log-parser.sh: We have been passed an arg ('../Python/zoo/zoo.out')
+Processing logfile: ../Python/zoo/zoo.out...
+
+********************************************
+**** Detected that the input file is from zoo.py ****
+********************************************
+
+We are starting with 15 healthy animals
+Animal id: 1  Monkey-1    has been fed 6 times and has an health of <37.48> and is <HEALTHY>
+Animal id: 2  Giraffe-2   has been fed 5 times and has an health of <47.34> and is <DEAD>
+Animal id: 3  Elephant-3  has been fed 5 times and has an health of <62.37> and is <DEAD>
+Animal id: 4  Monkey-4    has been fed 6 times and has an health of <38.61> and is <HEALTHY>
+Animal id: 5  Giraffe-5   has been fed 5 times and has an health of <45.42> and is <DEAD>
+Animal id: 6  Elephant-6  has been fed 5 times and has an health of <53.75> and is <DEAD>
+Animal id: 7  Monkey-7    has been fed 6 times and has an health of <45.41> and is <HEALTHY>
+Animal id: 8  Giraffe-8   has been fed 6 times and has an health of <62.86> and is <HEALTHY>
+Animal id: 9  Elephant-9  has been fed 5 times and has an health of <55.73> and is <DEAD>
+Animal id: 10 Monkey-10   has been fed 6 times and has an health of <44.93> and is <HEALTHY>
+Animal id: 11 Giraffe-11  has been fed 5 times and has an health of <43.54> and is <DEAD>
+Animal id: 12 Elephant-12 has been fed 5 times and has an health of <57.78> and is <DEAD>
+Animal id: 13 Monkey-13   has been fed 6 times and has an health of <40.58> and is <HEALTHY>
+Animal id: 14 Giraffe-14  has been fed 5 times and has an health of <45.33> and is <DEAD>
+Animal id: 15 Elephant-15 has been fed 5 times and has an health of <63.34> and is <DEAD>
+
+********************************************
+Finished processing logfile: ../Python/zoo/zoo.out
+********************************************
