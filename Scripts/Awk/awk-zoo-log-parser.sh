@@ -60,14 +60,8 @@ awk '
             start_pos=initial_val_c_plus_plus[a]
             # The if statement below is a safety measure as we do not want to
             # go past  array boundary
-            if (start_pos < NR) {
-                n = split(LINE[start_pos], arrA)
-                printf("We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
-             
-            } else {
-                printf("\n*** Warning! %d > %d ***\n", start_pos, NR)
-                return(1) 
-            }
+            n = split(LINE[start_pos], arrA)
+            printf("We are starting with '%d' healthy '%s'\n", arrA[n], arrA[3])
         }
 
         # We are only interested in the Status of the animals at the
@@ -126,11 +120,6 @@ awk '
     ############################################################
     function zoo_java_log() {
         start_pos=a_count_java_zoo[c - 1]
-        # The if below 
-        if (start_pos > NR) {
-            printf("\n'${SCRIPT}':zoo_java_log(): start_pos > NR (%d > %d)\n", start_pos, NR)
-            return(1) 
-        }
         n = split(LINE[start_pos], arrA, "<")
         str=arrA[n]
         p = split(arrA[n], arrB, ">")  
@@ -192,17 +181,10 @@ awk '
     #              1 - Failure 
     ############################################################
     function zoo_python_log() {
-            start_pos=a_count_python_zoo[e -1]
-            # The if statement below is a safety measure as we do not want to
-            # go past  array boundary.  The chances of it happening are probably nil though
-            if (start_pos < NR) {
-                n = split(LINE[start_pos], arrA)
-                animalNum=substr(arrA[5], 6, 2)
-                printf("We are starting with '%d' healthy animals\n", animalNum)
-            } else {
-                printf("\n*** Warning! %d > %d ***\n", start_pos, NR)
-                return(1) 
-            }
+        start_pos=a_count_python_zoo[e -1]
+        n = split(LINE[start_pos], arrA)
+        animalNum=substr(arrA[5], 6, 2)
+        printf("We are starting with '%d' healthy animals\n", animalNum)
 
         # We are only interested in the Status of the animals at the
         # very end and that information is available in this loop
