@@ -40,11 +40,9 @@
 
 from abc import ABC, abstractmethod
 from inspect import currentframe, getframeinfo
+from curses import wrapper
 import datetime, itertools, os, sys, random, time
-import logging, pwd, platform
-
-print ("Python version: %s" % sys.version)
-
+import logging, pwd, platform, curses, traceback
 
 class zooException(Exception):
     def __init__(self, message):
@@ -74,7 +72,16 @@ class animals(ABC):
     g_feed_rnum = 0
     e_feed_rnum = 0
 
+    menu_options = {
+
+            1:    'Feed All Animals',
+            2:    'Adjust Health Down',
+            3:    'Print All Instances',
+            4:    'Exit',
+    }
+
     __zoo = []  # A private array of derived animal objects
+    __lastOption = 1
     __script = "%s" % (os.path.basename(sys.argv[0]))
     __logdir = "/tmp"
     __starStr = "***************************************************************"
@@ -96,6 +103,179 @@ class animals(ABC):
     @classmethod
     def getFstr(cls):
         return cls.__fatalStr
+
+    @classmethod
+    def dummyInput(cls):
+        __func = "%s:dummyInput():" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        promptStr = "\n\n\t\t...Press any key to continue\n"
+        logger.info("%s %s" % (__func, promptStr))
+        dummy = input(promptStr)
+        return 0
+
+    @classmethod
+    def setLastOption(cls, option):
+        __func = "%s:setLastOption()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        logger.info("%s Setting __lastOption to '%s'" % (__func, str(option)) )
+        cls.__lastOption = option
+        return 0
+
+    @classmethod
+    def getLastOption(cls):
+        __func = "%s:getLastOption()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        logger.info("%s Returning __lastOption '%s'" % (__func, cls.__lastOption))
+        return cls.__lastOption
+
+    @classmethod
+    def cursesMenu(cls):
+        __func = "%s:cursesMenu()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        option = 0
+        try:
+            stdscr = curses.initscr()
+            curses.noecho()
+            curses.cbreak()
+
+            stdscr.keypad(1)
+            stdscr.border(1)
+            stdscr.clear()
+            spacing = 2
+            (maxcol, maxline) = stdscr.getmaxyx()
+            start_line = 10
+            line = start_line
+            print("%s: maxcol=%d  maxline=%d" % (__func, maxcol, maxline))
+            col = int(maxcol/2)
+            stdscr.addstr(line -3, col + 10, 'MAIN MENU', curses.A_UNDERLINE) 
+            rev_pos = 0
+            col += 8
+            for key in animals.menu_options.keys():
+                if (key ==  1):  
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[key]), curses.A_REVERSE)
+                    rev_pos = key
+                else:
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[key]), curses.A_NORMAL)
+                line += spacing 
+
+            navigation = "Up/Down \u2191\u2193    Use <CR> for selection     <q> for Exit"
+            stdscr.addstr(line + 1, col - 10, "%s" % (navigation), curses.A_STANDOUT)
+            statusLine = line + 3
+            statusCol = col - 10
+            logfile = cls.getLogfile()
+            current_branch = "method not implemented as yet!"
+            #stdscr.addstr(statusLine, statusCol, "Status messages" % curses.A_NORMAL)
+            stdscr.addstr(line - spacing, col + 5, "")
+
+            key = 0
+            option = 1
+            prev = 1
+            line = start_line
+            while True:
+                ch = int(stdscr.getch())
+                if (ch == ord('q')): 
+                    option = len(animals.menu_options)
+
+                if (ch == ord('q') or ch == ord('\n')): 
+                    break
+
+                elif (int(ch) > int(48) and int(ch) <= (48 + len(animals.menu_options))):
+                    option = it(ch) - 48
+
+                elif (ch == curses.KEY_DOWN):
+                    prev = option
+                    option += 1
+                    if (option > len(animals.menu_options)):
+                        stdscr.addstr(line, col, "%s" % (animals.menu_options[prev]), curses.A_NORMAL)
+                        option = 1
+                        key = 0
+                        option = key
+                        line = start_line
+                        stdscr.addstr(line, col, "%s" % (animals.menu_options[option]), curses.A_REVERSE)
+                        continue
+                    key += 1
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[prev]), curses.A_NORMAL)
+
+                    line += spacing
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[option]), curses.A_REVERSE)
+
+                elif (ch == curses.KEY_UP):
+                    prev = option
+                    option -= 1
+                    if (option < 1):
+                        option = len(animals.menu_options)
+                        stdscr.addstr(line, col, "%s" % (animals.menu_options[prev]), curses.A_NORMAL)
+                        line = start_line + (len(animals.menu_options) * spacing) - spacing
+                        stdscr.addstr(line, col, "%s" % (animals.menu_options[option]), curses.A_REVERSE)
+                        continue
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[prev]), curses.A_NORMAL)
+
+                    line -= spacing
+                    stdscr.addstr(line, col, "%s" % (animals.menu_options[option]), curses.A_REVERSE)
+        except:
+            traceback.print_exc()
+
+        finally:
+            stdscr.keypad(0)
+            curses.echo()
+            curses.nocbreak()
+            curses.endwin()
+
+        logger.info("%s Returning option '%d'" % (__func, option))
+        cls.setLastOption(option)
+        return option
+
+    @classmethod
+    def handleInput(self):
+        __func = "%s:handleInput()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
+        ret = 1
+        try:
+            cwd = os.getcwd()
+        except OSError as e:
+            logger.critical("%s getcwd() encountered an error for '%s'" % (__func, str(e)))
+            frameinfo = getframeinfo(currentframe())
+            logger.debug("%s %s lineno %s" % (__func, frameinfo.filename, frameinfo.lineno))
+            return 1
+        if (__name__ == '__main__'):
+            while (True):
+                option = self.cursesMenu()
+                logger.info("%s: cursesMenu() returned option '%s'" % (__func, str(option)))
+                
+                if (option == 1):
+                    os.system('clear')
+                    ret = self.feedAllAnimals(self)
+                    ret = animals.dummyInput()
+
+                elif (option == 2):
+                    os.system('clear')
+                    ret = self.adjustHealthDownAllAnimals(self)
+                    ret = animals.dummyInput()
+
+                elif (option == 3):
+                    os.system('clear')
+                    ret = self.printAllInstances(self)
+                    ret =     animals.dummyInput()
+
+                elif (option == len(animals.menu_options)):
+                    os.system('clear')
+                    ret = len(animals.menu_options)
+                    break
+
+                else:
+                    print("\n\n            '%s' is an invalid option" % (str(option)))
+                    logger.warning("\n\n            '%s' is an invalid option" % (str(option)))
+                    time.sleep(3)
+        return ret
 
     @classmethod
     def getTime(cls):
@@ -169,6 +349,9 @@ class animals(ABC):
 
         # Start updating logfile
         logger.info("\n%s" % (__func))
+        print ("Python version: %s" % sys.version)
+        logger.info("Python version: %s" % sys.version)
+
         print(msg) 
         logger.info(msg) 
 
@@ -528,6 +711,9 @@ class animals(ABC):
         __func = "%s:runWrapper()" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
+        ret = animals.handleInput()
+
+        """
         # print contents of animals.zoo list array
         self.printAllInstances()
 
@@ -591,7 +777,8 @@ class animals(ABC):
 
         self.feedAllAnimals()
         self.printAllInstances()
-        return 0
+        """
+        return ret
 
     @classmethod
     def incrementFeedCount(cls):
