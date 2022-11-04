@@ -39,7 +39,9 @@
 ######################################################################
 
 from abc import ABC, abstractmethod
-import datetime, itertools, os, sys, random
+from inspect import currentframe, getframeinfo
+import datetime, itertools, os, sys, random, time
+import logging, pwd, platform
 
 print ("Python version: %s" % sys.version)
 
@@ -73,6 +75,152 @@ class animals(ABC):
     e_feed_rnum = 0
 
     __zoo = []  # A private array of derived animal objects
+    __script = "%s" % (os.path.basename(sys.argv[0]))
+    __logdir = "/tmp"
+    __starStr = "***************************************************************"
+    __fatalStr = "*** FATAL ERROR ***"
+    __warningStr = "*** WARNING ***"
+
+    @classmethod
+    def getScriptName(cls):
+        return cls.__script
+
+    @classmethod
+    def getSstr(cls):
+        return cls.__starStr
+
+    @classmethod
+    def getWstr(cls):
+        return cls.__warningStr
+
+    @classmethod
+    def getFstr(cls):
+        return cls.__fatalStr
+
+    @classmethod
+    def getTime(cls):
+        __func = "%s:getTime()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        ts = datetime.datetime.now()
+        ts_fmt = "%d/%m/%Y %H:%M:%S"
+        fmt_time = ts.strftime(ts_fmt)
+        return fmt_time
+
+    @classmethod
+    def returnLoggerObject(cls):
+        __func = "%s:returnLoggerObject()" % (cls.getScriptName())
+        # Return a reference to the same logger instance consistently
+        return logging.getLogger(cls.getScriptName())
+
+    @classmethod
+    def getLogfile(cls):
+        __func = "%s:getLogfile()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+        
+        uid = pwd.getpwuid(os.getuid())[0]
+        script = (cls.getScriptName()).split('.')[0]
+        dt = datetime.datetime.now()
+        ts_fmt = "%A"
+        day_of_week = dt.strftime(ts_fmt)[0:3]
+
+        logfile = "%s/%s-%s-%s.log" % (cls.__logdir, script, uid, day_of_week)
+        logger.info("\n%s" % (__func))
+
+        print("%s Returning logfile ('%s')" % (__func, logfile))
+        logger.info("%s Returning logfile ('%s')" % (__func, logfile))
+        return logfile
+
+    @classmethod
+    def turnLoggingOn(cls):
+        __func = "%s:turnLoggingOn" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logfile = cls.getLogfile()
+        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.CRITICAL)
+        logger.setLevel(logging.DEBUG)
+         
+        fmt = "%d/%m/%Y %H:%M:%S"
+        current_date = datetime. datetime.now()
+        fmt_current_date = current_date.strftime(fmt)
+        today = datetime.datetime.strptime(fmt_current_date, fmt)
+
+        try:
+            # Calculate logfile modification time since epoch.  Unlike WINDOWS, there is no
+            # file creation time in UNIX so we use mtime instead of ctime.
+            mtime = os.path.getmtime(logfile)
+            fmt_mtime = time.strftime(fmt, time.localtime(mtime))
+            log_modified_date = datetime.datetime.strptime(fmt_mtime, fmt)
+            msg = "%s Found existing logfile '%s'" % (__func, logfile)
+        except FileNotFoundError as e:
+            log_modified_date = today
+            frameinfo = getframeinfo(currentframe())
+            line_no = "%s %s lineno %s" % (__func, frameinfo.filename, frameinfo.lineno)
+            msg = "%s\n\n%s ** %s ** Logfile '%s' is missing.  Creating a new logfile..." % (line_no, __func, e, logfile)
+            logger.info("%s ** %s ** Logfile '%s' is missing.  Creating a new logfile..." % (__func, e, logfile))
+            time.sleep(2)
+
+        # Open/create logfile
+        log_fd = logging.FileHandler(logfile)
+        logger.addHandler(log_fd)
+
+        # Start updating logfile
+        logger.info("\n%s" % (__func))
+        print(msg) 
+        logger.info(msg) 
+
+        # Calculate when the log was last modified.  If the logfile is
+        # more than 6 days old rename it.
+        age_of_logfile = (today - log_modified_date).days
+        log_move = 0
+        if (age_of_logfile > 6):
+            old_logfile = "%s.old" % (logfile)
+            os.rename(logfile, old_logfile)
+            log_move = 1
+
+        if (log_move == 1):
+            logger.info(
+                "%s Logfile '%s' was last modified on '%s'"
+                     % (__func, logfile, log_modified_date)
+            )
+            logger.info(
+                "%s Renamed '%s' to '%s' as it was '%d' days old"
+                     % (__func, logfile, old_logfile, age_of_logfile)
+            )
+
+        else:
+            logger.info("%s Not renaming logfile '%s' as it was last modified on '%s' - only '%d' day(s) ago" % (__func, logfile, log_modified_date, age_of_logfile))
+        print("%s Logging output to '%s'" % (__func, logfile))    
+        logger.info("%s Logging output to '%s'" % (__func, logfile))    
+        return 0
+
+    @classmethod
+    def logStart(cls):
+        __func = "%s:logStart()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        logfile = cls.getLogfile()
+        print("\n\n")
+        logger.info("\n\n")
+        print(
+            "%s\n%s Starting '%s' on '%s' for '%s' at '%s'"
+                 % (cls.getSstr(), __func, cls.getScriptName(), platform.node(),
+                     pwd.getpwuid(os.getuid())[0], cls.getTime())
+        )
+        logger.info(
+            "%s\n%s Starting '%s' on '%s' for '%s' at '%s'"
+                 % (cls.getSstr(), __func, cls.getScriptName(), platform.node(),
+                     pwd.getpwuid(os.getuid())[0], cls.getTime())
+        )
+        print(cls.getSstr())
+        logger.info(cls.getSstr())
+        print("\n\n")
+        logger.info("\n\n")
+        return 0
 
     @classmethod
     def loadData(cls, animal):
@@ -88,6 +236,9 @@ class animals(ABC):
 
     @classmethod
     def getObject(cls, idx):
+        __func = "%s:getObject()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
         if (animals.getObjectCount() > idx):
             return(animals.__zoo[idx])
         else:
@@ -95,8 +246,11 @@ class animals(ABC):
             try:
                 raise zooException(str)
             except zooException as err:
-                 
+                frameinfo = getframeinfo(currentframe())
+                print("%s %s lineno %s" % (__func, frameinfo.filename, frameinfo.lineno))
+                logger.info("%s %s lineno %s" % (__func, frameinfo.filename, frameinfo.lineno))
                 print("\nanimals::getObject(): Fatal error:", err.message)
+                logger.info("\nanimals::getObject(): Fatal error:", err.message)
                 return 1
             return 0
 
@@ -118,13 +272,19 @@ class animals(ABC):
     # These three class attributes are available to all instances 
     @classmethod
     def setFeedRval(cls, m, g, e):
+        __func = "%s:setFeedRval()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
         cls.m_feed_rnum = m
         cls.g_feed_rnum = g
         cls.e_feed_rnum = e
 
         print("\nanimals::setFeedRval(): m_feed_rnum=<%d>" % (cls.m_feed_rnum))
+        logger.info("\nanimals::setFeedRval(): m_feed_rnum=<%d>" % (cls.m_feed_rnum))
         print("animals::setFeedRval(): g_feed_rnum=<%d>" % (cls.g_feed_rnum))
+        logger.info("animals::setFeedRval(): g_feed_rnum=<%d>" % (cls.g_feed_rnum))
         print("animals::setFeedRval(): e_feed_rnum=<%d>\n" % (cls.e_feed_rnum))
+        logger.info("animals::setFeedRval(): e_feed_rnum=<%d>\n" % (cls.e_feed_rnum))
         return 0 
 
     def getMonkeyFeedRnum(self):
@@ -149,12 +309,21 @@ class animals(ABC):
 
     @classmethod
     def printBanner(cls, str):
+        __func = "%s:printBanner()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
         print("\n#############################################################")
+        logger.info("\n#############################################################")
         print("########## %s ##########" %(str));
+        logger.info("########## %s ##########" %(str));
         print("#############################################################")
+        logger.info("#############################################################")
         return 0
         
     def printInstance(self):
+        __func = "%s:printInstance()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         rval      = "  Animal type  specific feed random number (0 == not fed yet!)"
         fedNum    = "   ** number of times fed **"
         healthRed = "   ** number of times health reduced **"
@@ -162,33 +331,56 @@ class animals(ABC):
             feed_s ="    ** FeedVal is -1 as animal is yet to be fed! **" 
 
         print("\n---------- printInstance() ----------")
+        logger.info("\n---------- printInstance() ----------")
         print("    Name      = %s" % self.getName())
+        logger.info("    Name      = %s" % self.getName())
         print("    Idx       = %d" % self.getIdx())
+        logger.info("    Idx       = %d" % self.getIdx())
         print("    Health    = %f  (Threshold=%d)" % (self.getHealth(), self.getThresholdConst()))
+        logger.info("    Health    = %f  (Threshold=%d)" % (self.getHealth(), self.getThresholdConst()))
         print("    FeedVal   = %d  %s" % (self.getFeedValue(), rval))
+        logger.info("    FeedVal   = %d  %s" % (self.getFeedValue(), rval))
         print("    FeedRuns  = %s  %s" % (self.getFeedRun(), fedNum))
+        logger.info("    FeedRuns  = %s  %s" % (self.getFeedRun(), fedNum))
         print("    HealthRun = %s  %s" % (self.getHealthRunDown(), healthRed))
+        logger.info("    HealthRun = %s  %s" % (self.getHealthRunDown(), healthRed))
         print("    Status    = %s" % self.getStatus())
+        logger.info("    Status    = %s" % self.getStatus())
         return 0
 
     def printAllInstances(self):
+        __func = "%s:printAllInstances()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         str = "printAllInstances() is dumping zoo list data"
         animals.printBanner(str);
         for obj in animals.getListData():
             obj.printInstance()
         
     def printHealthAttr(self):
+        __func = "%s:printHealthAttr()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         feed_s =   "   ** number of times fed **"
         health_s = "   ** number of times health reduced **"
         print("---------- <%s> ----------" % (self.getName()))
+        logger.info("---------- <%s> ----------" % (self.getName()))
         print("    Health     = %f" % self.getHealth())
+        logger.info("    Health     = %f" % self.getHealth())
         print("    Status     = %s" % self.getStatus())
+        logger.info("    Status     = %s" % self.getStatus())
         print("    Threshold  = %s" % self.getThresholdConst())
+        logger.info("    Threshold  = %s" % self.getThresholdConst())
         print("    FeedRuns   = %s  %s" % (self.getFeedRun(), feed_s))
+        logger.info("    FeedRuns   = %s  %s" % (self.getFeedRun(), feed_s))
         print("    HealthDown = %s  %s" % (self.getHealthRunDown(), health_s))
+        logger.info("    HealthDown = %s  %s" % (self.getHealthRunDown(), health_s))
         return 0
 
     def changeStatus(self):
+        __func = "%s:changeStatus()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         chg = False
         if (self.getStatus() == animals.DEAD):
             return 0
@@ -196,26 +388,31 @@ class animals(ABC):
         elif (self.getStatus() == animals.LAME and
                             self.getHealth() < self.getThresholdConst()):
             print("adjustHealthDownAllAnimals(1): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
+            logger.info("adjustHealthDownAllAnimals(1): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             chg=True
             self.setStatus(animals.DEAD)
 
         elif (self.getStatus() == animals.LAME and
                  (self.getHealth() >= self.getThresholdConst())):
             print("adjustHealthDownAllAnimals(2): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LIVE, self.getName()))
+            logger.info("adjustHealthDownAllAnimals(2): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LIVE, self.getName()))
             self.setStatus(animals.LIVE)
             chg=True
 
         elif ((self.getType() == animals.ELEPHANT) and
                  (self.getHealth() < self.getThresholdConst())):
             print("adjustHealthDownAllAnimals(3): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LAME, self.getName()))
+            logger.info("adjustHealthDownAllAnimals(3): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.LAME, self.getName()))
             self.setStatus(animals.LAME)
 
         elif (self.getHealth() < self.getThresholdConst()):
             print("adjustHealthDownAllAnimals(4): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
+            logger.info("adjustHealthDownAllAnimals(4): Status now %-7s -> %-7s for <%-11s>" % (self.getStatus(), animals.DEAD, self.getName()))
             self.setStatus(animals.DEAD)
 
         else:
             print("adjustHealthDownAllAnimals(5): No change to status (%-7s) for <%-11s>" % (self.getStatus(), self.getName()))
+            logger.info("adjustHealthDownAllAnimals(5): No change to status (%-7s) for <%-11s>" % (self.getStatus(), self.getName()))
 
         return 0
 
@@ -224,6 +421,9 @@ class animals(ABC):
     # are available to all instances of the class vie the get methods
     @classmethod
     def genFeedValue(cls):
+        __func = "%s:genFeedValue()" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
         ret = 0
         # Generate three random values between 10 and 25
         m = animals.genRandomValue(10, 25)
@@ -238,13 +438,18 @@ class animals(ABC):
     # set the new health for one animal.  This method expects the caller to
     # have alreday regenerated the feed randon values.
     def feedAnimal(self):
+        __func = "%s:feedAnimal()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         if (self.getStatus() == animals.DEAD):
             if 'DEBUG' in os.environ: 
                 print("animals::feedAnimal(): %s is dead!" % (self.getName()))
+                logger.info("animals::feedAnimal(): %s is dead!" % (self.getName()))
             return 0
 
         if 'DEBUG' in os.environ: 
             print("animals::feedAnimal(): animal status = <%s>" % (self.getStatus()))
+            logger.info("animals::feedAnimal(): animal status = <%s>" % (self.getStatus()))
         val = animals.getFeedCount()  # get the incremented count
         # Set the number of feed runs that the LIVE/LAME instance has had
         self.setFeedRun(val) # The instance now has the number of feed runs
@@ -262,12 +467,16 @@ class animals(ABC):
 
         if 'DEBUG' in os.environ: 
             print("animals::feedAnimal(): %-11s oldHealth=<%-.2f> newHealth= <%-.2f>" % (self.getName(), chealth, nhealth)) 
+            logger.info("animals::feedAnimal(): %-11s oldHealth=<%-.2f> newHealth= <%-.2f>" % (self.getName(), chealth, nhealth)) 
         return 0            
 
 
     def feedAllAnimals(self):
+        __func = "%s:feedAllAnimals()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
 
         print("\nanimals::feedAllAnimals(): Feeding all animals")
+        logger.info("\nanimals::feedAllAnimals(): Feeding all animals")
         # Generate the feed random values
         animals.genFeedValue()
 
@@ -281,10 +490,14 @@ class animals(ABC):
         return 0
 
     def adjustHealthDown(self, value):
+        __func = "%s:adjustHealthDown()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         type = self.getType()
         if (self.getStatus() == animals.DEAD):
             if 'DEBUG' in os.environ: 
                 print("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
+                logger.info("animals::adjustHealthDown(): %s is dead!" % (self.getName()))
             return 0
 
         v = self.getHealthRunCount()
@@ -295,7 +508,11 @@ class animals(ABC):
         return 0
 
     def adjustHealthDownAllAnimals(self):
+        __func = "%s:adjustHealthDownAllAnimals()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down")
+        logger.info("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down")
         str = "adjustHealthDownAllAnimals() is adjusting the health of all animals in zoo list"
         animals.printBanner(str);
 
@@ -308,6 +525,8 @@ class animals(ABC):
         return 0
 
     def runWrapper(self):
+        __func = "%s:runWrapper()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
 
         # print contents of animals.zoo list array
         self.printAllInstances()
@@ -468,6 +687,8 @@ class monkey(animals):
 
 
     def __init__(self, idx):  # ctor method
+        __func = "%s:__init__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
 
         # Define instance attributes below 
         self.__name = animals.setName(self, self.__animalType, idx)
@@ -481,8 +702,13 @@ class monkey(animals):
         self.__healthRunDown = 0
         print("monkey::ctor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
+        logger.info("monkey::ctor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
         
     def __del__(self):
+        __func = "%s:__del__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         print("monkey::dtor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
 
@@ -549,6 +775,9 @@ class giraffe(animals):
     __threshold = 50
 
     def __init__(self, idx):  # ctor method
+        __func = "%s:__init__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
 
         # Define instance attributes below 
         self.__name = animals.setName(self, self.__animalType, idx)
@@ -561,8 +790,13 @@ class giraffe(animals):
         self.__healthRunDown = 0
         print("giraffe::ctor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
+        logger.info("giraffe::ctor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
 
     def __del__(self):
+        __func = "%s:__del__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         print("giraffe::dtor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
@@ -629,6 +863,8 @@ class elephant(animals):
     __threshold = 70
 
     def __init__(self, idx):  # ctor method
+        __func = "%s:__init__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
 
         # Define instance attributes below 
         self.__name = animals.setName(self, self.__animalType, idx)
@@ -641,8 +877,13 @@ class elephant(animals):
         self.__healthRunDown = 0
         print("elephant::ctor name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
+        logger.info("elephant::ctor name = <%-11s>  idx=<%-2d>  health=<%f>" %
+                             (self.getName(), self.getIdx(), self.getHealth()))
 
     def __del__(self):
+        __func = "%s:__del__()" % (self.getScriptName())
+        logger = self.returnLoggerObject()
+
         print("elephant::dtor name = <%-11s>  idx=<%-2d>  health=<%f>" %
                              (self.getName(), self.getIdx(), self.getHealth()))
         
@@ -707,7 +948,9 @@ class elephant(animals):
 class main():
 
     def runner(self):
-    
+        __func = "%s:runner()" % (animals.getScriptName())
+        logger = animals.returnLoggerObject()
+
         health=100
         i = idx = 0 
         # Populate array with five animals of each type
@@ -725,6 +968,7 @@ class main():
             exit(1 )
         m.runWrapper()
         print("========================================")
+        logger.info("========================================")
 
 
 
@@ -732,10 +976,12 @@ class main():
 ############### CALL MAIN FUNCTION ##################
 #####################################################
 
+animals.turnLoggingOn()
+animals.logStart()
 mainFunc = main()
 animals.printBanner("Starting zoo simulation")
 print("")
 ret = mainFunc.runner()
 print("==================================")
-exit(ret)
+sys.exit(ret)
 
