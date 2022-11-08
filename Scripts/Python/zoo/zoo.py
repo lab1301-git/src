@@ -172,7 +172,7 @@ class animals(ABC):
             statusCol = col - 10
             logfile = cls.getLogfile()
             current_branch = "method not implemented as yet!"
-            #stdscr.addstr(statusLine, statusCol, "Status messages" % curses.A_NORMAL)
+            stdscr.addstr(statusLine, statusCol, "Python Version: %s" % (platform.python_version()), curses.A_NORMAL)
             stdscr.addstr(line - spacing, col + 5, "")
 
             key = 0
@@ -197,7 +197,6 @@ class animals(ABC):
                         stdscr.addstr(line, col, "%s" % (animals.menu_options[prev]), curses.A_NORMAL)
                         option = 1
                         key = 0
-                        option = key
                         line = start_line
                         stdscr.addstr(line, col, "%s" % (animals.menu_options[option]), curses.A_REVERSE)
                         continue
@@ -349,8 +348,8 @@ class animals(ABC):
 
         # Start updating logfile
         logger.info("\n%s" % (__func))
-        print ("Python version: %s" % sys.version)
-        logger.info("Python version: %s" % sys.version)
+        print ("Python version: %s" % platform.python_version())
+        logger.info("Python version: %s" % platform.python_version())
 
         print(msg) 
         logger.info(msg) 
