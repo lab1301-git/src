@@ -1229,9 +1229,6 @@ class main():
 
 animals.turnLoggingOn()
 animals.logStart()
-(ret, str) = animals.promptForInput("ENTER INPUT:  ", 2)
-print("ret='%d'  STR='%s'" % (ret, str))
-sys.exit(0)  # DELME
 mainFunc = main()
 animals.printBanner("Starting zoo simulation")
 print("")
