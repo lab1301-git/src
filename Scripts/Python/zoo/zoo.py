@@ -65,6 +65,7 @@ class animals(ABC):
     __feed_max_rval   = 25
     __feedRun         = 0
     __healthRunCount  = 0
+    __static_count = 0
 
     # Three random numbers, one for each type of animal used for feeding and
     # these class attributes are available in all instances
@@ -117,7 +118,7 @@ class animals(ABC):
 
     @classmethod
     def setLastOption(cls, option):
-        __func = "%s:setLastOption()" % (cls.getScriptName())
+        __func = "%s:setLastOption():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logger.info("\n%s" % (__func))
@@ -127,7 +128,7 @@ class animals(ABC):
 
     @classmethod
     def getLastOption(cls):
-        __func = "%s:getLastOption()" % (cls.getScriptName())
+        __func = "%s:getLastOption():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logger.info("\n%s" % (__func))
@@ -136,7 +137,7 @@ class animals(ABC):
 
     @classmethod
     def cursesMenu(cls):
-        __func = "%s:cursesMenu()" % (cls.getScriptName())
+        __func = "%s:cursesMenu():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logger.info("\n%s" % (__func))
@@ -172,7 +173,7 @@ class animals(ABC):
             statusCol = col - 10
             logfile = cls.getLogfile()
             current_branch = "method not implemented as yet!"
-            #stdscr.addstr(statusLine, statusCol, "Status messages" % curses.A_NORMAL)
+            stdscr.addstr(statusLine, statusCol, "Python Version: %s" % (platform.python_version()), curses.A_NORMAL)
             stdscr.addstr(line - spacing, col + 5, "")
 
             key = 0
@@ -235,7 +236,7 @@ class animals(ABC):
 
     @classmethod
     def handleInput(self):
-        __func = "%s:handleInput()" % (self.getScriptName())
+        __func = "%s:handleInput():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         ret = 1
@@ -278,8 +279,72 @@ class animals(ABC):
         return ret
 
     @classmethod
+    def setStaticCounter(cls, count):
+        __func = "%s:setStaticCounter():" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        logger.debug("%s Setting __static_count to '%d'" % (__func, count))
+        cls.__static_count = count
+        return 0
+
+    @classmethod
+    def getStaticCounter(cls):
+        __func = "%s:getStaticCounter():" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        logger.debug("\n%s Returning '%d'" % (__func, cls.__static_count))
+        return cls.__static_count
+
+
+    ###############################################################################
+    # Function:    promptForInput(cls, promptStr, limit)
+    # Description:
+    # Return:      (ret, input) 
+    #              Where ret is 0 - SUCCESS
+    #                           1 - FAILURE
+    ###############################################################################
+    @classmethod
+    def promptForInput(cls, promptStr, limit):
+        __func = "%s:promptForInput():" % (cls.getScriptName())
+        logger = cls.returnLoggerObject()
+
+        logger.info("\n%s" % (__func))
+        count = 0
+        ret = 1
+        os.system('clear')
+        while (True):
+            os.system('clear')
+            userInput = input(promptStr)
+            if (len(userInput) == 0):
+                count = cls.getStaticCounter() + 1
+                cls.setStaticCounter(count)
+                if (cls.getStaticCounter() > limit):
+                    print("\n\t*** You have failed to provide any input ***") 
+                    logger.info("\n\t *** You have failed to provide any input ***") 
+                    break
+                print("%s\n\t*** Please provide input ***" % (__func)) 
+                logger.info("%s\n\t*** Please provide input ***" % (__func)) 
+                time.sleep(2)
+                if (len(userInput) > 0):
+                    ret = 0
+                    break
+                continue
+                
+            else: 
+                logger.info("%s User input is '%s'" % (__func, userInput))
+                ret = 0
+                break
+            if (cls.getStaticCounter() > limit):
+                logger.info("%s cls.getStaticCounter()='%d', userInput='%s'" % (__func, cls.getStaticCounter(), userInput))
+            break
+        logger.info("%s Returning '%d' '%s'" % (__func, ret, userInput))
+        return (ret, userInput)
+
+    @classmethod
     def getTime(cls):
-        __func = "%s:getTime()" % (cls.getScriptName())
+        __func = "%s:getTime():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logger.info("\n%s" % (__func))
@@ -290,13 +355,13 @@ class animals(ABC):
 
     @classmethod
     def returnLoggerObject(cls):
-        __func = "%s:returnLoggerObject()" % (cls.getScriptName())
+        __func = "%s:returnLoggerObject():" % (cls.getScriptName())
         # Return a reference to the same logger instance consistently
         return logging.getLogger(cls.getScriptName())
 
     @classmethod
     def getLogfile(cls):
-        __func = "%s:getLogfile()" % (cls.getScriptName())
+        __func = "%s:getLogfile():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
         
         uid = pwd.getpwuid(os.getuid())[0]
@@ -314,7 +379,7 @@ class animals(ABC):
 
     @classmethod
     def turnLoggingOn(cls):
-        __func = "%s:turnLoggingOn" % (cls.getScriptName())
+        __func = "%s:turnLoggingOn():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logfile = cls.getLogfile()
@@ -349,8 +414,8 @@ class animals(ABC):
 
         # Start updating logfile
         logger.info("\n%s" % (__func))
-        print ("Python version: %s" % sys.version)
-        logger.info("Python version: %s" % sys.version)
+        print ("Python version: %s" % platform.python_version())
+        logger.info("Python version: %s" % platform.python_version())
 
         print(msg) 
         logger.info(msg) 
@@ -382,7 +447,7 @@ class animals(ABC):
 
     @classmethod
     def logStart(cls):
-        __func = "%s:logStart()" % (cls.getScriptName())
+        __func = "%s:logStart():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         logger.info("\n%s" % (__func))
@@ -419,7 +484,7 @@ class animals(ABC):
 
     @classmethod
     def getObject(cls, idx):
-        __func = "%s:getObject()" % (cls.getScriptName())
+        __func = "%s:getObject():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         if (animals.getObjectCount() > idx):
@@ -455,7 +520,7 @@ class animals(ABC):
     # These three class attributes are available to all instances 
     @classmethod
     def setFeedRval(cls, m, g, e):
-        __func = "%s:setFeedRval()" % (cls.getScriptName())
+        __func = "%s:setFeedRval():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         cls.m_feed_rnum = m
@@ -492,7 +557,7 @@ class animals(ABC):
 
     @classmethod
     def printBanner(cls, str):
-        __func = "%s:printBanner()" % (cls.getScriptName())
+        __func = "%s:printBanner():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         print("\n#############################################################")
@@ -504,7 +569,7 @@ class animals(ABC):
         return 0
         
     def printInstance(self):
-        __func = "%s:printInstance()" % (self.getScriptName())
+        __func = "%s:printInstance():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         rval      = "  Animal type  specific feed random number (0 == not fed yet!)"
@@ -532,7 +597,7 @@ class animals(ABC):
         return 0
 
     def printAllInstances(self):
-        __func = "%s:printAllInstances()" % (self.getScriptName())
+        __func = "%s:printAllInstances():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         str = "printAllInstances() is dumping zoo list data"
@@ -541,7 +606,7 @@ class animals(ABC):
             obj.printInstance()
         
     def printHealthAttr(self):
-        __func = "%s:printHealthAttr()" % (self.getScriptName())
+        __func = "%s:printHealthAttr():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         feed_s =   "   ** number of times fed **"
@@ -561,7 +626,7 @@ class animals(ABC):
         return 0
 
     def changeStatus(self):
-        __func = "%s:changeStatus()" % (self.getScriptName())
+        __func = "%s:changeStatus():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         chg = False
@@ -604,7 +669,7 @@ class animals(ABC):
     # are available to all instances of the class vie the get methods
     @classmethod
     def genFeedValue(cls):
-        __func = "%s:genFeedValue()" % (cls.getScriptName())
+        __func = "%s:genFeedValue():" % (cls.getScriptName())
         logger = cls.returnLoggerObject()
 
         ret = 0
@@ -621,7 +686,7 @@ class animals(ABC):
     # set the new health for one animal.  This method expects the caller to
     # have alreday regenerated the feed randon values.
     def feedAnimal(self):
-        __func = "%s:feedAnimal()" % (self.getScriptName())
+        __func = "%s:feedAnimal():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         if (self.getStatus() == animals.DEAD):
@@ -655,7 +720,7 @@ class animals(ABC):
 
 
     def feedAllAnimals(self):
-        __func = "%s:feedAllAnimals()" % (self.getScriptName())
+        __func = "%s:feedAllAnimals():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         print("\nanimals::feedAllAnimals(): Feeding all animals")
@@ -673,7 +738,7 @@ class animals(ABC):
         return 0
 
     def adjustHealthDown(self, value):
-        __func = "%s:adjustHealthDown()" % (self.getScriptName())
+        __func = "%s:adjustHealthDown():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         type = self.getType()
@@ -691,7 +756,7 @@ class animals(ABC):
         return 0
 
     def adjustHealthDownAllAnimals(self):
-        __func = "%s:adjustHealthDownAllAnimals()" % (self.getScriptName())
+        __func = "%s:adjustHealthDownAllAnimals():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         print("\nanimals::adjustHealthDownAllAnimals(): Adjusting health down")
@@ -708,7 +773,7 @@ class animals(ABC):
         return 0
 
     def runWrapper(self):
-        __func = "%s:runWrapper()" % (self.getScriptName())
+        __func = "%s:runWrapper():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         ret = animals.handleInput()
@@ -874,7 +939,7 @@ class monkey(animals):
 
 
     def __init__(self, idx):  # ctor method
-        __func = "%s:__init__()" % (self.getScriptName())
+        __func = "%s:__init__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         # Define instance attributes below 
@@ -893,7 +958,7 @@ class monkey(animals):
                              (self.getName(), self.getIdx(), self.getHealth()))
         
     def __del__(self):
-        __func = "%s:__del__()" % (self.getScriptName())
+        __func = "%s:__del__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         print("monkey::dtor   name = <%-11s>  idx=<%-2d>  health=<%f>" %
@@ -962,7 +1027,7 @@ class giraffe(animals):
     __threshold = 50
 
     def __init__(self, idx):  # ctor method
-        __func = "%s:__init__()" % (self.getScriptName())
+        __func = "%s:__init__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
 
@@ -981,7 +1046,7 @@ class giraffe(animals):
                              (self.getName(), self.getIdx(), self.getHealth()))
 
     def __del__(self):
-        __func = "%s:__del__()" % (self.getScriptName())
+        __func = "%s:__del__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         print("giraffe::dtor  name = <%-11s>  idx=<%-2d>  health=<%f>" %
@@ -1050,7 +1115,7 @@ class elephant(animals):
     __threshold = 70
 
     def __init__(self, idx):  # ctor method
-        __func = "%s:__init__()" % (self.getScriptName())
+        __func = "%s:__init__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         # Define instance attributes below 
@@ -1068,7 +1133,7 @@ class elephant(animals):
                              (self.getName(), self.getIdx(), self.getHealth()))
 
     def __del__(self):
-        __func = "%s:__del__()" % (self.getScriptName())
+        __func = "%s:__del__():" % (self.getScriptName())
         logger = self.returnLoggerObject()
 
         print("elephant::dtor name = <%-11s>  idx=<%-2d>  health=<%f>" %
@@ -1135,7 +1200,7 @@ class elephant(animals):
 class main():
 
     def runner(self):
-        __func = "%s:runner()" % (animals.getScriptName())
+        __func = "%s:runner():" % (animals.getScriptName())
         logger = animals.returnLoggerObject()
 
         health=100
@@ -1165,6 +1230,9 @@ class main():
 
 animals.turnLoggingOn()
 animals.logStart()
+(ret, str) = animals.promptForInput("ENTER INPUT:  ", 2)
+print("ret='%d'  STR='%s'" % (ret, str))
+sys.exit(0)  # DELME
 mainFunc = main()
 animals.printBanner("Starting zoo simulation")
 print("")
