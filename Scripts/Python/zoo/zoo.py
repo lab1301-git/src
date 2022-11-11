@@ -427,7 +427,7 @@ class animals(ABC):
 
         print(msg) 
         logger.info(msg) 
-        if (log_move > 6):
+        if (log_move == 1):
             logger.info(
                 "%s Logfile '%s' was last modified on '%s'"
                      % (__func, logfile, log_modified_date)
