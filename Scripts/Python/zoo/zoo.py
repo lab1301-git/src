@@ -173,7 +173,8 @@ class animals(ABC):
             statusCol = col - 10
             logfile = cls.getLogfile()
             current_branch = "method not implemented as yet!"
-            stdscr.addstr(statusLine, statusCol, "Python Version: %s" % (platform.python_version()), curses.A_NORMAL)
+            stdscr.addstr(statusLine, statusCol, "Python:  %s" % (platform.python_version()), curses.A_NORMAL)
+            stdscr.addstr(statusLine + 1, statusCol, "Logfile: %s" % (cls.getLogfile()), curses.A_NORMAL)
             stdscr.addstr(line - spacing, col + 5, "")
 
             key = 0
@@ -404,8 +405,16 @@ class animals(ABC):
             frameinfo = getframeinfo(currentframe())
             line_no = "%s %s lineno %s" % (__func, frameinfo.filename, frameinfo.lineno)
             msg = "%s\n\n%s ** %s ** Logfile '%s' is missing.  Creating a new logfile..." % (line_no, __func, e, logfile)
-            logger.info("%s ** %s ** Logfile '%s' is missing.  Creating a new logfile..." % (__func, e, logfile))
             time.sleep(2)
+
+        # Calculate when the log was last modified.  If the logfile is
+        # more than 6 days old rename it.
+        age_of_logfile = (today - log_modified_date).days
+        log_move = 0
+        if (age_of_logfile > 6):
+            old_logfile = "%s.old" % (logfile)
+            os.rename(logfile, old_logfile)
+            log_move = 1
 
         # Open/create logfile
         log_fd = logging.FileHandler(logfile)
@@ -418,16 +427,6 @@ class animals(ABC):
 
         print(msg) 
         logger.info(msg) 
-
-        # Calculate when the log was last modified.  If the logfile is
-        # more than 6 days old rename it.
-        age_of_logfile = (today - log_modified_date).days
-        log_move = 0
-        if (age_of_logfile > 6):
-            old_logfile = "%s.old" % (logfile)
-            os.rename(logfile, old_logfile)
-            log_move = 1
-
         if (log_move == 1):
             logger.info(
                 "%s Logfile '%s' was last modified on '%s'"
