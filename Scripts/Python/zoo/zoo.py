@@ -190,7 +190,7 @@ class animals(ABC):
                     break
 
                 elif (int(ch) > int(48) and int(ch) <= (48 + len(animals.menu_options))):
-                    option = it(ch) - 48
+                    option = int(ch) - 48
 
                 elif (ch == curses.KEY_DOWN):
                     prev = option
@@ -411,7 +411,7 @@ class animals(ABC):
         # more than 6 days old rename it.
         age_of_logfile = (today - log_modified_date).days
         log_move = 0
-        if (age_of_logfile > 6):
+        if (age_of_logfile > 1):
             old_logfile = "%s.old" % (logfile)
             os.rename(logfile, old_logfile)
             log_move = 1
