@@ -53,6 +53,13 @@ class D1 : public B {
             return *this;
         }
 
+        // C++11 specific 
+        D1(D1&& rhs) { cout << "D1::D1(D1&& rhs) Move ctor" << endl; }
+
+        D1& operator=(D1&& rhs) {
+            cout << "D1::operator=(D1&& rhs)" << endl;
+            return *this;
+        } 
 
     public:
         D1() { cout << "D1:D1() ctor" << endl; };
@@ -79,6 +86,14 @@ class D2 : public B {
             cout << "operator=(const D2 &obj) - assignment operator" << endl;
             return *this;
         }
+
+        // C++11 specific 
+        D2(D2&& rhs) { cout << "D2::D2(D2&& rhs) Move ctor" << endl; }
+
+        D2& operator=(D2&& rhs) {
+            cout << "D2::operator=(D2&& rhs)" << endl;
+            return *this;
+        } 
 
     public:
         D2() { cout << "D2:D2() ctor" << endl; };
@@ -135,4 +150,4 @@ int main() {
     //D1 copy(d1); // copy disabled as  ‘D1::D1(const D1&)’ is private within this context
     //d1 = copy;   // Assignment disabled
 
-}
+		}
