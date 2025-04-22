@@ -415,6 +415,50 @@ class giraffe : public animal {
         }
 };
 
+
+/*
+ * Factory method design pattern to create animals
+*/
+class animalFactory {
+    public: 
+        virtual animal* createAnimal(int id) = 0;
+        virtual ~animalFactory() { cout << "virtual ~animalFactory::animalFactory() dtor" << endl; };
+};
+
+
+class monkeyFactory : public animalFactory {
+    public:
+        monkeyFactory() { }
+
+        animal* createAnimal(int id) override {
+            return new monkey(id);
+        }
+};
+
+
+class giraffeFactory : public animalFactory {
+    public:
+        giraffeFactory() {}
+
+        animal* createAnimal(int id) override {
+            return new giraffe(id);
+        }
+};
+
+class elephantFactory : public animalFactory {
+    public:
+        elephantFactory() {}
+
+        animal* createAnimal(int id) override {
+            return new elephant(id);
+        }
+};
+
+
+/*
+ * visitor method design pattern
+*/
+
 class visitorBase {
     private:
         static int srand_flg;
@@ -599,27 +643,37 @@ int visitorBase::srand_flg=0;
 int main(int argc, char **argv) {
     cout << "Entered zoo...." << endl;
 
-    // Use different ptr for each animal for better readability
-    animal   *eptr;
+    /*
+     * Use different ptr's for each animal for better readability as well as being useful for
+     * printing the status via getZooStatus()
+    */
+
     animal   *mptr;
     animal   *gptr;
+    animal   *eptr;
+
     elephant e;
-    animal   *aptr = &e;
+    animal *aptr = &e;
+    animalFactory *af_ptr;
     int idx = 0;
 
     // Populate the zoo with 15 animals (five of each)
 
     for (int i=0; i < 5; i++) { 
-        mptr = new monkey(idx);
+        af_ptr = new monkeyFactory();
+        mptr   = af_ptr->createAnimal(idx);
         aptr->loadVector(mptr);
 
         idx = aptr->getIdx();
-        gptr = new giraffe(idx);
+        af_ptr = new giraffeFactory();
+        gptr   = af_ptr->createAnimal(idx);
         aptr->loadVector(gptr);
 
         idx = aptr->getIdx();
-        eptr = new elephant(idx);
+        af_ptr = new elephantFactory();
+        eptr   = af_ptr->createAnimal(idx);
         aptr->loadVector(eptr);
+
         idx = aptr->getIdx();
     }
 
