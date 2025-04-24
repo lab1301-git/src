@@ -32,8 +32,8 @@
  * When a Monkey has a health below 30%, or a Giraffe below 50%, it is
  * pronounced dead straight away.
  *
- * This program demonstrate the OO "Is a" relationship and the visitor design 
- * pattern.
+ * This program demonstrate the OO "Is a" relationship and the visitor and factory design 
+ * patterns.
 */
 
 #include <iostream>
