@@ -5,11 +5,11 @@
 PRG_SUFFIX_FLAG := 0
 #
 CC := g++
-LIBS = -lpthread -lncurses
-LDFLAGS := -L -std=c++17 -g -Wall
-LDFLAGS := -g $(LIBS)
+LIBS = -lpthread
+LDFLAGS := -L -std=c++20 -g -Wall
+LDFLAGS := -g -lpthread
 CFLAGS_INC := -I.
-CFLAGS := -std=c++17 -g $(CFLAGS_INC) -Wall
+CFLAGS := -std=c++20 -g $(CFLAGS_INC) -Wall
 #
 ## ==================- NOTHING TO CHANGE BELOW THIS LINE ===================
 ##
@@ -29,13 +29,7 @@ ifeq ($(V),true)
 endif
 
 $(info $$#################################################)
-$(info $$  SRCS:    ${SRCS})
-$(info $$  CC:      ${CC})
-$(info $$  CFLAGS:  ${CFLAGS})
-$(info $$  LIBS:    ${LIBS})
-$(info $$  LDFLAGS: ${LDFLAGS})
-$(info $$  OBJS:    ${OBJS})
-$(info $$  BINS:    ${BINS})
+$(info $$  List of source files being compiled are: ${SRCS})
 $(info $$#################################################)
 
 ##
@@ -50,7 +44,6 @@ endif
 
 # When make is called with no args we arrive here
 %.o: %.cpp
-	$(info $$ *** make called with no args ***)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 %.d: %.cpp
@@ -59,7 +52,7 @@ endif
 all : $(BINS)
 
 $(BINS): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) $(LIBS) -o $@
+	$(CC) $(CFLAGS) -o $(OBJS) $(LIBS) -o $@
 
 ## Compile the executables 
 %$(PRG_SUFFIX) : $(OBJS) $(SRCS) 

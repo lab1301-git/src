@@ -149,7 +149,7 @@ class animal {
              *
             for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
             */
-            for (auto it : zoo) {
+            for (auto const &it : zoo) {
                 (*it).set_m_rnum(get_m_rnum());
                 (*it).set_g_rnum(get_g_rnum());
                 (*it).set_e_rnum(get_e_rnum());
@@ -496,7 +496,7 @@ void adjustAllAnimalHealthDownWrapper(animal *aptr) {
      *
         //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
     */
-    for (auto it : zoo) {
+    for (auto const &it : zoo) {
         (*it).adjustHealthDown();
 
         /*
@@ -517,7 +517,7 @@ void printVectorContentsWrapper(animal *aptr) {
         //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
      *
     */
-    for (auto it : zoo) {
+    for (auto const &it : zoo) {
         (*it).printInstance();
     }
     return;
@@ -547,7 +547,7 @@ void feedAllAnimalsWrapper(animal *aptr) {
      *
         //for (vector<shared_ptr<animal>>::const_iterator it = zoo.begin();
     */
-    for (auto it : zoo ) {
+    for (auto const &it : zoo ) {
         (*it).feedAnimal();
 
         /*
